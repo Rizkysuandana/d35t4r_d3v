@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.shashank.platform.destar.R;
-
 public class TransportasiActivity extends AppCompatActivity {
     private Button pengantarBarang;
     private Button jasaAngkut;

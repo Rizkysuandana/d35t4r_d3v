@@ -20,7 +20,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.destar.platform.destar.app.AppController;
 import com.destar.platform.destar.utils.MasifaController;
-import com.shashank.platform.destar.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;

@@ -28,7 +28,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import com.shashank.platform.destar.R;
+import com.destar.platform.destar.R;
 import com.destar.platform.destar.app.Config;
 
 public class NotificationUtils {

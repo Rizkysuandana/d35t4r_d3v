@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-import com.shashank.platform.destar.R;
-
 public class PengantarBarangActivity extends AppCompatActivity {
     private Button antarBarangNext;
     @Override

@@ -18,7 +18,6 @@ import android.widget.Toast;
 
 import com.destar.platform.destar.app.Config;
 import com.google.firebase.messaging.FirebaseMessaging;
-import com.shashank.platform.destar.R;
 
 public class SplashActivity extends AppCompatActivity {
     String android;

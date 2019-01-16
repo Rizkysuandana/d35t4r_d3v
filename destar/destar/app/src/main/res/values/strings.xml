@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Destar App</string>
+    <string name="title_activity_maps">Map</string>
+    <!--activity_pengantar_barang-->
+    <!--DARI-->
+    <string name="hint">Lokasi(Nama Jalan / Nama Bangunan</string>
+    <string name="hint2">Lokasi lengkap(Nomor Rumah/Lantai/Patokan)</string>
+    <string name="hint3">Nomor Telepon Pengirim</string>
+    <string name="hint4">Instruksi</string>
+    <!--activity_pengantar_barang-->
+    <!--TUJUAN-->
+    <string name="hint5">Lokasi(Nama Jalan / Nama Bangunan</string>
+    <string name="hint6">Lokasi lengkap(Nomor Rumah/Lantai/Patokan)</string>
+    <string name="hint7">Nomor Telepon Penerima</string>
+    <string name="hint8">Instruksi</string>
+    <!--dashboard-->
+    <string name="id_beranda">beranda</string>
+    <string name="id_pesanan">pesanan</string>
+    <string name="id_riwayat">riwayat</string>
+    <string name="id_akun">akun</string>
+
+</resources>

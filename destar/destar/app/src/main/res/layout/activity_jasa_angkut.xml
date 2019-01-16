@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".JasaAngkutActivity"
+    android:background="#e4e4e4"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:popupTheme="@style/AppTheme.AppBarOverlay"
+        app:theme="@style/AppTheme.Toolbar"
+        android:background="@drawable/background_header">
+
+        <RelativeLayout
+            android:id="@+id/logobar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp">
+
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="46dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/logo_destar" />
+
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="46dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/persero_logo" />
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/toolbar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorgrey"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/AppTheme.Toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:background="@color/colorgrey">
+
+            <LinearLayout
+                android:id="@+id/pesanan"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/gerobak_motor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/calibri"
+                    android:text="Gerobak Motor"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/riwayat"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/pickup" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/calibri"
+                    android:text="Pickup"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pickupBox"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/pickup_box" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/calibri"
+                    android:text="Pickup Box"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/akun"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/engkel_bak" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/calibri"
+                    android:text="Engkel Bak"
+                    android:textAlignment="center"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar1"
+        android:layout_above="@+id/bar">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="PETA"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000000"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="DARI"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000000"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/place"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_place" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint"
+                            android:textSize="16dp"
+                            android:id="@+id/lokasi"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_search" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint2"
+                            android:textSize="15dp"
+                            android:id="@+id/search_teks"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/notelpPengirim"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_telepon" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/search_teks"
+                            android:hint="@string/hint3"
+                            android:textSize="16dp"
+                            android:id="@+id/notelPengirim_teks"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/instruksi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_instruksi" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint4"
+                            android:textSize="16dp"
+                            android:id="@+id/teks_instruksi"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="TUJUAN"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000000"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/placepenerima"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/garistujuan"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/image_place" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint5"
+                            android:textSize="16dp"
+                            android:id="@+id/lokasipenerima"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_search" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lokasipenerima"
+                            android:hint="@string/hint6"
+                            android:textSize="15dp"
+                            android:id="@+id/search_teks_penerima"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_telepon" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/search_teks_penerima"
+                            android:layout_toRightOf="@+id/notelpPenerima"
+                            android:hint="@string/hint7"
+                            android:textSize="16dp"
+                            android:id="@+id/notelpPenerima_teks"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/notelpPenerima"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_instruksi" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/notelpPenerima_teks"
+                            android:hint="@string/hint8"
+                            android:textSize="16dp"
+                            android:id="@+id/teks_instruksi_penerima"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="BARANG YANG DIANTAR"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000000"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/image_box_barang" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nama Barang/Jenis Barang"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <View
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:textSize="13dp"
+                            android:text="Jelaskan Barang yang akan dikirim. Sopir akan menghubungi Anda untuk memastikan rincian  "
+                            android:layout_gravity="center"
+                            android:textAlignment="inherit"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/image_berat" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lokasipenerima"
+                            android:hint="Perkiraan Berat Barang"
+                            android:textSize="15dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                    <Button
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/next_jasaAngkut"
+                        android:text="lanjutkan"
+                        android:background="@color/colorOrange"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include android:id="@+id/bar"
+        layout="@layout/layout_toolbar"/>
+</RelativeLayout>

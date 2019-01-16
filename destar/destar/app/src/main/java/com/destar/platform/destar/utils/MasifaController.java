@@ -1,4 +1,4 @@
-package com.shashank.platform.destar.utils;
+package com.destar.platform.destar.utils;
 
 import android.util.Log;
 

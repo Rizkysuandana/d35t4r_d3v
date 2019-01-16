@@ -1,4 +1,4 @@
-package com.shashank.platform.destar;
+package com.destar.platform.destar;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -10,29 +10,23 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.widget.CardView;
+
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.shashank.platform.destar.app.AppController;
-import com.shashank.platform.destar.utils.MasifaController;
+import com.destar.platform.destar.app.AppController;
+import com.destar.platform.destar.utils.MasifaController;
+import com.shashank.platform.destar.R;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-
-import fr.arnaudguyon.xmltojsonlib.XmlToJson;
 
 public class LoginActivity extends AppCompatActivity {
 

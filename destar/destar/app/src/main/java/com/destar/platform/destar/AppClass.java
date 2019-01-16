@@ -1,4 +1,4 @@
-package com.shashank.platform.destar;
+package com.destar.platform.destar;
 
 import android.app.Application;
 import android.os.AsyncTask;
@@ -6,7 +6,7 @@ import android.text.TextUtils;
 
 import java.util.HashMap;
 
-import com.shashank.platform.destar.utils.MasifaController;
+import com.destar.platform.destar.utils.MasifaController;
 
 public class AppClass extends Application {
     private String pFBase;

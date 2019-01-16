@@ -1,4 +1,4 @@
-package com.shashank.platform.destar.app;
+package com.destar.platform.destar.app;
 
 /**
  * Created by RIVES on 11/30/2018.

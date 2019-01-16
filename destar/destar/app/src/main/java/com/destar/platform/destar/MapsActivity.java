@@ -1,4 +1,4 @@
-package com.shashank.platform.destar;
+package com.destar.platform.destar;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -29,6 +29,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.shashank.platform.destar.R;
 
 import static com.google.android.gms.location.LocationServices.FusedLocationApi;
 

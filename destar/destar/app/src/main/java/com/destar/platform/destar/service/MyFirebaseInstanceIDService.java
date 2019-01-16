@@ -1,4 +1,4 @@
-package com.shashank.platform.destar.service;
+package com.destar.platform.destar.service;
 
 /**
  * Created by RIVES on 4/29/2018.
@@ -9,10 +9,9 @@ import android.content.SharedPreferences;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
+import com.destar.platform.destar.app.Config;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
-
-import com.shashank.platform.destar.app.Config;
 
 public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
     private static final String TAG = MyFirebaseInstanceIDService.class.getSimpleName();

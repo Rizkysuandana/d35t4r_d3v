@@ -1,4 +1,4 @@
-package com.shashank.platform.destar.utils;
+package com.destar.platform.destar.utils;
 
 import android.app.ActivityManager;
 import android.app.Notification;
@@ -29,7 +29,7 @@ import java.util.Date;
 import java.util.List;
 
 import com.shashank.platform.destar.R;
-import com.shashank.platform.destar.app.Config;
+import com.destar.platform.destar.app.Config;
 
 public class NotificationUtils {
 

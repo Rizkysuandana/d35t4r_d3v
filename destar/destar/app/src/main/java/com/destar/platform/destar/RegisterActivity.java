@@ -1,4 +1,4 @@
-package com.shashank.platform.destar;
+package com.destar.platform.destar;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -22,7 +22,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.shashank.platform.destar.utils.MasifaController;
+import com.destar.platform.destar.utils.MasifaController;
+import com.shashank.platform.destar.R;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -30,7 +31,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.Calendar;
-import java.util.HashMap;
 
 public class RegisterActivity extends AppCompatActivity {
     private ProgressDialog pDialog;

@@ -1,4 +1,4 @@
-package com.shashank.platform.destar.service;
+package com.destar.platform.destar.service;
 /**
  * Created by RIVES on 12/1/2018.
  */
@@ -15,7 +15,7 @@ import android.os.IBinder;
 import android.support.v4.app.ActivityCompat;
 import android.widget.Toast;
 
-import com.shashank.platform.destar.AppClass;
+import com.destar.platform.destar.AppClass;
 
 
 public class MyLocationService extends Service {

@@ -1,4 +1,4 @@
-package com.shashank.platform.destar;
+package com.destar.platform.destar;
 
 import android.Manifest;
 import android.content.BroadcastReceiver;
@@ -9,17 +9,16 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.os.Handler;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
-import android.widget.Space;
 import android.widget.Toast;
 
+import com.destar.platform.destar.app.Config;
 import com.google.firebase.messaging.FirebaseMessaging;
-import com.shashank.platform.destar.app.Config;
+import com.shashank.platform.destar.R;
 
 public class SplashActivity extends AppCompatActivity {
     String android;

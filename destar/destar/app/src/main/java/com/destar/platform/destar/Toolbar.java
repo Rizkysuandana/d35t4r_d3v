@@ -1,10 +1,12 @@
-package com.shashank.platform.destar;
+package com.destar.platform.destar;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
+
+import com.shashank.platform.destar.R;
 
 public class Toolbar extends AppCompatActivity {
     @Override

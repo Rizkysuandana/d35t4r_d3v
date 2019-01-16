@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dashboard">
+    tools:context="com.destar.platform.destar.Dashboard">
 
     <include
         layout="@layout/header" />
@@ -2106,7 +2106,7 @@
 
             <include
                 layout="@layout/layout_toolbar"
-                tools:context=".Toolbar" />
+                tools:context="com.destar.platform.destar.Toolbar" />
         </LinearLayout>
     </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>

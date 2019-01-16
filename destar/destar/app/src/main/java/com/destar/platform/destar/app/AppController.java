@@ -1,4 +1,4 @@
-package com.shashank.platform.destar.app;
+package com.destar.platform.destar.app;
 
 import android.app.Application;
 import android.text.TextUtils;

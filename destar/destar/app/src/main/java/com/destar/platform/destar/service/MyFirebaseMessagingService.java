@@ -1,4 +1,4 @@
-package com.shashank.platform.destar.service;
+package com.destar.platform.destar.service;
 
 /**
  * Created by RIVES on 4/29/2018.
@@ -10,15 +10,15 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.destar.platform.destar.app.Config;
+import com.destar.platform.destar.utils.NotificationUtils;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.shashank.platform.destar.Dashboard;
-import com.shashank.platform.destar.app.Config;
-import com.shashank.platform.destar.utils.NotificationUtils;
+import com.destar.platform.destar.Dashboard;
 
 /**
  * Created by Ravi Tamada on 08/08/16.

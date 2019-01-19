@@ -10,7 +10,7 @@
     android:background="#ffffff"
     android:fitsSystemWindows="true"
     android:gravity="center"
-    tools:context=".Toolbar">
+    tools:context="com.destar.platform.destar.Toolbar">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

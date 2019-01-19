@@ -23,13 +23,14 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.destar.platform.destar.utils.MasifaController;
+import com.shashank.platform.destar.R;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.net.URLEncoder;
 import java.util.Calendar;
+import java.util.HashMap;
 
 public class RegisterActivity extends AppCompatActivity {
     private ProgressDialog pDialog;
@@ -76,20 +77,7 @@ public class RegisterActivity extends AppCompatActivity {
                 pCustomerType="1";
                 pMobileNumber = xMobileNumber.getText().toString();
                 if(pPwd.equals( pPwd2 )) {
-                    ByteArrayOutputStream byteArrayOutputStreamObject ;
-                    byteArrayOutputStreamObject = new ByteArrayOutputStream();
-                    imageBitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStreamObject);
-                    byte[] byteArrayVar = byteArrayOutputStreamObject.toByteArray();
-                    final String ConvertImage = Base64.encodeToString(byteArrayVar, Base64.DEFAULT);
-                    pServer = pServer + "?strUserName=" + pUsername;
-                    pServer = pServer + "&strFullName=" + URLEncoder.encode(pFullName);
-                    pServer = pServer + "&strEmail=" + pEmail;
-                    pServer = pServer + "&strPwd=" + pPwd;
-                    pServer = pServer + "&strMobileNumber=" + pMobileNumber;
-                    pServer = pServer + "&strCustomerType=" + pCustomerType;
-                    pServer = pServer + "&strHrdwareID=" + pHrdwareID;
-                    pServer = pServer + "&strImage=" + ConvertImage;
-                    Log.e("==================\n", "Link=>" + pServer);
+
                     Simpan();
                 }
                 else{
@@ -204,7 +192,23 @@ public class RegisterActivity extends AppCompatActivity {
             }
             @Override
             protected String doInBackground(Void... params) {
-                String FinalData = msfC.HttpRequestGet(pServer);
+                ByteArrayOutputStream byteArrayOutputStreamObject ;
+                byteArrayOutputStreamObject = new ByteArrayOutputStream();
+                imageBitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStreamObject);
+                byte[] byteArrayVar = byteArrayOutputStreamObject.toByteArray();
+                final String ConvertImage = Base64.encodeToString(byteArrayVar, Base64.DEFAULT);
+
+                HashMap<String,String> HashMapParams = new HashMap<String,String>();
+                HashMapParams.put("strUserName",pUsername);
+                HashMapParams.put("strFullName", pFullName);
+                HashMapParams.put("strEmail",pEmail);
+                HashMapParams.put("strPwd", pPwd);
+                HashMapParams.put("strMobileNumber", pMobileNumber);
+                HashMapParams.put("strCustomerType", pCustomerType);
+                HashMapParams.put("strHrdwareID", "-");
+                HashMapParams.put("strImage", ConvertImage);
+
+                String FinalData = msfC.HttpPost(pServer, HashMapParams);
                 return FinalData;
             }
             @Override
@@ -239,6 +243,9 @@ public class RegisterActivity extends AppCompatActivity {
             xPwd.setText( "" );
             xPwd2.setText( "" );
             xMobileNumber.setText( "" );
+            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+            startActivity(intent);
+            this.finish();
         }
         //==============================
     }

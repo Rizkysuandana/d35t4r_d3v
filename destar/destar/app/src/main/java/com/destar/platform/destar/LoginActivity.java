@@ -18,6 +18,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.shashank.platform.destar.R;
 import com.destar.platform.destar.app.AppController;
 import com.destar.platform.destar.utils.MasifaController;
 
@@ -63,9 +64,7 @@ public class LoginActivity extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
            public void onClick(View v) {
-                String username = txt_username.getText().toString();
-                String password = txt_password.getText().toString();
-                url = url +"?strUserName="+username+"&strPwd="+password;
+
                 xLogin();
            }
         });
@@ -159,7 +158,15 @@ public class LoginActivity extends AppCompatActivity {
             }
             @Override
             protected String doInBackground(Void... params) {
-                String FinalData = msfC.HttpGET(url);
+                String username = txt_username.getText().toString();
+                String password = txt_password.getText().toString();
+                String pIdHardware = ((AppClass) LoginActivity.this.getApplication()).Getandroidid();
+                HashMap<String,String> HashMapParams = new HashMap<String,String>();
+                HashMapParams.put("strUserName",username);
+                HashMapParams.put("strPwd", password);
+                HashMapParams.put("strHardwareID",pIdHardware);
+
+                String FinalData = msfC.HttpPost(url, HashMapParams);
                 return FinalData;
 
             }
@@ -191,7 +198,7 @@ public class LoginActivity extends AppCompatActivity {
         Boolean xACTIVE= null;
         Integer xCUSTOMERTYPEID= null;
         String xCUSTOMERTYPENAME= null;
-        String xHARDWAREID= null;
+        Log.e("Hasil",pParam);
         String pxJson = pParam.replace( "<?xml version=\"1.0\" encoding=\"utf-8\"?>","" );
         pxJson = pxJson.replace( "<string xmlns=\"http://tempuri.org/\">[","" );
         pxJson = pxJson.replace( "]</string>","" );
@@ -199,7 +206,6 @@ public class LoginActivity extends AppCompatActivity {
         xUSERNAME= jsonObj.getString("USERNAME");
         xACTIVE= jsonObj.getBoolean("ACTIVE");
         xCUSTOMERTYPEID= jsonObj.getInt("CUSTOMERTYPEID");
-        xHARDWAREID= jsonObj.getString("xHARDWAREID");
         xCUSTOMERTYPENAME= jsonObj.getString("CUSTOMERTYPENAME");
         ((AppClass) LoginActivity.this.getApplication()).setUSERNAME(xUSERNAME);
         ((AppClass) LoginActivity.this.getApplication()).setCUSTOMERTYPEID( String.valueOf( xCUSTOMERTYPEID ) );

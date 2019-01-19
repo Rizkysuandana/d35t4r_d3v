@@ -27,7 +27,7 @@ public class MasifaController{
     String RC2, RC1;boolean check = true;
     public MasifaController() {
     }
-    public String HttpRequest(String requestURL, HashMap<String, String> PData) {
+    public String HttpPost(String requestURL, HashMap<String, String> PData) {
         StringBuilder stringBuilder = new StringBuilder();
         try {
             URL url;
@@ -51,47 +51,6 @@ public class MasifaController{
             bufferedWriterObject.flush();
             bufferedWriterObject.close();
             OutPutStream.close();
-            RC = httpURLConnectionObject.getResponseCode();
-            if (RC == HttpsURLConnection.HTTP_OK) {
-                bufferedReaderObject = new BufferedReader(new InputStreamReader(httpURLConnectionObject.getInputStream()));
-                stringBuilder = new StringBuilder();
-                while ((RC2 = bufferedReaderObject.readLine()) != null){
-                    RC1=RC2;
-                    stringBuilder.append(RC2);
-                }
-            }
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
-        return stringBuilder.toString();
-    }
-    public String HttpRequestGet(String requestURL ) {
-        StringBuilder stringBuilder = new StringBuilder();
-        try {
-            URL url;
-            HttpURLConnection httpURLConnectionObject ;
-            OutputStream OutPutStream;
-            BufferedWriter bufferedWriterObject ;
-            BufferedReader bufferedReaderObject ;
-            int RC ;
-            url = new URL(requestURL);
-            httpURLConnectionObject = (HttpURLConnection) url.openConnection();
-            httpURLConnectionObject.setReadTimeout(19000);
-            httpURLConnectionObject.setConnectTimeout(19000);
-            httpURLConnectionObject.setRequestMethod("GET");
-            httpURLConnectionObject.setDoInput(true);
-            httpURLConnectionObject.setDoOutput(true);
-            /*
-            OutPutStream = httpURLConnectionObject.getOutputStream();
-            bufferedWriterObject = new BufferedWriter(
-                    new OutputStreamWriter(OutPutStream, "UTF-8")
-            );
-            bufferedWriterObject.write(bufferedWriterDataFN(PData));
-            bufferedWriterObject.flush();
-            bufferedWriterObject.close();
-            OutPutStream.close();
-            */
             RC = httpURLConnectionObject.getResponseCode();
             if (RC == HttpsURLConnection.HTTP_OK) {
                 bufferedReaderObject = new BufferedReader(new InputStreamReader(httpURLConnectionObject.getInputStream()));

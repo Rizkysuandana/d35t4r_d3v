@@ -3,9 +3,12 @@ package com.destar.platform.destar;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+
+import com.shashank.platform.destar.R;
 
 public class PengantarBarangActivity extends AppCompatActivity {
     private Button antarBarangNext;
@@ -63,6 +66,18 @@ public class PengantarBarangActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+    }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if ((keyCode == KeyEvent.KEYCODE_BACK)) {
+            if (keyCode == KeyEvent.KEYCODE_BACK) {
+                Intent intent = new Intent(this, Dashboard.class);
+                startActivity(intent);
+                this.finish();
+            }
+            return super.onKeyDown(keyCode, event);
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
 }

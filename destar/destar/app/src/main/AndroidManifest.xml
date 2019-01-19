@@ -12,31 +12,31 @@
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
-        android:name=".AppClass"
+        android:name="com.destar.platform.destar.AppClass"
         android:allowBackup="true"
         android:icon="@drawable/logo_destar"
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo_destar"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <service android:name=".service.MyFirebaseMessagingService">
+        <service android:name="com.destar.platform.destar.service.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".service.MyFirebaseInstanceIDService">
+        <service android:name="com.destar.platform.destar.service.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".service.MyLocationService"
+        <service android:name="com.destar.platform.destar.service.MyLocationService"
             android:process=":mylocation_service">
             <intent-filter>
                 <action android:name="LOKASI" />
             </intent-filter>
         </service>
         <activity
-            android:name=".SplashActivity"
+            android:name="com.destar.platform.destar.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,23 +44,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TampilanAwalActivity"/>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity"/>
+        <activity android:name="com.destar.platform.destar.TampilanAwalActivity"/>
+        <activity android:name="com.destar.platform.destar.LoginActivity" />
+        <activity android:name="com.destar.platform.destar.RegisterActivity"/>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
         <activity
-            android:name=".MapsActivity"
+            android:name="com.destar.platform.destar.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".Toolbar"/>
-        <activity android:name=".PesananActivity" />
-        <activity android:name=".RiwayatActivity" />
-        <activity android:name=".AkunActivity"></activity>
-        <activity android:name=".Dashboard"></activity>
-        <activity android:name=".TransportasiActivity"></activity>
-        <activity android:name=".PengantarBarangActivity"></activity>
-        <activity android:name=".NextPengantarBarang"></activity>
+        <activity android:name="com.destar.platform.destar.Toolbar"/>
+        <activity android:name="com.destar.platform.destar.PesananActivity" />
+        <activity android:name="com.destar.platform.destar.RiwayatActivity" />
+        <activity android:name="com.destar.platform.destar.AkunActivity"></activity>
+        <activity android:name="com.destar.platform.destar.Dashboard"></activity>
+        <activity android:name="com.destar.platform.destar.TransportasiActivity"></activity>
+        <activity android:name="com.destar.platform.destar.PengantarBarangActivity"></activity>
+        <activity android:name="com.destar.platform.destar.NextPengantarBarang"></activity>
     </application>
 
 </manifest>

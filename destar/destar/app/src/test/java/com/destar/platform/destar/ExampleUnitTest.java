@@ -1,4 +1,4 @@
-package com.destar.platform.destarapp;
+package com.destar.platform.destar;
 
 import org.junit.Test;
 

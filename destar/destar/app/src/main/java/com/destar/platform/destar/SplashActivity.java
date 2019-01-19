@@ -20,7 +20,7 @@ import android.view.Window;
 import android.widget.Toast;
 
 import com.google.firebase.messaging.FirebaseMessaging;
-import com.shashank.platform.destar.R;
+import com.destar.platform.destar.R;
 import com.destar.platform.destar.app.Config;
 import com.destar.platform.destar.utils.MasifaController;
 

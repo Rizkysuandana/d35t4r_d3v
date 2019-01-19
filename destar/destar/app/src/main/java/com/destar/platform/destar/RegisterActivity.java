@@ -23,7 +23,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.destar.platform.destar.utils.MasifaController;
-import com.shashank.platform.destar.R;
+import com.destar.platform.destar.R;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

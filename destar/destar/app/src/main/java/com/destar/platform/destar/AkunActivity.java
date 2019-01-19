@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.shashank.platform.destar.R;
+import com.destar.platform.destar.R;
 
 public class AkunActivity extends AppCompatActivity {
     LinearLayout blogout;

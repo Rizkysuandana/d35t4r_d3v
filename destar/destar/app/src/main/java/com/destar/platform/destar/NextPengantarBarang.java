@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 
-import com.shashank.platform.destar.R;
+import com.destar.platform.destar.R;
 
 public class NextPengantarBarang extends AppCompatActivity {
     @Override

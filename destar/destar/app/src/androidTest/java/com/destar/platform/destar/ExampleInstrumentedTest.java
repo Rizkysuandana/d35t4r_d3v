@@ -1,4 +1,4 @@
-package com.shashank.platform.destar;
+package com.destar.platform.destar;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

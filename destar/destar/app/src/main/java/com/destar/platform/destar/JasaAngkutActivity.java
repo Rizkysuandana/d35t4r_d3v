@@ -7,7 +7,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.shashank.platform.destar.R;
+import com.destar.platform.destar.R;
 
 public class JasaAngkutActivity extends AppCompatActivity {
     @Override

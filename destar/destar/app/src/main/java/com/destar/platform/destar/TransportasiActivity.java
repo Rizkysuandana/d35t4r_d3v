@@ -7,7 +7,7 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.shashank.platform.destar.R;
+import com.destar.platform.destar.R;
 
 public class TransportasiActivity extends AppCompatActivity {
     private CardView pengantarBarang;

@@ -18,7 +18,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.shashank.platform.destar.R;
+import com.destar.platform.destar.R;
 import com.destar.platform.destar.app.AppController;
 import com.destar.platform.destar.utils.MasifaController;
 

@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.shashank.platform.destar.R;
+import com.destar.platform.destar.R;
 
 public class TampilanAwalActivity extends AppCompatActivity {
     private Button btn_loginAwal, btn_registerAwal,google_btn;

@@ -4,14 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.destar.platform.destar.RegisterActivity">
+    tools:context=".RegisterActivity">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorgrey"
-        android:padding="8dp">
+        android:background="@color/colorgrey">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -45,7 +44,7 @@
                             android:layout_marginBottom="5dp"
                             android:layout_marginTop="5dp"
                             android:fontFamily="sans-serif-smallcaps"
-                            android:text="DAFTAR"
+                            android:text="PENDAFTARAN"
                             android:textColor="@color/colorblack"
                             android:textSize="18dip" />
 
@@ -55,7 +54,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/dftr"
-                            android:layout_centerHorizontal="true">
+                            android:layout_centerHorizontal="true"
+                            android:padding="2dp">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -80,7 +80,6 @@
                                         android:layout_marginBottom="5dp"
                                         android:layout_marginLeft="10dp"
                                         android:background="@drawable/textboxdesainkecil"
-                                        android:singleLine="false"
                                         android:textAlignment="textStart"
                                         android:textColorLink="@color/colorPrimary"
                                         android:textSize="14sp" />
@@ -262,8 +261,8 @@
 
                                     <ImageView
                                         android:id="@+id/imgfoto"
-                                        android:layout_width="150dp"
-                                        android:layout_height="150dp"
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
                                         android:scaleType="fitCenter"
                                         app:srcCompat="@drawable/logo_destar" />
                                 </LinearLayout>
@@ -277,7 +276,7 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/unggah_foto"
                             android:layout_centerHorizontal="true"
-                            android:layout_margin="20dp">
+                            android:layout_margin="10dp">
 
                             <Button
                                 android:id="@+id/btn_daftar"

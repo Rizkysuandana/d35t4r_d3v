@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.destar.platform.destar.NextPengantarBarang"
+    tools:context=".NextPengantarBarang"
     android:orientation="vertical">
     <android.support.design.widget.AppBarLayout
         android:id="@+id/toolbar"
@@ -43,5 +43,5 @@
     <include
         android:id="@+id/bar"
         layout="@layout/layout_toolbar"
-        tools:context="com.destar.platform.destar.Toolbar" />
+        tools:context=".Toolbar" />
 </LinearLayout>

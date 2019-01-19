@@ -191,6 +191,7 @@ public class LoginActivity extends AppCompatActivity {
         Boolean xACTIVE= null;
         Integer xCUSTOMERTYPEID= null;
         String xCUSTOMERTYPENAME= null;
+        String xHARDWAREID= null;
         String pxJson = pParam.replace( "<?xml version=\"1.0\" encoding=\"utf-8\"?>","" );
         pxJson = pxJson.replace( "<string xmlns=\"http://tempuri.org/\">[","" );
         pxJson = pxJson.replace( "]</string>","" );
@@ -198,6 +199,7 @@ public class LoginActivity extends AppCompatActivity {
         xUSERNAME= jsonObj.getString("USERNAME");
         xACTIVE= jsonObj.getBoolean("ACTIVE");
         xCUSTOMERTYPEID= jsonObj.getInt("CUSTOMERTYPEID");
+        xHARDWAREID= jsonObj.getString("xHARDWAREID");
         xCUSTOMERTYPENAME= jsonObj.getString("CUSTOMERTYPENAME");
         ((AppClass) LoginActivity.this.getApplication()).setUSERNAME(xUSERNAME);
         ((AppClass) LoginActivity.this.getApplication()).setCUSTOMERTYPEID( String.valueOf( xCUSTOMERTYPEID ) );

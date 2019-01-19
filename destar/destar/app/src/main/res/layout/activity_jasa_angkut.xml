@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.destar.platform.destar.JasaAngkutActivity"
+    tools:context=".JasaAngkutActivity"
     android:background="#e4e4e4"
     android:orientation="vertical">
     <android.support.design.widget.AppBarLayout
@@ -497,7 +497,7 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/next_jasaAngkut"
                         android:text="lanjutkan"
-                        android:background="@drawable/buttonshapelogin"/>
+                        android:background="@color/colorOrange"/>
                 </RelativeLayout>
             </LinearLayout>
         </ScrollView>

@@ -58,9 +58,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:layout_toRightOf="@+id/image_email"
-                    android:hint="Nama Pengguna"
+                    android:hint="Email"
                     android:inputType="textEmailAddress"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:text="Ali" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1.5dp"
@@ -87,7 +88,8 @@
                     android:hint="Kata Sandi"
                     android:inputType="textPassword"
                     android:password="true"
-                    android:singleLine="true"/>
+                    android:singleLine="true"
+                    android:text="@Bismillah12" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1.5dp"

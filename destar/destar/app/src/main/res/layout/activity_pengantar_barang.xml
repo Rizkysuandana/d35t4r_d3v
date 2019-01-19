@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.destar.platform.destar.PengantarBarangActivity"
+    tools:context=".PengantarBarangActivity"
     android:background="#e4e4e4"
     android:orientation="vertical">
     <RelativeLayout
@@ -531,7 +531,7 @@
                             android:layout_height="wrap_content"
                             android:id="@+id/next_pengantarBarang"
                             android:text="lanjutkan"
-                            android:background="@drawable/buttonshapelogin"/>
+                            android:background="@color/colorOrange"/>
                     </RelativeLayout>
                 </LinearLayout>
             </ScrollView>
@@ -542,7 +542,7 @@
                 android:id="@+id/bar_dashboard1">
                 <include
                     layout="@layout/layout_toolbar"
-                    tools:context="com.destar.platform.destar.Toolbar"/>
+                    tools:context=".Toolbar"/>
             </LinearLayout>
 
     </RelativeLayout>

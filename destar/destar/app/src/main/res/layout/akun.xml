@@ -54,7 +54,7 @@
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
                                 android:layout_weight="4"
-                                android:background="@drawable/account"
+                                android:background="@drawable/image_akun"
                                 android:scaleType="center" />
 
                             <LinearLayout
@@ -137,12 +137,12 @@
                             android:weightSum="100">
 
                             <ImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
-                                android:layout_marginLeft="15dp"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="13dp"
                                 android:layout_marginRight="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/transportasi1"
+                                android:background="@drawable/image_logout"
                                 android:padding="10dp"
                                 android:scaleType="fitCenter" />
 
@@ -156,12 +156,12 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginEnd="5dp"
                                     android:layout_marginLeft="10dp"
+                                    android:layout_marginEnd="5dp"
                                     android:layout_marginRight="10dp"
+                                    android:fontFamily="@font/calibri"
                                     android:text="Logout"
-                                    android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:textSize="18sp" />
 
                                 <View
                                     android:layout_width="match_parent"
@@ -175,17 +175,18 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
                             android:gravity="center|start"
                             android:orientation="horizontal"
                             android:weightSum="100">
 
                             <ImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginRight="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/transportasi1"
+                                android:background="@drawable/image_bantuan"
                                 android:padding="10dp"
                                 android:scaleType="fitCenter" />
 
@@ -204,7 +205,7 @@
                                     android:layout_marginRight="10dp"
                                     android:text="Bantuan"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:fontFamily="@font/calibri" />
 
                                 <View
                                     android:layout_width="match_parent"
@@ -218,17 +219,18 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
                             android:gravity="center|start"
                             android:orientation="horizontal"
                             android:weightSum="100">
 
                             <ImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginRight="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/transportasi1"
+                                android:background="@drawable/image_ketentuan_layanan"
                                 android:padding="10dp"
                                 android:scaleType="fitCenter" />
 
@@ -247,7 +249,7 @@
                                     android:layout_marginRight="10dp"
                                     android:text="Ketentuan Layanan"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:fontFamily="@font/calibri" />
 
                                 <View
                                     android:layout_width="match_parent"
@@ -261,17 +263,18 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
                             android:gravity="center|start"
                             android:orientation="horizontal"
                             android:weightSum="100">
 
                             <ImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginRight="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/transportasi1"
+                                android:background="@drawable/image_kebijakan_privasi"
                                 android:padding="10dp"
                                 android:scaleType="fitCenter" />
 
@@ -290,7 +293,7 @@
                                     android:layout_marginRight="10dp"
                                     android:text="Kebijakan Privasi"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:fontFamily="@font/calibri" />
 
                                 <View
                                     android:layout_width="match_parent"
@@ -304,17 +307,18 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
                             android:gravity="center|start"
                             android:orientation="horizontal"
                             android:weightSum="100">
 
                             <ImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
                                 android:layout_marginLeft="15dp"
                                 android:layout_marginRight="10dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/transportasi1"
+                                android:background="@drawable/image_hubungi"
                                 android:padding="10dp"
                                 android:scaleType="fitCenter" />
 
@@ -333,7 +337,7 @@
                                     android:layout_marginRight="10dp"
                                     android:text="Hubungi Kami"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:fontFamily="@font/calibri" />
 
                                 <View
                                     android:layout_width="match_parent"
@@ -347,17 +351,18 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
                             android:gravity="center|start"
                             android:orientation="horizontal"
                             android:weightSum="100">
 
                             <ImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
+                                android:layout_width="35dp"
+                                android:layout_height="30dp"
                                 android:layout_marginLeft="15dp"
-                                android:layout_marginRight="10dp"
+                                android:layout_marginRight="5dp"
                                 android:layout_weight="1"
-                                android:background="@drawable/transportasi1"
+                                android:background="@drawable/image_tentang"
                                 android:padding="10dp"
                                 android:scaleType="fitCenter" />
 
@@ -376,7 +381,7 @@
                                     android:layout_marginRight="10dp"
                                     android:text="Tentang Kami"
                                     android:textSize="18sp"
-                                    android:textStyle="bold" />
+                                    android:fontFamily="@font/calibri" />
 
                                 <View
                                     android:layout_width="match_parent"

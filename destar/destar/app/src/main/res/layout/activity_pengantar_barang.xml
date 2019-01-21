@@ -542,7 +542,7 @@
                 android:id="@+id/bar_dashboard1">
                 <include
                     layout="@layout/layout_toolbar"
-                    tools:context="com.destar.platform.destar.Toolbar"/>
+                    tools:context="com.destar.platform.destar.Toolbar" />
             </LinearLayout>
 
     </RelativeLayout>

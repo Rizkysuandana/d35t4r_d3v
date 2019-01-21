@@ -282,7 +282,7 @@
                                 android:id="@+id/btn_daftar"
                                 android:layout_width="match_parent"
                                 android:layout_height="40dp"
-                                android:background="@color/colorOrange"
+                                android:background="@drawable/buttonshapelogin"
                                 android:text="DAFTAR"
                                 android:textColor="@color/cardview_light_background" />
                         </RelativeLayout>

@@ -47,16 +47,16 @@ public class SplashActivity extends AppCompatActivity {
         ((AppClass) SplashActivity.this.getApplication()).Setandroidid(android);
         Firebase();
        // locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-     //   if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
-     //           ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-     //       return;
-    //    }
-   //     locationManager.requestLocationUpdates(
-    //            LocationManager.GPS_PROVIDER,
-    //            MINIMUM_TIME_BETWEEN_UPDATES,
+       // if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+       //         ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+      //      return;
+      //  }
+      //  locationManager.requestLocationUpdates(
+     //           LocationManager.GPS_PROVIDER,
+       //         MINIMUM_TIME_BETWEEN_UPDATES,
     //            MINIMUM_DISTANCE_CHANGE_FOR_UPDATES,
     //            new MyLocationListener()
-    //    );
+     //   );
         msfC = new MasifaController();
         url = url +"?strHardwareID="+android;
         Log.i("Hasil=>",url);

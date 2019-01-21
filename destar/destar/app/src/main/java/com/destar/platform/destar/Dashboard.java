@@ -15,7 +15,7 @@ import com.synnapps.carouselview.ImageListener;
 public class Dashboard extends AppCompatActivity {
     private CardView transportasi;
     CarouselView carouselView;
-    int[] sampleImages = {R.drawable.image1, R.drawable.image2, R.drawable.image3, R.drawable.image4, R.drawable.image5};
+    int[] sampleImages = {R.drawable.image_promo1, R.drawable.image_promo2, R.drawable.image_promo3, R.drawable.image_promo4};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

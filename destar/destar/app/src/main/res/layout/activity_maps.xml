@@ -20,17 +20,6 @@
 
 
 
-        <LinearLayout
-            android:id="@+id/bar_dashboard"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true">
-
-            <include
-                layout="@layout/layout_toolbar"
-                tools:context="com.destar.platform.destar.Toolbar" />
-
-        </LinearLayout>
     </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>

@@ -3,6 +3,6 @@
     <item
         android:id="@+id/perdagangan"
         android:drawable="@drawable/perdagangan1"
-        android:width="90dp"
-        android:height="75dp" />
+        android:width="60dp"
+        android:height="60dp" />
 </layer-list>

@@ -82,7 +82,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
                                         android:layout_margin="5dp"
-                                        android:background="@color/darkblue" />
+                                        android:background="@color/dark_blue" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -123,7 +123,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
                                         android:layout_margin="5dp"
-                                        android:background="@color/darkblue" />
+                                        android:background="@color/dark_blue" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -164,7 +164,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
                                         android:layout_margin="5dp"
-                                        android:background="@color/darkblue" />
+                                        android:background="@color/dark_blue" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -213,7 +213,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
                                         android:layout_margin="5dp"
-                                        android:background="@color/darkblue" />
+                                        android:background="@color/dark_blue" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -254,7 +254,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
                                         android:layout_margin="5dp"
-                                        android:background="@color/darkblue" />
+                                        android:background="@color/dark_blue" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
@@ -295,7 +295,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
                                         android:layout_margin="5dp"
-                                        android:background="@color/darkblue" />
+                                        android:background="@color/dark_blue" />
 
                                     <TextView
                                         android:layout_width="wrap_content"

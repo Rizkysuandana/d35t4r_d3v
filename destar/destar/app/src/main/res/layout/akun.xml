@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.destar.platform.destar.com.destar.platform.destar.AkunActivity"
+    tools:context="com.destar.platform.destar.AkunActivity"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -166,7 +166,7 @@
                                 <View
                                     android:layout_width="match_parent"
                                     android:layout_height="1dp"
-                                    android:background="@color/darkblue" />
+                                    android:background="@color/dark_blue" />
 
                             </LinearLayout>
 
@@ -209,7 +209,7 @@
                                 <View
                                     android:layout_width="match_parent"
                                     android:layout_height="1dp"
-                                    android:background="@color/darkblue" />
+                                    android:background="@color/dark_blue" />
 
                             </LinearLayout>
 
@@ -252,7 +252,7 @@
                                 <View
                                     android:layout_width="match_parent"
                                     android:layout_height="1dp"
-                                    android:background="@color/darkblue" />
+                                    android:background="@color/dark_blue" />
 
                             </LinearLayout>
 
@@ -295,7 +295,7 @@
                                 <View
                                     android:layout_width="match_parent"
                                     android:layout_height="1dp"
-                                    android:background="@color/darkblue" />
+                                    android:background="@color/dark_blue" />
 
                             </LinearLayout>
 
@@ -338,7 +338,7 @@
                                 <View
                                     android:layout_width="match_parent"
                                     android:layout_height="1dp"
-                                    android:background="@color/darkblue" />
+                                    android:background="@color/dark_blue" />
 
                             </LinearLayout>
 
@@ -381,7 +381,7 @@
                                 <View
                                     android:layout_width="match_parent"
                                     android:layout_height="1dp"
-                                    android:background="@color/darkblue" />
+                                    android:background="@color/dark_blue" />
 
                             </LinearLayout>
 

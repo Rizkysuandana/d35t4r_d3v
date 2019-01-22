@@ -37,7 +37,7 @@
             </intent-filter>
         </service>
         <activity
-            android:name="com.destar.platform.destar.DeantarMapsActivity"
+            android:name="com.destar.platform.destar.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

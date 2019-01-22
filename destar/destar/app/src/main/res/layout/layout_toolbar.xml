@@ -44,7 +44,7 @@
                     <ImageView
                         android:layout_width="28dp"
                         android:layout_height="28dp"
-                        android:src="@drawable/home" />
+                        android:src="@drawable/image_home" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -69,7 +69,7 @@
                     <ImageView
                         android:layout_width="28dp"
                         android:layout_height="28dp"
-                        android:src="@drawable/pesanan" />
+                        android:src="@drawable/image_pemesanan" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -94,7 +94,7 @@
                     <ImageView
                         android:layout_width="28dp"
                         android:layout_height="28dp"
-                        android:src="@drawable/find" />
+                        android:src="@drawable/image_pemantauan" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -119,7 +119,7 @@
                     <ImageView
                         android:layout_width="28dp"
                         android:layout_height="28dp"
-                        android:src="@drawable/history" />
+                        android:src="@drawable/image_history" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -169,7 +169,7 @@
                     <ImageView
                         android:layout_width="28dp"
                         android:layout_height="28dp"
-                        android:src="@drawable/account" />
+                        android:src="@drawable/image_akun1" />
 
                     <TextView
                         android:layout_width="match_parent"

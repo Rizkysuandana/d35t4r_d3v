@@ -19,7 +19,7 @@ import android.util.Log;
 import android.view.Window;
 import android.widget.Toast;
 
-import com.google.firebase.messaging.FirebaseMessaging;
+//import com.google.firebase.messaging.FirebaseMessaging;
 import com.destar.platform.destar.R;
 import com.destar.platform.destar.app.Config;
 import com.destar.platform.destar.utils.MasifaController;
@@ -45,18 +45,18 @@ public class SplashActivity extends AppCompatActivity {
 
         android = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
         ((AppClass) SplashActivity.this.getApplication()).Setandroidid(android);
-        Firebase();
-       // locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-       // if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
-       //         ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-      //      return;
-      //  }
-      //  locationManager.requestLocationUpdates(
-     //           LocationManager.GPS_PROVIDER,
-       //         MINIMUM_TIME_BETWEEN_UPDATES,
-    //            MINIMUM_DISTANCE_CHANGE_FOR_UPDATES,
-    //            new MyLocationListener()
-     //   );
+       // Firebase();
+    //  locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+     //   if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+         //     ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+    //       return;
+     // }
+   ///   locationManager.requestLocationUpdates(
+    //           LocationManager.GPS_PROVIDER,
+     //         MINIMUM_TIME_BETWEEN_UPDATES,
+    //           MINIMUM_DISTANCE_CHANGE_FOR_UPDATES,
+     //          new MyLocationListener()
+  //    );
         msfC = new MasifaController();
         url = url +"?strHardwareID="+android;
         Log.i("Hasil=>",url);
@@ -145,22 +145,22 @@ public class SplashActivity extends AppCompatActivity {
                     Toast.LENGTH_LONG).show();
         }
     }
-    private void Firebase(){
-        mRegistrationBroadcastReceiver = new BroadcastReceiver() {
-            @Override
-            public void onReceive(Context context, Intent intent) {
-                if (intent.getAction().equals( Config.REGISTRATION_COMPLETE)) {
-                    FirebaseMessaging.getInstance().subscribeToTopic(Config.TOPIC_GLOBAL);
-                    displayFirebaseRegId();
-                }
-                else if (intent.getAction().equals(Config.PUSH_NOTIFICATION)) {
-                    String message = intent.getStringExtra("message");
-                }
-            }
-        };
-
-        displayFirebaseRegId();
-    }
+//    private void Firebase(){
+//        mRegistrationBroadcastReceiver = new BroadcastReceiver() {
+//            @Override
+//            public void onReceive(Context context, Intent intent) {
+//                if (intent.getAction().equals( Config.REGISTRATION_COMPLETE)) {
+//                    FirebaseMessaging.getInstance().subscribeToTopic(Config.TOPIC_GLOBAL);
+//                    displayFirebaseRegId();
+//                }
+//                else if (intent.getAction().equals(Config.PUSH_NOTIFICATION)) {
+//                    String message = intent.getStringExtra("message");
+//                }
+//            }
+//        };
+//
+//        displayFirebaseRegId();
+//    }
     private void displayFirebaseRegId() {
         SharedPreferences pref = getApplicationContext().getSharedPreferences(Config.SHARED_PREF, 0);
         String regId = pref.getString("regId", null);

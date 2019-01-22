@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:name="com.destar.platform.destar.AppClass"
@@ -36,7 +37,7 @@
             </intent-filter>
         </service>
         <activity
-            android:name="com.destar.platform.destar.SplashActivity"
+            android:name="com.destar.platform.destar.DeantarMapsActivity"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

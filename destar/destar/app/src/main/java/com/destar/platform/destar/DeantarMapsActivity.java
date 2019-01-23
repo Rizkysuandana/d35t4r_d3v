@@ -44,7 +44,7 @@ import retrofit2.Response;
 public class DeantarMapsActivity  extends AppCompatActivity implements OnMapReadyCallback{
     private GoogleMap mMap;
 
-    private String API_KEY = "AIzaSyAZSRXEenCH_Cv-1GmUFxLEM4-I1zluWvE";
+    private String API_KEY = "AIzaSyBihJwSXvIqcXUPRS_z0HT_Y71xGoWaP1E";
 
     public LatLng pickUpLatLng = null;
     public LatLng locationLatLng = null;
@@ -59,6 +59,7 @@ public class DeantarMapsActivity  extends AppCompatActivity implements OnMapRead
     public static final int PICK_UP = 0;
     public static final int DEST_LOC = 1;
     private static int REQUEST_CODE = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,6 +90,8 @@ public class DeantarMapsActivity  extends AppCompatActivity implements OnMapRead
 
 
     }
+
+    // Method untuk Inisilisasi Widget agar lebih rapih
     private void wigetInit() {
         // Maps
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -104,6 +107,7 @@ public class DeantarMapsActivity  extends AppCompatActivity implements OnMapRead
         tvDistance = findViewById(R.id.tvDistance);
         btnNext = findViewById(R.id.btnNext);
     }
+
     // Method menampilkan input Place Auto Complete
     private void showPlaceAutoComplete(int typeLocation) {
         // isi RESUT_CODE tergantung tipe lokasi yg dipilih.
@@ -128,6 +132,7 @@ public class DeantarMapsActivity  extends AppCompatActivity implements OnMapRead
         }
 
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -172,6 +177,7 @@ public class DeantarMapsActivity  extends AppCompatActivity implements OnMapRead
         }
 
     }
+
     @SuppressLint("MissingPermission")
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -263,5 +269,4 @@ public class DeantarMapsActivity  extends AppCompatActivity implements OnMapRead
             }
         });
     }
-
 }

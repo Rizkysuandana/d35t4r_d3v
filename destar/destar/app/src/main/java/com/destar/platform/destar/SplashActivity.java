@@ -47,17 +47,17 @@ public class SplashActivity extends AppCompatActivity {
         android = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
         ((AppClass) SplashActivity.this.getApplication()).Setandroidid(android);
         Firebase();
-    //  locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-     //   if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
-         //     ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-    //       return;
-     // }
-   ///   locationManager.requestLocationUpdates(
-    //           LocationManager.GPS_PROVIDER,
-     //         MINIMUM_TIME_BETWEEN_UPDATES,
-    //           MINIMUM_DISTANCE_CHANGE_FOR_UPDATES,
-     //          new MyLocationListener()
-  //    );
+     locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+   //    if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+     //        ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+     //     return;
+    //  }
+    //  locationManager.requestLocationUpdates(
+     //          LocationManager.GPS_PROVIDER,
+    //         MINIMUM_TIME_BETWEEN_UPDATES,
+     //        MINIMUM_DISTANCE_CHANGE_FOR_UPDATES,
+     //         new MyLocationListener()
+   //  );
         msfC = new MasifaController();
         url = url +"?strHardwareID="+android;
         Log.i("Hasil=>",url);
@@ -80,7 +80,7 @@ public class SplashActivity extends AppCompatActivity {
             protected void onPostExecute(String string1) {
                 super.onPostExecute(string1);
                 if (TextUtils.isEmpty(string1)) {
-                    Intent intent = new Intent(SplashActivity.this, TampilanAwalActivity.class);
+                    Intent intent = new Intent(SplashActivity.this, DeantarMapsActivity.class);
                     startActivity(intent);
                     SplashActivity.this.finish();
                     Toast.makeText(SplashActivity.this,"Sesi Anda Telah Habis \nSilahkan Login",Toast.LENGTH_LONG).show();
@@ -90,7 +90,7 @@ public class SplashActivity extends AppCompatActivity {
                         Hasil(string1);
                     } catch (JSONException e) {
                         Log.e( "Error",String.valueOf( e.toString() ) );
-                        Intent intent = new Intent(SplashActivity.this, TampilanAwalActivity.class);
+                        Intent intent = new Intent(SplashActivity.this, DeantarMapsActivity.class);
                         startActivity(intent);
                         SplashActivity.this.finish();
                         Toast.makeText(SplashActivity.this,"Sesi Anda Telah Habis \nSilahkan Login",Toast.LENGTH_LONG).show();

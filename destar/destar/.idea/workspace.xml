@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -67,29 +67,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/LoginActivity.java">
+      <file leaf-file-name="DeantarMapsActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/DeantarMapsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-663">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state relative-caret-position="233">
+              <caret line="66" column="61" selection-start-line="66" selection-start-column="61" selection-end-line="66" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2815#3096#0" expanded="true" />
+                <element signature="e#3095#3096#0" expanded="true" />
+                <element signature="e#3166#3449#0" expanded="true" />
+                <element signature="e#3448#3449#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="40" column="67" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
-            </state>
+      <file leaf-file-name="deantar_maps.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/deantar_maps.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MasifaController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/utils/MasifaController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1187">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="136">
+              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -97,58 +98,8 @@
       <file leaf-file-name="SplashActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/SplashActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2341">
-              <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6603#7144#0" expanded="true" />
-                <element signature="e#7143#7144#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NotificationUtils.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/utils/NotificationUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/app/Config.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="20" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/app/AppController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyLocationService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/service/MyLocationService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="65" column="68" selection-start-line="65" selection-start-column="68" selection-end-line="65" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyFirebaseMessagingService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/service/MyFirebaseMessagingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+            <state relative-caret-position="238">
+              <caret line="92" column="91" selection-start-line="92" selection-start-column="91" selection-end-line="92" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,14 +107,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyFirebaseInstanceIDService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/service/MyFirebaseInstanceIDService.java">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="570">
+              <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="68" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -182,6 +151,8 @@
     <findStrings>
       <find>met</find>
       <find>action</find>
+      <find>onMapReady</find>
+      <find>tvDe</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -2471,18 +2442,22 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_pengantar_barang.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_toolbar.xml" />
         <option value="$PROJECT_DIR$/app/google-services.json" />
-        <option value="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/deantar_maps.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/DeantarMapsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/response/StartLocation.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/service/ApiServices.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/service/InitLibrary.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/service/MyFirebaseInstanceIDService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/service/MyFirebaseMessagingService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/DeantarMapsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/app/PlaceAutoCompleteActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/PlaceAutoCompleteActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/DirectionActivity.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/SplashActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/service/ApiServices.java" />
+        <option value="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/DeantarMapsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/deantar_maps.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
       </list>
     </option>
   </component>
@@ -2549,7 +2524,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="destar" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="response" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="destar" type="b2602c69:ProjectViewProjectNode" />
@@ -2567,9 +2542,25 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="destar" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="destar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="destar" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="destar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="destar" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="values" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -2588,9 +2579,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.destar.platform.destar" />
+      <recent name="com.destar.platform.destar.app" />
       <recent name="com.destar.platform.destar.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Documents\AndroidProj\destar_dev\d35t4r_d3v\destar\destar\app\src\main\res\layout" />
       <recent name="C:\Users\Lenovo\Documents\AndroidProj\destar_dev\d35t4r_d3v\destar\destar\app\src\main\java\com\destar\platform\destar" />
       <recent name="C:\Users\Lenovo\Documents\AndroidProj\destar_dev\d35t4r_d3v\destar\destar\app\src\main\res\drawable" />
     </key>
@@ -2607,7 +2601,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.destar [androidDependencies]">
+  <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -2776,8 +2770,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.destar [androidDependencies]" />
         <item itemvalue="Gradle.destar [signingReport]" />
+        <item itemvalue="Gradle.destar [androidDependencies]" />
       </list>
     </recent_temporary>
   </component>
@@ -2796,37 +2790,38 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50064266" side_tool="true" weight="0.328877" />
+      <window_info anchor="right" id="Preview" order="3" weight="0.32969153" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.328877" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Logcat" order="7" weight="0.328877" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.328877" />
+      <window_info anchor="bottom" id="Logcat" order="7" weight="0.4117647" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4993573" visible="true" weight="0.328877" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.4993573" weight="0.328877" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.328877" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.32969153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39973262" />
       <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Preview" order="3" weight="0.32969153" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.328877" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Build" order="0" sideWeight="0.4993573" weight="0.328877" />
@@ -2864,63 +2859,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/DeantarMapsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3077">
-          <caret line="181" column="7" selection-start-line="181" selection-start-column="7" selection-end-line="181" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/deantar_maps.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/service/InitLibrary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/SplashActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6603#7144#0" expanded="true" />
-            <element signature="e#7143#7144#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/service/ApiServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="73" selection-start-line="9" selection-start-column="6" selection-end-line="10" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -2998,11 +2942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/google-services.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-56">
@@ -3070,11 +3009,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/response/LegsItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/response/StepsItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -3082,64 +3016,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="128" selection-start-line="1" selection-start-column="89" selection-end-line="1" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/service/ApiServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="73" selection-start-line="9" selection-start-column="6" selection-end-line="10" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/deantar_maps.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/DeantarMapsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="181" column="7" selection-start-line="181" selection-start-column="7" selection-end-line="181" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/service/InitLibrary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -3164,13 +3044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="40" column="67" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/service/MyFirebaseInstanceIDService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -3178,25 +3051,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/SplashActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2341">
-          <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6603#7144#0" expanded="true" />
-            <element signature="e#7143#7144#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/service/MyLocationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="65" column="68" selection-start-line="65" selection-start-column="68" selection-end-line="65" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -3210,17 +3064,193 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/app/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/utils/NotificationUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/AppClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-444">
+          <caret line="1" selection-start-line="1" selection-end-line="116" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/app/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/app/PlaceAutoCompleteActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_place_auto_complete.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/DirectionActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/82bd05e614c7b7f474c7db5da56d7ddc/jars/classes.jar!/com/google/android/gms/maps/GoogleMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="290" column="59" selection-start-line="290" selection-start-column="37" selection-end-line="290" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/SplashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="92" column="91" selection-start-line="92" selection-start-column="91" selection-end-line="92" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/service/ApiServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="120" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/PlaceAutoCompleteActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/service/MyLocationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="899">
+          <caret line="65" column="68" selection-start-line="65" selection-start-column="68" selection-end-line="65" selection-end-column="68" />
+          <folding>
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_direction.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="33" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/response/LegsItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/response/ResponseRoute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-25/android/os/Looper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="232" selection-start-line="232" selection-end-line="232" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/deantar_maps.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/destar/platform/destar/DeantarMapsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="66" column="61" selection-start-line="66" selection-start-column="61" selection-end-line="66" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2815#3096#0" expanded="true" />
+            <element signature="e#3095#3096#0" expanded="true" />
+            <element signature="e#3166#3449#0" expanded="true" />
+            <element signature="e#3448#3449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="68" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="68" />
         </state>
       </provider>
     </entry>

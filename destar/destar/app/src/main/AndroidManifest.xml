@@ -45,12 +45,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.destar.platform.destar.DeantarMapsActivity"/>
         <activity android:name="com.destar.platform.destar.TampilanAwalActivity"/>
         <activity android:name="com.destar.platform.destar.LoginActivity" />
         <activity android:name="com.destar.platform.destar.RegisterActivity"/>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyBihJwSXvIqcXUPRS_z0HT_Y71xGoWaP1E" />
         <activity
             android:name="com.destar.platform.destar.MapsActivity"
             android:label="@string/title_activity_maps" />

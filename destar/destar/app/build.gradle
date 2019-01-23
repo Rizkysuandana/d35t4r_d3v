@@ -42,9 +42,9 @@ dependencies {
     implementation 'com.github.smart-fun:XmlToJson:1.4.4'
     implementation 'com.synnapps:carouselview:0.1.5'
     // Auto Complete Place & location
-   //implementation 'com.google.android.gms:play-services-places:9.8.0'
- //  implementation 'com.google.android.gms:play-services-places:11.8.0'
-   //// implementation 'com.google.android.gms:play-services-places:16.0.0'
+   implementation 'com.google.android.gms:play-services-places:9.8.0'
+   implementation 'com.google.android.gms:play-services-places:11.8.0'
+   implementation 'com.google.android.gms:play-services-places:16.0.0'
 
     // Maps Utils
     implementation 'com.google.maps.android:android-maps-utils:0.4+'

@@ -185,7 +185,7 @@ public class DeantarMapsActivity  extends AppCompatActivity implements OnMapRead
         mMap.setPadding(10, 180, 10, 10);
         mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 
-        mMap.setMyLocationEnabled(true);
+        mMap.setMyLocationEnabled(false);
         mMap.getUiSettings().setCompassEnabled(true);
         mMap.getUiSettings().setZoomGesturesEnabled(true);
         mMap.getUiSettings().setRotateGesturesEnabled(false);

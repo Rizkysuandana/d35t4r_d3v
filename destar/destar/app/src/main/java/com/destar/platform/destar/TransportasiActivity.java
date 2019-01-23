@@ -20,7 +20,7 @@ public class TransportasiActivity extends AppCompatActivity {
         pengantarBarang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TransportasiActivity.this, PengantarBarangActivity.class );
+                Intent intent = new Intent(TransportasiActivity.this, DeantarMapsActivity.class );
                 startActivity(intent);
             }
         });

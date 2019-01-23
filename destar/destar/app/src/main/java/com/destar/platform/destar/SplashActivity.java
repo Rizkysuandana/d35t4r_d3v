@@ -46,7 +46,7 @@ public class SplashActivity extends AppCompatActivity {
 
         android = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
         ((AppClass) SplashActivity.this.getApplication()).Setandroidid(android);
-        Firebase();
+      //  Firebase();
      locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
    //    if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
      //        ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -73,14 +73,12 @@ public class SplashActivity extends AppCompatActivity {
             protected String doInBackground(Void... params) {
                 String FinalData = msfC.HttpGET(url);
                 return FinalData;
-
-
             }
             @Override
             protected void onPostExecute(String string1) {
                 super.onPostExecute(string1);
                 if (TextUtils.isEmpty(string1)) {
-                    Intent intent = new Intent(SplashActivity.this, DeantarMapsActivity.class);
+                    Intent intent = new Intent(SplashActivity.this, TampilanAwalActivity.class);
                     startActivity(intent);
                     SplashActivity.this.finish();
                     Toast.makeText(SplashActivity.this,"Sesi Anda Telah Habis \nSilahkan Login",Toast.LENGTH_LONG).show();
@@ -90,7 +88,7 @@ public class SplashActivity extends AppCompatActivity {
                         Hasil(string1);
                     } catch (JSONException e) {
                         Log.e( "Error",String.valueOf( e.toString() ) );
-                        Intent intent = new Intent(SplashActivity.this, DeantarMapsActivity.class);
+                        Intent intent = new Intent(SplashActivity.this, TampilanAwalActivity.class);
                         startActivity(intent);
                         SplashActivity.this.finish();
                         Toast.makeText(SplashActivity.this,"Sesi Anda Telah Habis \nSilahkan Login",Toast.LENGTH_LONG).show();

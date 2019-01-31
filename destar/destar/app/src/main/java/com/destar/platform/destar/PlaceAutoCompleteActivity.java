@@ -56,8 +56,8 @@ public class PlaceAutoCompleteActivity extends AppCompatActivity {
     }
     // Method untuk Inisilisasi Widget agar lebih rapih
     private void wigetInit() {
-        tvPickUpFrom = findViewById(R.id.tvPickUpFrom);
-        tvDestLocation = findViewById(R.id.tvDestLocation);
+        tvPickUpFrom = findViewById(R.id.tvPickUpFrom1);
+        tvDestLocation = findViewById(R.id.tvDestLocation1);
         tvPickUpAddr = findViewById(R.id.tvPickUpAddr);
         tvPickUpLatLng = findViewById(R.id.tvPickUpLatLng);
         tvPickUpName = findViewById(R.id.tvPickUpName);

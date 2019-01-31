@@ -6,156 +6,167 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="500dp"
-    android:background="@color/colorAccent"
+    android:background="@color/cardview_light_background"
     app:behavior_hideable="false"
     app:behavior_peekHeight="250dp"
-    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
-
-
-    <LinearLayout
-        android:id="@+id/infoPanel"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:layout_alignParentBottom="true">
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:orientation="vertical">
-
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/white"
-            android:elevation="1dp"
-            android:orientation="vertical"
-            android:paddingHorizontal="20dp"
-            android:paddingVertical="15dp">
-
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scrollbars="none">
-
-                <TextView
-                    android:id="@+id/tvPickUpFrom"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:maxLines="1"
-                    android:text="Pick up from" />
-            </HorizontalScrollView>
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginHorizontal="0dp"
-                android:layout_marginVertical="10dp"
-                android:background="@android:color/darker_gray">
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:elevation="1dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="15dp">
 
-            </LinearLayout>
-
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scrollbars="none">
-
-                <TextView
-                    android:id="@+id/tvDestLocation"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:maxLines="1"
-                    android:text="Destination Location"
-                    android:layout_marginBottom="10dp"/>
-            </HorizontalScrollView>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:background="#ffffff"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:text="BARANG YANG DIANTAR"
-                        android:textColor="#000000"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="#000000"
-                        android:visibility="visible" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="9dp"
-                        android:layout_marginLeft="10dp"
-                        android:src="@drawable/image_box_barang" />
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Nama Barang/Jenis Barang"
-                        android:textSize="15dp"/>
-                </LinearLayout>
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <View
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="10dp"/>
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:textSize="13dp"
-                        android:text="Jelaskan Barang yang akan dikirim. Sopir akan menghubungi Anda untuk memastikan rincian  "
-                        android:layout_gravity="center"
-                        android:textAlignment="inherit"/>
+                        android:maxLines="1"
+                        android:text="Pick up from" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="0dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@android:color/darker_gray">
 
                 </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:maxLines="1"
+                        android:text="Destination Location" />
+                </RelativeLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="5dp">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="9dp"
-                        android:src="@drawable/image_berat" />
-                    <EditText
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@+id/lokasipenerima"
-                        android:hint="Perkiraan Berat Barang (Kg)"
-                        android:textSize="15dp"/>
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="BARANG YANG DIANTAR"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000000"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/image_box_barang" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nama Barang/Jenis Barang"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="3dp"
+                            android:text="Jelaskan Barang yang akan dikirim. Sopir akan menghubungi Anda untuk memastikan rincian  "
+                            android:textAlignment="inherit"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/image_berat" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lokasipenerima"
+                            android:hint="Perkiraan Berat Barang (Kg)"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
                 </LinearLayout>
 
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnNext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:elevation="1dp"
+                        android:paddingVertical="20dp"
+                        android:text="Next" />
+                </RelativeLayout>
+
             </LinearLayout>
-            <Button
-                android:id="@+id/btnNext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:elevation="1dp"
-                android:paddingVertical="20dp"
-                android:text="Next" />
         </LinearLayout>
-
-
-    </LinearLayout>
+    </ScrollView>
 </LinearLayout>

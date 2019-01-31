@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.synnapps:carouselview-0.1.5">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/carouselview-0.1.5.aar/3f612c5b4d07fad2f94a1849f84f6303/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/carouselview-0.1.5.aar/ccead0cce2db1e52e1a554c732585c23/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/carouselview-0.1.5.aar/3f612c5b4d07fad2f94a1849f84f6303/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/carouselview-0.1.5.aar/3f612c5b4d07fad2f94a1849f84f6303/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/carouselview-0.1.5.aar/ccead0cce2db1e52e1a554c732585c23/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/carouselview-0.1.5.aar/ccead0cce2db1e52e1a554c732585c23/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

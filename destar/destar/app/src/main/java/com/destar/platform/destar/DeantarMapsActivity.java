@@ -1,12 +1,14 @@
 package com.destar.platform.destar;
+
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +16,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.destar.platform.destar.response.LegsItem;
+import com.destar.platform.destar.response.ResponseRoute;
+import com.destar.platform.destar.service.ApiServices;
+import com.destar.platform.destar.service.InitLibrary;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.location.places.AutocompleteFilter;
@@ -22,6 +28,7 @@ import com.google.android.gms.location.places.ui.PlaceAutocomplete;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -29,22 +36,16 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.maps.android.PolyUtil;
-import com.destar.platform.destar.service.ApiServices;
-import com.destar.platform.destar.service.InitLibrary;
-import com.destar.platform.destar.response.Distance;
-import com.destar.platform.destar.response.Duration;
-import com.destar.platform.destar.response.LegsItem;
-import com.destar.platform.destar.response.ResponseRoute;
 
 import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-public class DeantarMapsActivity  extends AppCompatActivity implements OnMapReadyCallback{
+public class DeantarMapsActivity extends AppCompatActivity implements OnMapReadyCallback{
     private GoogleMap mMap;
 
-    private String API_KEY = "AIzaSyBihJwSXvIqcXUPRS_z0HT_Y71xGoWaP1E";
+    private String API_KEY = "AIzaSyAr4oTQcYaWyLnxH4TnU8jN1qKn03bVkRM";
 
     public LatLng pickUpLatLng = null;
     public LatLng locationLatLng = null;
@@ -59,16 +60,35 @@ public class DeantarMapsActivity  extends AppCompatActivity implements OnMapRead
     public static final int PICK_UP = 0;
     public static final int DEST_LOC = 1;
     private static int REQUEST_CODE = 0;
-
+    private MapView mapView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.deantar_maps);
+        setContentView(R.layout.activity_pengantar_barang);
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            // Permission is not granted
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+                    Manifest.permission.ACCESS_FINE_LOCATION)) {
+                Toast.makeText(this, "Membutuhkan Izin Lokasi", Toast.LENGTH_SHORT).show();
+            } else {
+
+                // No explanation needed; request the permission
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION},
+                        1);
+            }
+        } else {
+            // Permission has already been granted
+            Toast.makeText(this, "Izin Lokasi diberikan", Toast.LENGTH_SHORT).show();
+        }
        // getSupportActionBar().setTitle("Ojek Hampir Online");
 
         // Inisialisasi Widget
         wigetInit();
-        infoPanel.setVisibility(View.GONE);
+        infoPanel.setVisibility(View.VISIBLE);
         // Event OnClick
         tvPickUpFrom.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,8 +123,6 @@ public class DeantarMapsActivity  extends AppCompatActivity implements OnMapRead
         tvPickUpFrom = findViewById(R.id.tvPickUpFrom);
         tvDestLocation = findViewById(R.id.tvDestLocation);
 
-        tvPrice = findViewById(R.id.tvPrice);
-        tvDistance = findViewById(R.id.tvDistance);
         btnNext = findViewById(R.id.btnNext);
     }
 
@@ -115,12 +133,11 @@ public class DeantarMapsActivity  extends AppCompatActivity implements OnMapRead
         REQUEST_CODE = typeLocation;
 
         // Filter hanya tmpat yg ada di Indonesia
-        AutocompleteFilter typeFilter = new AutocompleteFilter.Builder().setCountry("ID").build();
+        AutocompleteFilter typeFilter = new AutocompleteFilter.Builder().setCountry("Indonesia").build();
         try {
             // Intent untuk mengirim Implisit Intent
             Intent mIntent = new PlaceAutocomplete.IntentBuilder(PlaceAutocomplete.MODE_OVERLAY)
-                    .setFilter(typeFilter)
-                    .build(this);
+                    .setFilter(typeFilter).build(this);
             // jalankan intent impilist
             startActivityForResult(mIntent, REQUEST_CODE);
         } catch (GooglePlayServicesRepairableException e) {
@@ -184,15 +201,14 @@ public class DeantarMapsActivity  extends AppCompatActivity implements OnMapRead
         mMap = googleMap;
         mMap.setPadding(10, 180, 10, 10);
         mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-
-        mMap.setMyLocationEnabled(false);
+        mMap.setMyLocationEnabled(true);
         mMap.getUiSettings().setCompassEnabled(true);
         mMap.getUiSettings().setZoomGesturesEnabled(true);
         mMap.getUiSettings().setRotateGesturesEnabled(false);
         mMap.getUiSettings().setZoomControlsEnabled(true);
     }
 
-    private void actionRoute(LatLng placeLatLng, int requestCode) {
+    private void actionRoute(LatLng placeLatlng, int requestCode) {
         String lokasiAwal = pickUpLatLng.latitude + "," + pickUpLatLng.longitude;
         String lokasiAkhir = locationLatLng.latitude + "," + locationLatLng.longitude;
 
@@ -226,15 +242,15 @@ public class DeantarMapsActivity  extends AppCompatActivity implements OnMapRead
                     mMap.addMarker(new MarkerOptions().position(pickUpLatLng).title("Lokasi Awal"));
                     mMap.addMarker(new MarkerOptions().position(locationLatLng).title("Lokasi Akhir"));
                     // Dapatkan jarak dan waktu
-                    Distance dataDistance = dataLegs.getDistance();
-                    Duration dataDuration = dataLegs.getDuration();
-
-                    // Set Nilai Ke Widget
-                    double price_per_meter = 250;
-                    double priceTotal = dataDistance.getValue() * price_per_meter; // Jarak * harga permeter
-
-                    tvDistance.setText(dataDistance.getText());
-                    tvPrice.setText(String.valueOf(priceTotal));
+//                    Distance dataDistance = dataLegs.getDistance();
+//                    Duration dataDuration = dataLegs.getDuration();
+//
+//                    // Set Nilai Ke Widget
+//                    double price_per_meter = 250;
+//                    double priceTotal = dataDistance.getValue() * price_per_meter; // Jarak * harga permeter
+//
+//                    tvDistance.setText(dataDistance.getText());
+//                    tvPrice.setText(String.valueOf(priceTotal));
                     /** START
                      * Logic untuk membuat layar berada ditengah2 dua koordinat
                      */
@@ -264,7 +280,8 @@ public class DeantarMapsActivity  extends AppCompatActivity implements OnMapRead
             }
 
             @Override
-            public void onFailure(Call<ResponseRoute> call, Throwable t) {
+            public void onFailure(Call<ResponseRoute> call, Throwable t)
+            {
                 t.printStackTrace();
             }
         });

@@ -1,19 +1,19 @@
 package com.destar.platform.destar;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.destar.platform.destar.R;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
 public class Dashboard extends AppCompatActivity {
     private CardView transportasi;
+    private CardView deSewa;
     CarouselView carouselView;
     int[] sampleImages = {R.drawable.image_promo1, R.drawable.image_promo2, R.drawable.image_promo3, R.drawable.image_promo4};
     @Override
@@ -28,6 +28,13 @@ public class Dashboard extends AppCompatActivity {
                 Intent intent = new Intent(Dashboard.this, TransportasiActivity.class);
                 startActivity(intent);
                 Dashboard.this.finish();
+            }
+        });
+        deSewa = (CardView)findViewById(R.id.btn_penyewaan);
+        deSewa.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(Dashboard.this, deSewaActivity.class);
             }
         });
         carouselView = (CarouselView) findViewById(R.id.carouselView);

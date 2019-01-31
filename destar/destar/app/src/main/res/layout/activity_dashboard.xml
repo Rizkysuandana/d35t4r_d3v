@@ -67,10 +67,10 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:orientation="vertical">
+                                    android:orientation="vertical"
+                                    android:id="@+id/btnkolat">
 
                                     <ImageView
-                                        android:id="@+id/btnkolat"
                                         android:layout_width="60dp"
                                         android:layout_height="60dp"
                                         android:layout_marginTop="5dp"
@@ -202,11 +202,9 @@
 
                                     <ImageView
                                         android:id="@+id/ssss"
-                                        android:layout_width="60dp"
-                                        android:layout_height="60dp"
-                                        android:layout_marginTop="5dp"
-                                        android:background="@drawable/penyewaan1"
-                                        android:padding="10dp"
+                                        android:layout_width="65sp"
+                                        android:layout_height="65dp"
+                                        android:src="@drawable/image_desewa"
                                         android:scaleType="fitCenter" />
 
                                     <View
@@ -219,9 +217,8 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="0dp"
-                                        android:text="Penyewaan"
-                                        android:textSize="11sp"
-                                        android:textStyle="bold" />
+                                        android:text="deSewa"
+                                        android:textSize="13sp" />
 
                                 </LinearLayout>
                             </android.support.v7.widget.CardView>
@@ -781,7 +778,7 @@
 
             <include
                 layout="@layout/layout_toolbar"
-                tools:context="com.destar.platform.destar.Toolbar" />
+                class="com.destar.platform.destar.Toolbar" />
         </LinearLayout>
     </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>

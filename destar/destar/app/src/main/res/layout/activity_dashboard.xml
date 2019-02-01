@@ -202,9 +202,9 @@
 
                                     <ImageView
                                         android:id="@+id/ssss"
-                                        android:layout_width="65sp"
+                                        android:layout_width="250px"
                                         android:layout_height="65dp"
-                                        android:src="@drawable/image_desewa"
+                                        android:src="@drawable/desewa"
                                         android:scaleType="fitCenter" />
 
                                     <View

@@ -24,8 +24,6 @@
         android:roundIcon="@drawable/logo_destar"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".KendaraanActivity"></activity>
-        <activity android:name=".deSewaActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -36,11 +34,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAr4oTQcYaWyLnxH4TnU8jN1qKn03bVkRM" />
-
-        <activity
-            android:name=".MapsActivity2"
-            android:label="@string/title_activity_maps2" />
+            android:value="AIzaSyDAYclEPUZVFukgkAnxIBavesMbOoabDa0" />
 
         <service android:name=".service.MyFirebaseMessagingService">
             <intent-filter>
@@ -69,8 +63,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- <activity android:name="com.destar.platform.destar.DeantarMapsActivity"/> -->
-        <activity android:name=".DeantarMapsActivity" />
+        </activity>
+        <activity android:name=".DeantarMapsActivity"
+            android:label="Map"/>
+        <activity android:name=".deSewaActivity" />
         <activity android:name=".TampilanAwalActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
@@ -82,7 +78,7 @@
         <activity android:name=".RiwayatActivity" />
         <activity android:name=".AkunActivity" />
         <activity android:name=".Dashboard" />
-        <activity android:name=".TransportasiActivity" /> <!-- <activity android:name="com.destar.platform.destar.PengantarBarangActivity"></activity> -->
+        <activity android:name=".TransportasiActivity" />
         <activity android:name=".NextPengantarBarang" />
     </application>
 

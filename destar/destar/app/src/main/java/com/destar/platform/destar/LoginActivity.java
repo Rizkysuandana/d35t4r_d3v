@@ -34,7 +34,6 @@ public class LoginActivity extends AppCompatActivity {
     Button btn_login;
     EditText txt_username, txt_password;
     Intent intent;
-
     int success;
     ConnectivityManager conMgr;
     private String url = ServerActivity.URL + "CustomersLogin";

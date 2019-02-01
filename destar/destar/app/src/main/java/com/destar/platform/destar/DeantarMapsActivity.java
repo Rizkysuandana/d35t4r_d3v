@@ -6,8 +6,12 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomSheetBehavior;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -45,7 +49,7 @@ import retrofit2.Response;
 public class DeantarMapsActivity extends AppCompatActivity implements OnMapReadyCallback{
     private GoogleMap mMap;
 
-    private String API_KEY = "AIzaSyAr4oTQcYaWyLnxH4TnU8jN1qKn03bVkRM";
+    private String API_KEY = "AIzaSyDAYclEPUZVFukgkAnxIBavesMbOoabDa0";
 
     public LatLng pickUpLatLng = null;
     public LatLng locationLatLng = null;
@@ -108,7 +112,19 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
             }
         });
 
+        View bottomSheet = (CoordinatorLayout)findViewById(R.id.sliding);
+        BottomSheetBehavior behavior = BottomSheetBehavior.from(bottomSheet);
+        behavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
+            @Override
+            public void onStateChanged(@NonNull View bottomSheet, int newState) {
 
+            }
+
+            @Override
+            public void onSlide(@NonNull View bottomSheet, float slideOffset) {
+
+            }
+        });
     }
 
     // Method untuk Inisilisasi Widget agar lebih rapih

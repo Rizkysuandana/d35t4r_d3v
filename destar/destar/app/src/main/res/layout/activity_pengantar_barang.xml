@@ -157,26 +157,24 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/toolbar1">
 
-            <fragment
-                android:id="@+id/map"
-                android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:apiKey="AIzaSyBihJwSXvIqcXUPRS_z0HT_Y71xGoWaP1E"
-                android:name="com.google.android.gms.maps.SupportMapFragment"/>
-
             <android.support.design.widget.CoordinatorLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="fill_parent"
-                android:id="@+id/sliding"
-                android:layout_below="@+id/map"
+                android:layout_height="match_parent"
                 android:background="@color/cardview_light_background">
-                <android.support.v4.widget.NestedScrollView
+                <fragment
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:apiKey="AIzaSyDAYclEPUZVFukgkAnxIBavesMbOoabDa0"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"/>
+                <android.support.design.widget.CoordinatorLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     app:layout_behavior="@string/bottom_sheet_behavior"
-                    app:behavior_hideable="true"
-                    app:behavior_peekHeight="400dp">
+                    app:behavior_hideable="false"
+                    app:behavior_peekHeight="200dp"
+                    android:id="@+id/sliding">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -303,7 +301,7 @@
 
                         </LinearLayout>
                     </LinearLayout>
-                </android.support.v4.widget.NestedScrollView>
+                </android.support.design.widget.CoordinatorLayout>
             </android.support.design.widget.CoordinatorLayout>
         </RelativeLayout>
 

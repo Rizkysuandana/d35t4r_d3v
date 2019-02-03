@@ -131,31 +131,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/btnmaps"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="25"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="28dp"
-                        android:layout_height="28dp"
-                        android:src="@drawable/mapslogo" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/calibri"
-                        android:text="Maps"
-                        android:textAlignment="center"
-                        android:textColor="@color/common_google_signin_btn_text_light_focused"
-                        android:textSize="11sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
                     android:id="@+id/akun"
                     android:layout_width="25dp"
                     android:layout_height="wrap_content"

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.destar.platform.destar.TampilanAwalActivity"
+    android:background="@color/cardview_light_background">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo_tampilanawal">
+
+        <ImageView
+            android:layout_width="58dp"
+            android:layout_height="46dp"
+            android:src="@drawable/logo_destar" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_tampilanawal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/image_awal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/image_tampilan_awal" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#82543a"
+                android:id="@+id/tempat_login"
+                android:layout_below="@+id/image_awal">
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true">
+                    <Button
+                        android:id="@+id/login"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:text="LOGIN"
+                        android:background="@drawable/buttonshape"
+                        android:textColor="@color/cardview_light_background"/>
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="REGISTER"
+                        android:id="@+id/register"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/buttonshapehijau"
+                        android:textColor="@color/cardview_light_background"/>
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-15dp"
+                android:id="@+id/or"
+                android:layout_below="@+id/tempat_login">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:visibility="visible"
+                    android:background="@color/cardview_dark_background"
+                    android:layout_centerInParent="true"/>
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/circle"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OR"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/cardview_dark_background"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/or">
+
+                <Button
+                    android:id="@+id/google_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/buttonshapemerah"
+                    android:fontFamily="@font/calibri"
+                    android:text="GOOGLE +"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

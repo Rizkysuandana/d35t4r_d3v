@@ -10,6 +10,7 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.AsyncTask;
+import android.os.Handler;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -17,16 +18,19 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Window;
+import android.widget.Space;
 import android.widget.Toast;
 
-//import com.google.firebase.messaging.FirebaseMessaging;
-import com.destar.platform.destar.R;
+import com.destar.platform.destar.AppClass;
+import com.destar.platform.destar.ServerActivity;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.destar.platform.destar.app.Config;
 import com.destar.platform.destar.utils.MasifaController;
-import com.google.firebase.messaging.FirebaseMessaging;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.HashMap;
 
 public class SplashActivity extends AppCompatActivity {
     String android;
@@ -47,17 +51,17 @@ public class SplashActivity extends AppCompatActivity {
         android = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
         ((AppClass) SplashActivity.this.getApplication()).Setandroidid(android);
         Firebase();
-     locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-       if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
-             ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-         return;
-      }
-      locationManager.requestLocationUpdates(
-               LocationManager.GPS_PROVIDER,
-             MINIMUM_TIME_BETWEEN_UPDATES,
-             MINIMUM_DISTANCE_CHANGE_FOR_UPDATES,
-              new MyLocationListener()
-     );
+        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
+        locationManager.requestLocationUpdates(
+                LocationManager.GPS_PROVIDER,
+                MINIMUM_TIME_BETWEEN_UPDATES,
+                MINIMUM_DISTANCE_CHANGE_FOR_UPDATES,
+                new MyLocationListener()
+        );
         msfC = new MasifaController();
         url = url +"?strHardwareID="+android;
         Log.i("Hasil=>",url);
@@ -73,6 +77,8 @@ public class SplashActivity extends AppCompatActivity {
             protected String doInBackground(Void... params) {
                 String FinalData = msfC.HttpGET(url);
                 return FinalData;
+
+
             }
             @Override
             protected void onPostExecute(String string1) {

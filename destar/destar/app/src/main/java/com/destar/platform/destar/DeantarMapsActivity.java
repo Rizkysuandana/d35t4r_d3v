@@ -51,7 +51,7 @@ import retrofit2.Response;
 public class DeantarMapsActivity extends AppCompatActivity implements OnMapReadyCallback{
     private GoogleMap mMap;
 
-    private String API_KEY = "AIzaSyDAYclEPUZVFukgkAnxIBavesMbOoabDa0";
+    private String API_KEY = "AIzaSyDer24n5iXYt8iGfCkEXJU8MEvzhHmsBDk";
 
     public LatLng pickUpLatLng = null;
     public LatLng locationLatLng = null;

@@ -192,11 +192,12 @@ public class RegisterActivity extends AppCompatActivity {
             }
             @Override
             protected String doInBackground(Void... params) {
-                ByteArrayOutputStream byteArrayOutputStreamObject ;
-                byteArrayOutputStreamObject = new ByteArrayOutputStream();
-                imageBitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStreamObject);
-                byte[] byteArrayVar = byteArrayOutputStreamObject.toByteArray();
-                final String ConvertImage = Base64.encodeToString(byteArrayVar, Base64.DEFAULT);
+
+//                ByteArrayOutputStream byteArrayOutputStreamObject ;
+//                byteArrayOutputStreamObject = new ByteArrayOutputStream();
+//                imageBitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStreamObject);
+//                byte[] byteArrayVar = byteArrayOutputStreamObject.toByteArray();
+//                final String ConvertImage = Base64.encodeToString(byteArrayVar, Base64.DEFAULT);
 
                 HashMap<String,String> HashMapParams = new HashMap<String,String>();
                 HashMapParams.put("strUserName",pUsername);
@@ -206,7 +207,7 @@ public class RegisterActivity extends AppCompatActivity {
                 HashMapParams.put("strMobileNumber", pMobileNumber);
                 HashMapParams.put("strCustomerType", pCustomerType);
                 HashMapParams.put("strHrdwareID", "-");
-                HashMapParams.put("strImage", ConvertImage);
+               // HashMapParams.put("strImage", ConvertImage);
 
                 String FinalData = msfC.HttpPost(pServer, HashMapParams);
                 return FinalData;

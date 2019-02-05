@@ -2,14 +2,19 @@ package com.destar.platform.destar;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.location.LocationManager;
+import android.location.Location;
+import android.location.LocationListener;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.LoaderManager;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
@@ -49,13 +54,11 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class DeantarMapsActivity extends AppCompatActivity implements OnMapReadyCallback{
-    private GoogleMap mMap;
 
-    private String API_KEY = "AIzaSyDer24n5iXYt8iGfCkEXJU8MEvzhHmsBDk";
+   private String API_KEY = "AIzaSyDAYclEPUZVFukgkAnxIBavesMbOoabDa0";
 
     public LatLng pickUpLatLng = null;
     public LatLng locationLatLng = null;
-
     private TextView tvStartAddress, tvEndAddress;
     private TextView tvPrice, tvDistance;
     private Button btnNext;
@@ -67,35 +70,69 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
     public static final int PICK_UP = 0;
     public static final int DEST_LOC = 1;
     private static int REQUEST_CODE = 0;
+
+    private GoogleMap mMap;
     private MapView mapView;
+    private int LOCATION_MIN_DISTANCE = 20;
+    private int LOCATION_MIN_TIME = 4000;
+    private LocationManager locationManager;
+    private LocationListener locationListener = new LocationListener() {
+        @Override
+        public void onLocationChanged(Location location) {
+            drawMarker(location);
+            locationManager.removeUpdates(locationListener);
+        }
+        @Override
+        public void onStatusChanged(String provider, int status, Bundle extras) {
+        }
+        @Override
+        public void onProviderEnabled(String provider) {
+        }
+        @Override
+        public void onProviderDisabled(String provider) {
+        }
+    };
+
     @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pengantar_barang);
-        if (ContextCompat.checkSelfPermission(this,
-                Manifest.permission.ACCESS_FINE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED) {
-
-            // Permission is not granted
-            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                    Manifest.permission.ACCESS_FINE_LOCATION)) {
-                Toast.makeText(this, "Membutuhkan Izin Lokasi", Toast.LENGTH_SHORT).show();
-            } else {
-
-                // No explanation needed; request the permission
-                ActivityCompat.requestPermissions(this,
-                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION},
-                        1);
+        mapView = findViewById(R.id.mapView);
+        mapView.onCreate(savedInstanceState);
+        mapView.getMapAsync(new OnMapReadyCallback() {
+            @Override
+            public void onMapReady(GoogleMap googleMap) {
+                mapView_onMapReady(googleMap);
             }
-        } else {
-            // Permission has already been granted
-            Toast.makeText(this, "Izin Lokasi diberikan", Toast.LENGTH_SHORT).show();
-        }
-       // getSupportActionBar().setTitle("Ojek Hampir Online");
+        });
+        locationManager= (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        initMap();
+        getCurrentLocation();
 
-        // Inisialisasi Widget
-        wigetInit();
+//        if (ContextCompat.checkSelfPermission(this,
+//                Manifest.permission.ACCESS_FINE_LOCATION)
+//                != PackageManager.PERMISSION_GRANTED) {
+//
+//            // Permission is not granted
+//            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+//                    Manifest.permission.ACCESS_FINE_LOCATION)) {
+//                Toast.makeText(this, "Membutuhkan Izin Lokasi", Toast.LENGTH_SHORT).show();
+//            } else {
+//
+//                // No explanation needed; request the permission
+//                ActivityCompat.requestPermissions(this,
+//                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION},
+//                        1);
+//            }
+//        } else {
+//            // Permission has already been granted
+//            Toast.makeText(this, "Izin Lokasi diberikan", Toast.LENGTH_SHORT).show();
+//        }
+//       // getSupportActionBar().setTitle("Ojek Hampir Online");
+//
+//        // Inisialisasi Widget
+//        wigetInit();
         infoPanel.setVisibility(View.VISIBLE);
         // Event OnClick
         tvPickUpFrom.setOnClickListener(new View.OnClickListener() {
@@ -131,11 +168,16 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
         });
     }
 
+    private  void mapView_onMapReady(GoogleMap googleMap){
+        this.mMap = googleMap;
+
+    }
+
     // Method untuk Inisilisasi Widget agar lebih rapih
     private void wigetInit() {
         // Maps
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
+                .findFragmentById(R.id.mapView);
         mapFragment.getMapAsync(this);
 
         infoPanel = findViewById(R.id.infoPanel);
@@ -224,8 +266,24 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
 
     }
 
-    @SuppressLint("MissingPermission")
     @Override
+    protected void onResume() {
+        super.onResume();
+        mapView.onResume();
+        getCurrentLocation();
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mapView.onDestroy();
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mapView.onPause();
+        locationManager.removeUpdates(locationListener);
+    }
+
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         mMap.setPadding(10, 180, 10, 10);
@@ -237,6 +295,62 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
         mMap.getUiSettings().setZoomControlsEnabled(true);
     }
 
+    private void initMap(){
+        if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)== PackageManager.PERMISSION_GRANTED ||
+                ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+            if (mMap != null){
+                mMap.setMyLocationEnabled(true);
+                mMap.getUiSettings().setMyLocationButtonEnabled(true);
+                mMap.getUiSettings().setAllGesturesEnabled(true);
+            }
+        }else{
+                if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
+                    ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION},12);
+                }
+                if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED){
+                    ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},13);
+                }
+        }
+        infoPanel = findViewById(R.id.infoPanel);
+        // Widget
+        tvPickUpFrom = findViewById(R.id.tvPickUpFrom);
+        tvDestLocation = findViewById(R.id.tvDestLocation);
+
+        btnNext = findViewById(R.id.btnNext);
+    }
+
+
+    private void getCurrentLocation(){
+        if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)== PackageManager.PERMISSION_GRANTED ||
+        ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+            boolean isGPSEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
+            boolean isNetworkEnabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+            Location location = null;
+            if(!isGPSEnabled && ! isNetworkEnabled){
+                Toast.makeText(getApplicationContext(),getText(R.string.network_failed), Toast.LENGTH_LONG).show();
+            }else{
+                if(isGPSEnabled){
+                    locationManager.requestLocationUpdates(locationManager.GPS_PROVIDER,LOCATION_MIN_TIME, LOCATION_MIN_DISTANCE, locationListener);
+                    location = locationManager.getLastKnownLocation(locationManager.GPS_PROVIDER);
+                }
+                if(isNetworkEnabled){
+                    locationManager.requestLocationUpdates(locationManager.NETWORK_PROVIDER,LOCATION_MIN_TIME, LOCATION_MIN_DISTANCE, locationListener);
+                    location = locationManager.getLastKnownLocation(locationManager.NETWORK_PROVIDER);
+                }
+            }
+            if (location != null){
+                drawMarker(location);
+            }
+        }
+    }
+    private void drawMarker (Location location){
+        if (mMap!=null){
+            mMap.clear();
+            LatLng latLng = new LatLng(location.getLatitude(),location.getLongitude());
+            mMap.addMarker(new MarkerOptions().position(latLng).title(getText(R.string.i_here).toString()));
+            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,20));
+        }
+    }
     private void actionRoute(LatLng placeLatlng, int requestCode) {
         String lokasiAwal = pickUpLatLng.latitude + "," + pickUpLatLng.longitude;
         String lokasiAkhir = locationLatLng.latitude + "," + locationLatLng.longitude;
@@ -315,4 +429,6 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
             }
         });
     }
+
+
 }

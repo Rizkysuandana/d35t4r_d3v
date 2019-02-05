@@ -31,7 +31,7 @@
                 android:weightSum="100">
 
                 <LinearLayout
-                    android:id="@+id/beranda"
+                    android:id="@+id/sepeda_motor"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="25"
@@ -55,7 +55,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/pesanan"
+                    android:id="@+id/gerobak_motor"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="25"
@@ -79,7 +79,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/riwayat"
+                    android:id="@+id/pickup"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="25"
@@ -126,7 +126,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/akun"
+                    android:id="@+id/engkel_bak"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="25"

@@ -87,48 +87,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="0dp"
-                                        android:text="Transportasi"
-                                        android:textSize="25sp"
-                                        android:textStyle="bold" />
-
-                                </LinearLayout>
-                            </android.support.v7.widget.CardView>
-
-                            <android.support.v7.widget.CardView
-                                android:id="@+id/btn_pergudangan"
-                                android:layout_width="match_parent"
-                                android:layout_height="200dp"
-                                android:layout_margin="5dp"
-                                android:layout_weight="1"
-                                android:clickable="true"
-                                android:foreground="?android:attr/selectableItemBackground">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:id="@+id/btnkolat1"
-                                        android:layout_width="130dp"
-                                        android:layout_height="130dp"
-                                        android:layout_marginTop="5dp"
-                                        android:background="@drawable/pergudangan1"
-                                        android:padding="10dp"
-                                        android:scaleType="centerCrop" />
-
-                                    <View
-                                        android:layout_width="match_parent"
-                                        android:layout_height="1dp"
-                                        android:layout_margin="5dp"
-                                        android:background="@color/dark_blue" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="0dp"
-                                        android:text="Pergudangan"
+                                        android:text="deAntar"
                                         android:textSize="25sp"
                                         android:textStyle="bold" />
 
@@ -168,7 +127,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Perdagangan"
+                                        android:text="dePasar"
                                         android:textSize="25sp"
                                         android:textStyle="bold" />
 
@@ -255,48 +214,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="0dp"
-                                        android:text="Kesepakatan"
-                                        android:textSize="25sp"
-                                        android:textStyle="bold" />
-
-                                </LinearLayout>
-                            </android.support.v7.widget.CardView>
-
-                            <android.support.v7.widget.CardView
-                                android:id="@+id/btn_pengaturan"
-                                android:layout_width="match_parent"
-                                android:layout_height="200dp"
-                                android:layout_margin="5dp"
-                                android:layout_weight="1"
-                                android:clickable="true"
-                                android:foreground="?android:attr/selectableItemBackground">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:id="@+id/btnkolatddd"
-                                        android:layout_width="130dp"
-                                        android:layout_height="130dp"
-                                        android:layout_marginTop="5dp"
-                                        android:background="@drawable/pengaturan1"
-                                        android:padding="10dp"
-                                        android:scaleType="fitCenter" />
-
-                                    <View
-                                        android:layout_width="match_parent"
-                                        android:layout_height="1dp"
-                                        android:layout_margin="5dp"
-                                        android:background="@color/dark_blue" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="0dp"
-                                        android:text="Pengaturan"
+                                        android:text="deBayar"
                                         android:textSize="25sp"
                                         android:textStyle="bold" />
 

@@ -57,7 +57,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LinearLayout pesanan1 = (LinearLayout)findViewById(R.id.pesanan);
         LinearLayout riwayat1 = (LinearLayout)findViewById(R.id.riwayat);
         LinearLayout akun1 = (LinearLayout)findViewById(R.id.akun);
-        LinearLayout btnmaps= (LinearLayout)findViewById(R.id.btnmaps);
         beranda1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,14 +83,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public void onClick(View v) {
                 Intent i = new Intent(MapsActivity.this, AkunActivity.class);
                 startActivity(i);
-            }
-        });
-        btnmaps.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MapsActivity.this, MapsActivity.class);
-                startActivity(i);
-                MapsActivity.this.finish();
             }
         });
     }

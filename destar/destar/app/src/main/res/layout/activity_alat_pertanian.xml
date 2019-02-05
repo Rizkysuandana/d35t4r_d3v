@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlatPertanian"
+    android:orientation="vertical">
+    <include layout="@layout/header"
+        android:id="@+id/header"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/toolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/traktortangan"
+            android:orientation="horizontal"
+            android:layout_marginVertical="2.5dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/traktortangan"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Traktor Tangan"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/calibri" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quick Boxer G 1000"
+                    android:fontFamily="@font/calibri"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jl. Rawa, RT.11 RW.04, Cipuyuh, Sukabumi, Jawa Barat"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/calibri"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lihat Lokasi"
+                    android:fontFamily="@font/calibri"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorBlue"
+                    android:layout_gravity="right"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorblack"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Rp.250.000/Hari"
+                    android:textColor="@color/colorGreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/calibri"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="2.5dp"
+            android:id="@+id/traktor">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/traktor"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Traktor"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/calibri" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KUBOTA Traktor LG 400"
+                    android:fontFamily="@font/calibri"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kantor DESTAR"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/calibri"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lihat Lokasi"
+                    android:fontFamily="@font/calibri"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorBlue"
+                    android:layout_gravity="right"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorblack"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Rp.500.000/Hari"
+                    android:textColor="@color/colorGreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/calibri"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="2.5dp"
+            android:id="@+id/gilingpadi">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/gilinganpadi"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mesin Penggiling Padi"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/calibri" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADR MPS 750"
+                    android:fontFamily="@font/calibri"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kantor DESTAR"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/calibri"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lihat Lokasi"
+                    android:fontFamily="@font/calibri"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorBlue"
+                    android:layout_gravity="right"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorblack"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dp"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/calibri"
+                    android:text="Rp.300.000/Hari"
+                    android:textColor="@color/colorGreen"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="2.5dp"
+            android:id="@+id/sekop">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/sekop"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEKOP"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/calibri" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MAGUMI 1060"
+                    android:fontFamily="@font/calibri"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kantor DESTAR"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/calibri"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lihat Lokasi"
+                    android:fontFamily="@font/calibri"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorBlue"
+                    android:layout_gravity="right"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorblack"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Rp.20.000/Hari"
+                    android:textColor="@color/colorGreen"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/calibri"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/layout_toolbar"
+        android:id="@+id/toolbar"/>
+</RelativeLayout>

@@ -27,7 +27,6 @@ public class Dashboard extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Dashboard.this, TransportasiActivity.class);
                 startActivity(intent);
-                Dashboard.this.finish();
             }
         });
         deSewa = (CardView)findViewById(R.id.btn_penyewaan);
@@ -35,6 +34,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(Dashboard.this, deSewaActivity.class);
+                startActivity(intent);
             }
         });
         carouselView = (CarouselView) findViewById(R.id.carouselView);
@@ -54,7 +54,6 @@ public class Dashboard extends AppCompatActivity {
         LinearLayout pesanan1 = (LinearLayout)findViewById(R.id.pesanan);
         LinearLayout riwayat1 = (LinearLayout)findViewById(R.id.riwayat);
         LinearLayout akun1 = (LinearLayout)findViewById(R.id.akun);
-        LinearLayout btnmaps= (LinearLayout)findViewById(R.id.btnmaps);
         beranda1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,14 +82,6 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Dashboard.this, AkunActivity.class);
-                startActivity(i);
-                Dashboard.this.finish();
-            }
-        });
-        btnmaps.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Dashboard.this, MapsActivity.class);
                 startActivity(i);
                 Dashboard.this.finish();
             }

@@ -21,7 +21,6 @@ public class JasaAngkutActivity extends AppCompatActivity {
         LinearLayout pesanan1 = (LinearLayout)findViewById(R.id.pesanan);
         LinearLayout riwayat1 = (LinearLayout)findViewById(R.id.riwayat);
         LinearLayout akun1 = (LinearLayout)findViewById(R.id.akun);
-        LinearLayout btnmaps= (LinearLayout)findViewById(R.id.btnmaps);
         beranda1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,14 +47,6 @@ public class JasaAngkutActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(JasaAngkutActivity.this, AkunActivity.class);
                 startActivity(i);JasaAngkutActivity.this.finish();
-            }
-        });
-        btnmaps.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(JasaAngkutActivity.this, MapsActivity.class);
-                startActivity(i);
-                JasaAngkutActivity.this.finish();
             }
         });
     }

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.destar.platform.destar">
+
     <supports-screens
         android:largeScreens="true"
         android:normalScreens="true"
+        android:resizeable="true"
         android:smallScreens="true"
-        android:xlargeScreens="true"
-        />
+        android:xlargeScreens="true" />
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -62,7 +63,7 @@
 
         <activity
             android:name=".SplashActivity"
-            android:label="Map"
+            android:label="deStar"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -70,22 +71,45 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DeantarMapsActivity"
-            android:label="Map"/>
-        <activity android:name=".deSewaActivity" />
+        <activity
+            android:name=".DeantarMapsActivity"
+            android:parentActivityName=".TransportasiActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TransportasiActivity" />
+        </activity>
+        <activity
+         android:name=".deSewaActivity"
+         android:parentActivityName=".Dashboard">
+         <meta-data
+         android:name="android.support.PARENT_ACTIVITY"
+         android:value=".Dashboard" />
+         </activity>
         <activity android:name=".TampilanAwalActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
-        <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
+        <activity android:name=".MapsActivity" />
         <activity android:name=".Toolbar" />
         <activity android:name=".PesananActivity" />
         <activity android:name=".RiwayatActivity" />
         <activity android:name=".AkunActivity" />
         <activity android:name=".Dashboard" />
-        <activity android:name=".TransportasiActivity" />
+        <activity
+            android:name=".TransportasiActivity"
+            android:parentActivityName=".Dashboard">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Dashboard" />
+        </activity>
         <activity android:name=".NextPengantarBarang" />
+        <activity android:name=".LanjutanKendaraan" />
+        <activity android:name=".deSewaLainnya" />
+        <activity android:name=".AlatMedis" />
+        <activity android:name=".AlatPertanian" />
+        <activity android:name=".Kendaraan" />
+        <activity android:name=".LanjutanLainnya"></activity>
+        <activity android:name=".AlatMedisLanjutan" />
+        <activity android:name=".PertanianLanjutan" />
     </application>
 
 </manifest>

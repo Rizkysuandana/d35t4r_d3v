@@ -87,53 +87,13 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="0dp"
-                                        android:text="Transportasi"
+                                        android:text="deAntar"
                                         android:textSize="15sp"
                                         android:textStyle="bold" />
 
                                 </LinearLayout>
                             </android.support.v7.widget.CardView>
 
-                            <android.support.v7.widget.CardView
-                                android:id="@+id/btn_pergudangan"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:layout_margin="3.33dp"
-                                android:clickable="true"
-                                android:foreground="?android:attr/selectableItemBackground">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:id="@+id/btnkolat1"
-                                        android:layout_width="80dp"
-                                        android:layout_height="80dp"
-                                        android:layout_marginTop="5dp"
-                                        android:background="@drawable/image_pergudangan"
-                                        android:padding="10dp"
-                                        android:scaleType="centerCrop" />
-
-                                    <View
-                                        android:layout_width="match_parent"
-                                        android:layout_height="1dp"
-                                        android:layout_margin="5dp"
-                                        android:background="@color/dark_blue" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="0dp"
-                                        android:text="Pergudangan"
-                                        android:textSize="15sp"
-                                        android:textStyle="bold" />
-
-                                </LinearLayout>
-                            </android.support.v7.widget.CardView>
 
                             <android.support.v7.widget.CardView
                                 android:id="@+id/btn_perdagangan"
@@ -169,7 +129,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="0dp"
-                                        android:text="Perdagangan"
+                                        android:text="dePasar"
                                         android:textSize="15sp"
                                         android:textStyle="bold" />
 
@@ -254,47 +214,8 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="0dp"
-                                        android:text="Kesepakatan"
+                                        android:text="deBayar"
                                         android:textSize="14sp"
-                                        android:textStyle="bold" />
-
-                                </LinearLayout>
-                            </android.support.v7.widget.CardView>
-
-                            <android.support.v7.widget.CardView
-                                android:id="@+id/btn_pengaturan"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:layout_margin="3.33dp"
-                                android:clickable="true"
-                                android:foreground="?android:attr/selectableItemBackground">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:id="@+id/btnkolatddd"
-                                        android:layout_width="80dp"
-                                        android:layout_height="80dp"
-                                        android:layout_marginTop="5dp"
-                                        android:background="@drawable/pengaturan1"
-                                        android:scaleType="fitCenter" />
-
-                                    <View
-                                        android:layout_width="match_parent"
-                                        android:layout_height="1dp"
-                                        android:layout_margin="5dp"
-                                        android:background="@color/dark_blue" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Pengaturan"
-                                        android:textSize="15sp"
                                         android:textStyle="bold" />
 
                                 </LinearLayout>

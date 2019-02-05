@@ -13,6 +13,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
+import android.text.style.BackgroundColorSpan;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -46,6 +47,7 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+
 public class DeantarMapsActivity extends AppCompatActivity implements OnMapReadyCallback{
     private GoogleMap mMap;
 
@@ -58,6 +60,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
     private TextView tvPrice, tvDistance;
     private Button btnNext;
     private LinearLayout infoPanel;
+    private LinearLayout motor;
     // Deklarasi variable
     private TextView tvPickUpFrom, tvDestLocation;
 
@@ -65,6 +68,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
     public static final int DEST_LOC = 1;
     private static int REQUEST_CODE = 0;
     private MapView mapView;
+    @SuppressLint("ResourceAsColor")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -208,6 +212,15 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
                 Toast.makeText(this, "Invalid Place !", Toast.LENGTH_SHORT).show();
             }
         }
+        motor = (LinearLayout) findViewById(R.id.sepeda_motor);
+        motor.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Sepeda Motor dipilih", Toast.LENGTH_SHORT).show();
+                motor.setBackgroundColor(R.color.colorOrange);
+            }
+        });
 
     }
 

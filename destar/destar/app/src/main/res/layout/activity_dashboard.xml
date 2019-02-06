@@ -88,9 +88,9 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="0dp"
-                                        android:text="deAntar"
+                                        android:text="DE ANTAR"
                                         android:fontFamily="@font/perfectlyscratchy"
-                                        android:textSize="13sp" />
+                                        android:textSize="19sp" />
 
                                 </LinearLayout>
                             </LinearLayout>
@@ -130,9 +130,9 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="0dp"
-                                        android:text="dePasar"
+                                        android:text="DE PASAR"
                                         android:fontFamily="@font/perfectlyscratchy"
-                                        android:textSize="13sp" />
+                                        android:textSize="19sp" />
 
                                 </LinearLayout>
                             </LinearLayout>
@@ -179,8 +179,8 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="0dp"
                                         android:fontFamily="@font/perfectlyscratchy"
-                                        android:text="deSewa"
-                                        android:textSize="13sp" />
+                                        android:text="DE SEWA"
+                                        android:textSize="19sp" />
 
                                 </LinearLayout>
                             </LinearLayout>
@@ -219,9 +219,9 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="deBayar"
+                                        android:text="DE BAYAR"
                                         android:fontFamily="@font/perfectlyscratchy"
-                                        android:textSize="13sp" />
+                                        android:textSize="19sp" />
 
                                 </LinearLayout>
                             </android.support.v7.widget.CardView>

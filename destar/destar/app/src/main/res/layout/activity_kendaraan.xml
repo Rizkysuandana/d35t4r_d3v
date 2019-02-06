@@ -18,8 +18,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/Germor"
+            android:background="@drawable/textboxdesainkecil"
             android:orientation="horizontal"
-            android:layout_marginVertical="2.5dp">
+            android:layout_margin="2.5dp">
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -29,6 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@drawable/textboxdesainkecil"
                 android:layout_marginLeft="10dp">
                 <TextView
                     android:layout_width="wrap_content"
@@ -75,7 +77,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginVertical="2.5dp"
+            android:background="@drawable/textboxdesainkecil"
+            android:layout_margin="2.5dp"
             android:id="@+id/pickupStandar">
             <ImageView
                 android:layout_width="100dp"
@@ -85,6 +88,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/textboxdesainkecil"
                 android:orientation="vertical"
                 android:layout_marginLeft="10dp">
                 <TextView
@@ -132,7 +136,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginVertical="2.5dp"
+            android:background="@drawable/textboxdesainkecil"
+            android:layout_margin="2.5dp"
             android:id="@+id/DumpTruck">
             <ImageView
                 android:layout_width="100dp"
@@ -142,6 +147,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/textboxdesainkecil"
                 android:orientation="vertical"
                 android:layout_marginLeft="10dp">
                 <TextView
@@ -190,7 +196,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginVertical="2.5dp"
+            android:layout_margin="2.5dp"
+            android:background="@drawable/textboxdesainkecil"
             android:id="@+id/pickupbox">
             <ImageView
                 android:layout_width="100dp"
@@ -201,6 +208,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@drawable/textboxdesainkecil"
                 android:layout_marginLeft="10dp">
                 <TextView
                     android:layout_width="wrap_content"

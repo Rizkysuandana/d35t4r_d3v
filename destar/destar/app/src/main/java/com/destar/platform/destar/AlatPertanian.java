@@ -21,28 +21,28 @@ public class AlatPertanian extends AppCompatActivity {
         traktorTangan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AlatPertanian.this, PertanianLanjutan.class);
+                Intent intent = new Intent(AlatPertanian.this, NextDesewa.class);
                 startActivity(intent);
             }
         });
         Traktor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AlatPertanian.this, PertanianLanjutan.class);
+                Intent intent = new Intent(AlatPertanian.this, NextDesewa.class);
                 startActivity(intent);
             }
         });
         Gilingpadi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AlatPertanian.this, PertanianLanjutan.class);
+                Intent intent = new Intent(AlatPertanian.this, NextDesewa.class);
                 startActivity(intent);
             }
         });
         Sekop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AlatPertanian.this, PertanianLanjutan.class);
+                Intent intent = new Intent(AlatPertanian.this, NextDesewa.class);
                 startActivity(intent);
             }
         });

@@ -19,28 +19,28 @@ public class AlatMedis extends AppCompatActivity {
         kursiroda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AlatMedis.this, AlatMedisLanjutan.class);
+                Intent intent = new Intent(AlatMedis.this, NextDesewa.class);
                 startActivity(intent);
             }
         });
         tabungoksigen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AlatMedis.this, AlatMedisLanjutan.class);
+                Intent intent = new Intent(AlatMedis.this, NextDesewa.class);
                 startActivity(intent);
             }
         });
         ranjangpasien.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AlatMedis.this, AlatMedisLanjutan.class);
+                Intent intent = new Intent(AlatMedis.this, NextDesewa.class);
                 startActivity(intent);
             }
         });
         alatcekguladarah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AlatMedis.this, AlatMedisLanjutan.class);
+                Intent intent = new Intent(AlatMedis.this, NextDesewa.class);
                 startActivity(intent);
             }
         });

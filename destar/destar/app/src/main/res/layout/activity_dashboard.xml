@@ -17,8 +17,7 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
+            android:background="@color/colorgrey2"
             android:layout_above="@+id/bar_dashboard">
 
             <LinearLayout
@@ -41,6 +40,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:cardUseCompatPadding="true"
+                    android:background="@drawable/textboxdesainkecil"
                     app:contentPadding="5dp">
 
                     <LinearLayout
@@ -53,7 +53,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <android.support.v7.widget.CardView
+                            <LinearLayout
                                 android:id="@+id/btn_transportasi"
                                 android:layout_width="match_parent"
                                 android:layout_height="110dp"
@@ -66,6 +66,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:gravity="center"
+                                    android:background="@drawable/shape"
                                     android:orientation="vertical"
                                     android:id="@+id/btnkolat">
 
@@ -75,12 +76,12 @@
                                         android:layout_marginTop="5dp"
                                         android:background="@drawable/transportasi1"
                                         android:padding="10dp"
-                                        android:scaleType="fitCenter" />
+                                        android:scaleType="fitXY" />
 
                                     <View
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
-                                        android:layout_margin="5dp"
+                                        android:layout_marginHorizontal="5dp"
                                         android:background="@color/dark_blue" />
 
                                     <TextView
@@ -88,13 +89,13 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="0dp"
                                         android:text="deAntar"
-                                        android:textSize="11sp"
-                                        android:textStyle="bold" />
+                                        android:fontFamily="@font/perfectlyscratchy"
+                                        android:textSize="13sp" />
 
                                 </LinearLayout>
-                            </android.support.v7.widget.CardView>
+                            </LinearLayout>
 
-                            <android.support.v7.widget.CardView
+                            <LinearLayout
                                 android:id="@+id/btn_perdagangan"
                                 android:layout_width="match_parent"
                                 android:layout_height="110dp"
@@ -106,6 +107,7 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:background="@drawable/shape"
                                     android:gravity="center"
                                     android:orientation="vertical">
 
@@ -116,12 +118,12 @@
                                         android:layout_marginTop="5dp"
                                         android:background="@drawable/image_perdagangan"
                                         android:padding="10dp"
-                                        android:scaleType="fitCenter" />
+                                        android:scaleType="fitXY" />
 
                                     <View
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
-                                        android:layout_margin="5dp"
+                                        android:layout_marginHorizontal="5dp"
                                         android:background="@color/dark_blue" />
 
                                     <TextView
@@ -129,11 +131,11 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="0dp"
                                         android:text="dePasar"
-                                        android:textSize="11sp"
-                                        android:textStyle="bold" />
+                                        android:fontFamily="@font/perfectlyscratchy"
+                                        android:textSize="13sp" />
 
                                 </LinearLayout>
-                            </android.support.v7.widget.CardView>
+                            </LinearLayout>
 
                         </LinearLayout>
 
@@ -142,11 +144,12 @@
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
-                            <android.support.v7.widget.CardView
+                            <LinearLayout
                                 android:id="@+id/btn_penyewaan"
                                 android:layout_width="match_parent"
                                 android:layout_height="110dp"
                                 android:layout_margin="2.5dp"
+                                android:orientation="vertical"
                                 android:layout_weight="1"
                                 android:clickable="true"
                                 android:foreground="?android:attr/selectableItemBackground">
@@ -155,30 +158,32 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:gravity="center"
+                                    android:background="@drawable/shape"
                                     android:orientation="vertical">
 
                                     <ImageView
                                         android:id="@+id/ssss"
-                                        android:layout_width="250px"
+                                        android:layout_width="65dp"
                                         android:layout_height="65dp"
                                         android:src="@drawable/desewa"
-                                        android:scaleType="fitCenter" />
+                                        android:scaleType="fitXY" />
 
                                     <View
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
-                                        android:layout_margin="5dp"
+                                        android:layout_marginHorizontal="5dp"
                                         android:background="@color/dark_blue" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="0dp"
+                                        android:fontFamily="@font/perfectlyscratchy"
                                         android:text="deSewa"
                                         android:textSize="13sp" />
 
                                 </LinearLayout>
-                            </android.support.v7.widget.CardView>
+                            </LinearLayout>
 
                             <android.support.v7.widget.CardView
                                 android:id="@+id/btn_kesepakatan"
@@ -193,6 +198,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:gravity="center"
+                                    android:background="@drawable/shape"
                                     android:orientation="vertical">
 
                                     <ImageView
@@ -202,21 +208,20 @@
                                         android:layout_marginTop="5dp"
                                         android:background="@drawable/kesepakatan1"
                                         android:padding="10dp"
-                                        android:scaleType="fitCenter" />
+                                        android:scaleType="fitXY" />
 
                                     <View
                                         android:layout_width="match_parent"
                                         android:layout_height="1dp"
-                                        android:layout_margin="5dp"
+                                        android:layout_marginHorizontal="5dp"
                                         android:background="@color/dark_blue" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="0dp"
                                         android:text="deBayar"
-                                        android:textSize="11sp"
-                                        android:textStyle="bold" />
+                                        android:fontFamily="@font/perfectlyscratchy"
+                                        android:textSize="13sp" />
 
                                 </LinearLayout>
                             </android.support.v7.widget.CardView>
@@ -232,6 +237,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="3dp"
+                    android:background="@drawable/textboxdesainkecil"
                     android:layout_marginTop="3dp"
                     app:cardUseCompatPadding="true"
                     app:contentPadding="5dp">
@@ -254,7 +260,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_weight="70"
-                                android:fontFamily="@font/calibri"
+                                android:fontFamily="@font/perfectlyscratchy"
                                 android:gravity="left"
                                 android:text="RECENTLY BOUGHT PHONES"
                                 android:textColor="#322e47"
@@ -265,7 +271,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_weight="30"
-                                android:fontFamily="@font/calibri"
+                                android:fontFamily="@font/perfectlyscratchy"
                                 android:gravity="right"
                                 android:text="See All"
                                 android:textColor="#308fe9"
@@ -289,8 +295,7 @@
                                     android:layout_height="wrap_content"
                                     app:cardCornerRadius="4dp"
                                     app:cardElevation="8dp"
-                                    app:cardUseCompatPadding="true"
-                                    app:contentPadding="16dp">
+                                    app:cardUseCompatPadding="true">
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
@@ -306,11 +311,13 @@
                                             <LinearLayout
                                                 android:layout_width="0dp"
                                                 android:layout_height="wrap_content"
-                                                android:layout_weight="28">
+                                                android:layout_weight="28"
+                                                android:gravity="center">
 
                                                 <ImageView
-                                                    android:layout_width="72dp"
-                                                    android:layout_height="72dp"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="80dp"
+                                                    android:scaleType="fitXY"
                                                     android:src="@drawable/image22" />
 
                                             </LinearLayout>
@@ -327,7 +334,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginBottom="6dp"
-                                                    android:fontFamily="@font/calibri"
+                                                    android:fontFamily="@font/perfectlyscratchy"
                                                     android:text="Huawei Nexus 6p"
                                                     android:textColor="#000000"
                                                     android:textSize="18dp"
@@ -337,7 +344,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginBottom="4dp"
-                                                    android:fontFamily="@font/calibri"
+                                                    android:fontFamily="@font/perfectlyscratchy"
                                                     android:text="3 GB RAM | 5.7 inch Quad HD Display | 12.3 MP Camera | 3450 mAH Battery"
                                                     android:textColor="#757575"
                                                     android:textSize="14dp" />
@@ -356,8 +363,7 @@
                                     android:layout_height="wrap_content"
                                     app:cardCornerRadius="4dp"
                                     app:cardElevation="8dp"
-                                    app:cardUseCompatPadding="true"
-                                    app:contentPadding="16dp">
+                                    app:cardUseCompatPadding="true">
 
                                     <LinearLayout
                                         android:layout_width="match_parent"
@@ -373,12 +379,14 @@
                                             <LinearLayout
                                                 android:layout_width="0dp"
                                                 android:layout_height="wrap_content"
-                                                android:layout_weight="28">
+                                                android:layout_weight="28"
+                                                android:gravity="center">
 
                                                 <ImageView
-                                                    android:layout_width="72dp"
-                                                    android:layout_height="72dp"
-                                                    android:src="@drawable/image23" />
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="80dp"
+                                                    android:src="@drawable/image23"
+                                                    android:scaleType="fitXY"/>
 
                                             </LinearLayout>
 
@@ -394,7 +402,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginBottom="6dp"
-                                                    android:fontFamily="@font/calibri"
+                                                    android:fontFamily="@font/perfectlyscratchy"
                                                     android:text="Redmi Note 4"
                                                     android:textColor="#000000"
                                                     android:textSize="18dp"
@@ -404,7 +412,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginBottom="4dp"
-                                                    android:fontFamily="@font/calibri"
+                                                    android:fontFamily="@font/perfectlyscratchy"
                                                     android:text="4 GB RAM | 5.5 inch Full HD Display | 13 MP Camera | 4100 mAH Battery"
                                                     android:textColor="#757575"
                                                     android:textSize="14dp" />
@@ -429,8 +437,7 @@
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardUseCompatPadding="true"
-                    app:contentPadding="16dp">
+                    android:background="@drawable/textboxdesainkecil">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -442,12 +449,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="5dp"
                             android:gravity="center"
-                            android:weightSum="100">
+                            android:orientation="horizontal">
 
                             <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginHorizontal="4dp"
                                 android:layout_weight="25"
                                 android:gravity="center"
                                 android:orientation="vertical">
@@ -455,7 +464,6 @@
                                 <ImageView
                                     android:layout_width="52dp"
                                     android:layout_height="52dp"
-                                    android:layout_marginBottom="6dp"
                                     android:src="@drawable/pestisida" />
 
                                 <View
@@ -468,19 +476,18 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/calibri"
+                                    android:fontFamily="@font/perfectlyscratchy"
                                     android:text="PUPUK &amp; PESTISIDA"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
-                                    android:textSize="12sp" />
+                                    android:textSize="10sp" />
 
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="0dp"
+                                android:layout_width="100dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="8dp"
-                                android:layout_marginRight="8dp"
+                                android:layout_marginHorizontal="4dp"
                                 android:layout_weight="25"
                                 android:gravity="center"
                                 android:orientation="vertical">
@@ -488,7 +495,6 @@
                                 <ImageView
                                     android:layout_width="52dp"
                                     android:layout_height="52dp"
-                                    android:layout_marginBottom="6dp"
                                     android:src="@drawable/alkes" />
 
                                 <View
@@ -501,7 +507,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/calibri"
+                                    android:fontFamily="@font/perfectlyscratchy"
                                     android:text="FARMASI &amp; ALAT KESEHATAN"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
@@ -510,8 +516,9 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="0dp"
+                                android:layout_width="100dp"
                                 android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="4dp"
                                 android:layout_weight="25"
                                 android:gravity="center"
                                 android:orientation="vertical">
@@ -519,7 +526,6 @@
                                 <ImageView
                                     android:layout_width="52dp"
                                     android:layout_height="52dp"
-                                    android:layout_marginBottom="6dp"
                                     android:src="@drawable/konsumsi" />
 
                                 <View
@@ -532,7 +538,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/calibri"
+                                    android:fontFamily="@font/perfectlyscratchy"
                                     android:text="KONSUMSI &amp; BAHAN POKOK"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
@@ -541,8 +547,9 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="0dp"
+                                android:layout_width="100dp"
                                 android:layout_height="match_parent"
+                                android:layout_marginHorizontal="4dp"
                                 android:layout_weight="25"
                                 android:gravity="center"
                                 android:orientation="vertical">
@@ -550,7 +557,6 @@
                                 <ImageView
                                     android:layout_width="52dp"
                                     android:layout_height="52dp"
-                                    android:layout_marginBottom="6dp"
                                     android:src="@drawable/guhring" />
 
                                 <View
@@ -563,11 +569,11 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/calibri"
+                                    android:fontFamily="@font/perfectlyscratchy"
                                     android:text="PRODUK GUHRING"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
-                                    android:textSize="12sp" />
+                                    android:textSize="10sp" />
 
                             </LinearLayout>
 
@@ -582,11 +588,10 @@
                             android:weightSum="100">
 
                             <LinearLayout
-                                android:layout_width="0dp"
+                                android:layout_width="100dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="8dp"
-                                android:layout_marginRight="8dp"
-                                android:layout_weight="33.33"
+                                android:layout_marginHorizontal="4dp"
+                                android:layout_weight="25"
                                 android:gravity="center"
                                 android:orientation="vertical">
 
@@ -605,19 +610,20 @@
 
                                 <TextView
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/calibri"
+                                    android:layout_height="12dp"
+                                    android:fontFamily="@font/perfectlyscratchy"
                                     android:text="BAHAN KIMIA"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
-                                    android:textSize="12sp" />
+                                    android:textSize="10sp" />
 
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="0dp"
+                                android:layout_width="100dp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="33.3"
+                                android:layout_weight="25"
+                                android:layout_marginHorizontal="4dp"
                                 android:gravity="center"
                                 android:orientation="vertical">
 
@@ -637,18 +643,19 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/calibri"
+                                    android:fontFamily="@font/perfectlyscratchy"
                                     android:text="PRODUK EKSPOR"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
-                                    android:textSize="12sp" />
+                                    android:textSize="10sp" />
 
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="0dp"
+                                android:layout_width="100dp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="33.3"
+                                android:layout_weight="25"
+                                android:layout_marginHorizontal="4dp"
                                 android:gravity="center"
                                 android:orientation="vertical">
 
@@ -668,11 +675,11 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/calibri"
+                                    android:fontFamily="@font/perfectlyscratchy"
                                     android:text="PRODUK LAINNYA"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
-                                    android:textSize="12sp" />
+                                    android:textSize="10sp" />
 
                             </LinearLayout>
 

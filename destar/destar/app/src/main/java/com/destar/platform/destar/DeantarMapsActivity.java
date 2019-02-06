@@ -21,6 +21,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.style.BackgroundColorSpan;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -30,8 +32,12 @@ import com.destar.platform.destar.response.LegsItem;
 import com.destar.platform.destar.response.ResponseRoute;
 import com.destar.platform.destar.service.ApiServices;
 import com.destar.platform.destar.service.InitLibrary;
+import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.location.places.AutocompleteFilter;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlaceAutocomplete;
@@ -43,8 +49,11 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.maps.android.PolyUtil;
 
 import java.util.List;
@@ -64,8 +73,12 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
     private Button btnNext;
     private LinearLayout infoPanel;
     private LinearLayout motor;
+    private Boolean mLocationPermissionsGranted = false;
+    private FusedLocationProviderClient mFusedLocationProviderClient;
+    private GoogleApiClient mGoogleApiClient;
+    private Marker mMarker;
     // Deklarasi variable
-    private TextView tvPickUpFrom, tvDestLocation;
+    private AutoCompleteTextView tvPickUpFrom, tvDestLocation;
 
     public static final int PICK_UP = 0;
     public static final int DEST_LOC = 1;
@@ -107,34 +120,34 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
             }
         });
         locationManager= (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        initMap();
         getCurrentLocation();
+//
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
 
-//        if (ContextCompat.checkSelfPermission(this,
-//                Manifest.permission.ACCESS_FINE_LOCATION)
-//                != PackageManager.PERMISSION_GRANTED) {
-//
-//            // Permission is not granted
-//            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-//                    Manifest.permission.ACCESS_FINE_LOCATION)) {
-//                Toast.makeText(this, "Membutuhkan Izin Lokasi", Toast.LENGTH_SHORT).show();
-//            } else {
-//
-//                // No explanation needed; request the permission
-//                ActivityCompat.requestPermissions(this,
-//                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION},
-//                        1);
-//            }
-//        } else {
-//            // Permission has already been granted
-//            Toast.makeText(this, "Izin Lokasi diberikan", Toast.LENGTH_SHORT).show();
-//        }
-//       // getSupportActionBar().setTitle("Ojek Hampir Online");
-//
+            // Permission is not granted
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
+                    Manifest.permission.ACCESS_FINE_LOCATION)) {
+                Toast.makeText(this, "Membutuhkan Izin Lokasi", Toast.LENGTH_SHORT).show();
+            } else {
+
+                // No explanation needed; request the permission
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION},
+                        1);
+            }
+        } else {
+            // Permission has already been granted
+            Toast.makeText(this, "Izin Lokasi diberikan", Toast.LENGTH_SHORT).show();
+        }
+       // getSupportActionBar().setTitle("Ojek Hampir Online");
+
 //        // Inisialisasi Widget
-//        wigetInit();
+        wigetInit();
         infoPanel.setVisibility(View.VISIBLE);
         // Event OnClick
+        tvPickUpFrom = (AutoCompleteTextView)findViewById(R.id.tvPickUpFrom);
         tvPickUpFrom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -144,6 +157,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
             }
         });
         // Event OnClick
+        tvDestLocation = (AutoCompleteTextView)findViewById(R.id.tvDestLocation);
         tvDestLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -170,16 +184,20 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
 
     private  void mapView_onMapReady(GoogleMap googleMap){
         this.mMap = googleMap;
+        mapView.getMapAsync(this);
+        infoPanel = findViewById(R.id.infoPanel);
+        // Widget
+        tvPickUpFrom = findViewById(R.id.tvPickUpFrom);
+        tvDestLocation = findViewById(R.id.tvDestLocation);
 
+        btnNext = findViewById(R.id.btnNext);
     }
 
     // Method untuk Inisilisasi Widget agar lebih rapih
     private void wigetInit() {
+        mapView.getMapAsync(this);
         // Maps
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.mapView);
-        mapFragment.getMapAsync(this);
-
+        mapView.getMapAsync(this);
         infoPanel = findViewById(R.id.infoPanel);
         // Widget
         tvPickUpFrom = findViewById(R.id.tvPickUpFrom);
@@ -283,7 +301,6 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
         mapView.onPause();
         locationManager.removeUpdates(locationListener);
     }
-
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         mMap.setPadding(10, 180, 10, 10);
@@ -293,9 +310,23 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
         mMap.getUiSettings().setZoomGesturesEnabled(true);
         mMap.getUiSettings().setRotateGesturesEnabled(false);
         mMap.getUiSettings().setZoomControlsEnabled(true);
+        mMap = googleMap;
+        mapView.getMapAsync(this);
+        if (mLocationPermissionsGranted) {
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                    != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
+                    Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                return;
+            }
+            mMap.setMyLocationEnabled(true);
+            mMap.getUiSettings().setMyLocationButtonEnabled(false);
+
+            initMap();
+        }
     }
 
     private void initMap(){
+        mapView.getMapAsync(this);
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)== PackageManager.PERMISSION_GRANTED ||
                 ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
             if (mMap != null){
@@ -429,6 +460,4 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
             }
         });
     }
-
-
 }

@@ -23,28 +23,28 @@ public class Kendaraan extends AppCompatActivity {
         germor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Kendaraan.this, LanjutanKendaraan.class);
+                Intent intent = new Intent(Kendaraan.this, NextDesewa.class);
                 startActivity(intent);
             }
         });
         pickupstandar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Kendaraan.this, LanjutanKendaraan.class);
+                Intent intent = new Intent(Kendaraan.this, NextDesewa.class);
                 startActivity(intent);
             }
         });
         pickupbox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Kendaraan.this, LanjutanKendaraan.class);
+                Intent intent = new Intent(Kendaraan.this, NextDesewa.class);
                 startActivity(intent);
             }
         });
         dumptruck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Kendaraan.this, LanjutanKendaraan.class);
+                Intent intent = new Intent(Kendaraan.this, NextDesewa.class);
                 startActivity(intent);
             }
         });

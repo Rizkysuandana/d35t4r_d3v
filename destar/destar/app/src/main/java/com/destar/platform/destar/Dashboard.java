@@ -12,8 +12,8 @@ import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
 public class Dashboard extends AppCompatActivity {
-    private CardView transportasi;
-    private CardView deSewa;
+    private LinearLayout transportasi;
+    private LinearLayout deSewa;
     CarouselView carouselView;
     int[] sampleImages = {R.drawable.image_promo1, R.drawable.image_promo2, R.drawable.image_promo3, R.drawable.image_promo4};
     @Override
@@ -21,7 +21,7 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        transportasi = (CardView)findViewById(R.id.btn_transportasi);
+        transportasi = (LinearLayout)findViewById(R.id.btn_transportasi);
         transportasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,7 +29,7 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        deSewa = (CardView)findViewById(R.id.btn_penyewaan);
+        deSewa = (LinearLayout) findViewById(R.id.btn_penyewaan);
         deSewa.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){

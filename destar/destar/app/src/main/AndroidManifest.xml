@@ -73,7 +73,8 @@
         </activity>
         <activity
             android:name=".DeantarMapsActivity"
-            android:parentActivityName=".TransportasiActivity">
+            android:parentActivityName=".TransportasiActivity"
+            android:value="AIzaSyDer24n5iXYt8iGfCkEXJU8MEvzhHmsBDk">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TransportasiActivity" />
@@ -102,14 +103,11 @@
                 android:value=".Dashboard" />
         </activity>
         <activity android:name=".NextPengantarBarang" />
-        <activity android:name=".LanjutanKendaraan" />
         <activity android:name=".deSewaLainnya" />
         <activity android:name=".AlatMedis" />
         <activity android:name=".AlatPertanian" />
         <activity android:name=".Kendaraan" />
-        <activity android:name=".LanjutanLainnya"></activity>
-        <activity android:name=".AlatMedisLanjutan" />
-        <activity android:name=".PertanianLanjutan" />
+        <activity android:name=".NextDesewa"></activity>
     </application>
 
 </manifest>

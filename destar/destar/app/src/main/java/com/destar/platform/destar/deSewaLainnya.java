@@ -20,28 +20,28 @@ public class deSewaLainnya extends AppCompatActivity {
         bor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(deSewaLainnya.this, LanjutanLainnya.class);
+                Intent intent = new Intent(deSewaLainnya.this, NextDesewa.class);
                 startActivity(intent);
             }
         });
         buku.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(deSewaLainnya.this, LanjutanLainnya.class);
+                Intent intent = new Intent(deSewaLainnya.this, NextDesewa.class);
                 startActivity(intent);
             }
         });
         carrier.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(deSewaLainnya.this, LanjutanLainnya.class);
+                Intent intent = new Intent(deSewaLainnya.this, NextDesewa.class);
                 startActivity(intent);
             }
         });
         kamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(deSewaLainnya.this, LanjutanLainnya.class);
+                Intent intent = new Intent(deSewaLainnya.this, NextDesewa.class);
                 startActivity(intent);
             }
         });

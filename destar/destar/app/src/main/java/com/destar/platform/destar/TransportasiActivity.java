@@ -10,13 +10,13 @@ import android.widget.LinearLayout;
 import com.destar.platform.destar.R;
 
 public class TransportasiActivity extends AppCompatActivity {
-    private CardView pengantarBarang;
-    private CardView jasaAngkut;
+    private LinearLayout pengantarBarang;
+    private LinearLayout jasaAngkut;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transportasi);
-        pengantarBarang = (CardView)findViewById(R.id.btnpengantaran);
+        pengantarBarang = (LinearLayout) findViewById(R.id.btnpengantaran);
         pengantarBarang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,7 +24,7 @@ public class TransportasiActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        jasaAngkut = (CardView)findViewById(R.id.btnpengangkutan);
+        jasaAngkut = (LinearLayout) findViewById(R.id.btnpengangkutan);
         jasaAngkut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

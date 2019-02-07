@@ -66,7 +66,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:background="@drawable/shape"
+                                    android:background="@drawable/textboxdesainkecil"
                                     android:orientation="vertical"
                                     android:id="@+id/btnkolat">
 
@@ -89,7 +89,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="0dp"
                                         android:text="DE ANTAR"
-                                        android:fontFamily="@font/perfectlyscratchy"
+                                        android:fontFamily="@font/font1"
                                         android:textSize="19sp" />
 
                                 </LinearLayout>
@@ -107,7 +107,7 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/shape"
+                                    android:background="@drawable/textboxdesainkecil"
                                     android:gravity="center"
                                     android:orientation="vertical">
 
@@ -131,7 +131,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="0dp"
                                         android:text="DE PASAR"
-                                        android:fontFamily="@font/perfectlyscratchy"
+                                        android:fontFamily="@font/font1"
                                         android:textSize="19sp" />
 
                                 </LinearLayout>
@@ -158,7 +158,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:background="@drawable/shape"
+                                    android:background="@drawable/textboxdesainkecil"
                                     android:orientation="vertical">
 
                                     <ImageView
@@ -178,14 +178,14 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="0dp"
-                                        android:fontFamily="@font/perfectlyscratchy"
+                                        android:fontFamily="@font/font1"
                                         android:text="DE SEWA"
                                         android:textSize="19sp" />
 
                                 </LinearLayout>
                             </LinearLayout>
 
-                            <android.support.v7.widget.CardView
+                            <LinearLayout
                                 android:id="@+id/btn_kesepakatan"
                                 android:layout_width="match_parent"
                                 android:layout_height="110dp"
@@ -198,7 +198,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:background="@drawable/shape"
+                                    android:background="@drawable/textboxdesainkecil"
                                     android:orientation="vertical">
 
                                     <ImageView
@@ -220,11 +220,11 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="DE BAYAR"
-                                        android:fontFamily="@font/perfectlyscratchy"
+                                        android:fontFamily="@font/font1"
                                         android:textSize="19sp" />
 
                                 </LinearLayout>
-                            </android.support.v7.widget.CardView>
+                            </LinearLayout>
 
                         </LinearLayout>
 
@@ -260,7 +260,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_weight="70"
-                                android:fontFamily="@font/perfectlyscratchy"
+                                android:fontFamily="@font/font1"
                                 android:gravity="left"
                                 android:text="RECENTLY BOUGHT PHONES"
                                 android:textColor="#322e47"
@@ -271,7 +271,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_weight="30"
-                                android:fontFamily="@font/perfectlyscratchy"
+                                android:fontFamily="@font/font1"
                                 android:gravity="right"
                                 android:text="See All"
                                 android:textColor="#308fe9"
@@ -334,7 +334,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginBottom="6dp"
-                                                    android:fontFamily="@font/perfectlyscratchy"
+                                                    android:fontFamily="@font/font1"
                                                     android:text="Huawei Nexus 6p"
                                                     android:textColor="#000000"
                                                     android:textSize="18dp"
@@ -344,7 +344,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginBottom="4dp"
-                                                    android:fontFamily="@font/perfectlyscratchy"
+                                                    android:fontFamily="@font/font1"
                                                     android:text="3 GB RAM | 5.7 inch Quad HD Display | 12.3 MP Camera | 3450 mAH Battery"
                                                     android:textColor="#757575"
                                                     android:textSize="14dp" />
@@ -402,7 +402,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginBottom="6dp"
-                                                    android:fontFamily="@font/perfectlyscratchy"
+                                                    android:fontFamily="@font/font1"
                                                     android:text="Redmi Note 4"
                                                     android:textColor="#000000"
                                                     android:textSize="18dp"
@@ -412,7 +412,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginBottom="4dp"
-                                                    android:fontFamily="@font/perfectlyscratchy"
+                                                    android:fontFamily="@font/font1"
                                                     android:text="4 GB RAM | 5.5 inch Full HD Display | 13 MP Camera | 4100 mAH Battery"
                                                     android:textColor="#757575"
                                                     android:textSize="14dp" />
@@ -476,7 +476,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/perfectlyscratchy"
+                                    android:fontFamily="@font/font1"
                                     android:text="PUPUK &amp; PESTISIDA"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
@@ -507,7 +507,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/perfectlyscratchy"
+                                    android:fontFamily="@font/font1"
                                     android:text="FARMASI &amp; ALAT KESEHATAN"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
@@ -538,7 +538,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/perfectlyscratchy"
+                                    android:fontFamily="@font/font1"
                                     android:text="KONSUMSI &amp; BAHAN POKOK"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
@@ -569,7 +569,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/perfectlyscratchy"
+                                    android:fontFamily="@font/font1"
                                     android:text="PRODUK GUHRING"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
@@ -611,7 +611,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="12dp"
-                                    android:fontFamily="@font/perfectlyscratchy"
+                                    android:fontFamily="@font/font1"
                                     android:text="BAHAN KIMIA"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
@@ -643,7 +643,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/perfectlyscratchy"
+                                    android:fontFamily="@font/font1"
                                     android:text="PRODUK EKSPOR"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
@@ -675,7 +675,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/perfectlyscratchy"
+                                    android:fontFamily="@font/font1"
                                     android:text="PRODUK LAINNYA"
                                     android:textAlignment="center"
                                     android:textColor="#000000"

@@ -11,20 +11,19 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
+        android:layout_marginVertical="10dp"
         android:layout_below="@+id/header"
-        android:layout_above="@+id/toolbar"
-        android:background="@drawable/textboxdesainkecil">
+        android:layout_above="@+id/toolbar">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/textboxdesainkecil">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_marginTop="30dp">
-
                 <LinearLayout
                     android:id="@+id/btn_kendaraan"
                     android:layout_width="150dp"
@@ -55,7 +54,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
                             android:text="KENDARAAN"
-                            android:fontFamily="@font/perfectlyscratchy"
+                            android:fontFamily="@font/font1"
                             android:textSize="10sp"
                             android:textStyle="bold" />
 
@@ -92,7 +91,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
                             android:text="ALAT PERTANIAN"
-                            android:fontFamily="@font/perfectlyscratchy"
+                            android:fontFamily="@font/font1"
                             android:textSize="10sp"
                             android:textStyle="bold"  />
 
@@ -136,7 +135,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
                             android:text="ALAT MEDIS"
-                            android:fontFamily="@font/perfectlyscratchy"
+                            android:fontFamily="@font/font1"
                             android:textSize="10sp"
                             android:textStyle="bold"  />
 
@@ -173,7 +172,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
                             android:text="LAINNYA"
-                            android:fontFamily="@font/perfectlyscratchy"
+                            android:fontFamily="@font/font1"
                             android:textSize="10sp"
                             android:textStyle="bold"  />
 

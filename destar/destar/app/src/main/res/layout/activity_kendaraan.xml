@@ -36,6 +36,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Motor Roda Tiga (Mini Dump Truck)"
+                    android:id="@+id/namakendaraan"
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:fontFamily="@font/calibri" />
@@ -43,6 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="VIAR karya 300"
+                    android:id="@+id/merkKendaraan"
                     android:fontFamily="@font/calibri"
                     android:textSize="15dp"/>
                 <TextView
@@ -50,6 +52,7 @@
                     android:layout_height="wrap_content"
                     android:text="Kapasitas : 1.000 - 1.200 Kg"
                     android:textSize="15dp"
+                    android:id="@+id/kapasitasKendaraan"
                     android:fontFamily="@font/calibri"/>
                 <TextView
                     android:layout_width="wrap_content"

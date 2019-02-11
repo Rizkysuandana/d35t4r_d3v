@@ -62,9 +62,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class DeantarMapsActivity extends AppCompatActivity implements OnMapReadyCallback{
+public class DeantarMapsActivity extends AppCompatActivity implements OnMapReadyCallback {
 
-   private String API_KEY = "AIzaSyDAYclEPUZVFukgkAnxIBavesMbOoabDa0";
+    private String API_KEY = "AIzaSyDAYclEPUZVFukgkAnxIBavesMbOoabDa0";
 
     public LatLng pickUpLatLng = null;
     public LatLng locationLatLng = null;
@@ -95,12 +95,15 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
             drawMarker(location);
             locationManager.removeUpdates(locationListener);
         }
+
         @Override
         public void onStatusChanged(String provider, int status, Bundle extras) {
         }
+
         @Override
         public void onProviderEnabled(String provider) {
         }
+
         @Override
         public void onProviderDisabled(String provider) {
         }
@@ -119,8 +122,16 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
                 mapView_onMapReady(googleMap);
             }
         });
-        locationManager= (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         getCurrentLocation();
+        btnNext = (Button)findViewById(R.id.btnNext);
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DeantarMapsActivity.this, NextPengantarBarang.class);
+                startActivity(intent);
+            }
+        });
 //
         if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_FINE_LOCATION)
@@ -141,13 +152,13 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
             // Permission has already been granted
             Toast.makeText(this, "Izin Lokasi diberikan", Toast.LENGTH_SHORT).show();
         }
-       // getSupportActionBar().setTitle("Ojek Hampir Online");
+        // getSupportActionBar().setTitle("Ojek Hampir Online");
 
 //        // Inisialisasi Widget
         wigetInit();
         infoPanel.setVisibility(View.VISIBLE);
         // Event OnClick
-        tvPickUpFrom = (AutoCompleteTextView)findViewById(R.id.tvPickUpFrom);
+        tvPickUpFrom = (AutoCompleteTextView) findViewById(R.id.tvPickUpFrom);
         tvPickUpFrom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -157,7 +168,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
             }
         });
         // Event OnClick
-        tvDestLocation = (AutoCompleteTextView)findViewById(R.id.tvDestLocation);
+        tvDestLocation = (AutoCompleteTextView) findViewById(R.id.tvDestLocation);
         tvDestLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -167,7 +178,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
             }
         });
 
-        View bottomSheet = (CoordinatorLayout)findViewById(R.id.sliding);
+        View bottomSheet = (CoordinatorLayout) findViewById(R.id.sliding);
         BottomSheetBehavior behavior = BottomSheetBehavior.from(bottomSheet);
         behavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
@@ -182,7 +193,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
         });
     }
 
-    private  void mapView_onMapReady(GoogleMap googleMap){
+    private void mapView_onMapReady(GoogleMap googleMap) {
         this.mMap = googleMap;
         mapView.getMapAsync(this);
         infoPanel = findViewById(R.id.infoPanel);
@@ -290,21 +301,34 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
         mapView.onResume();
         getCurrentLocation();
     }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
         mapView.onDestroy();
     }
+
     @Override
     protected void onPause() {
         super.onPause();
         mapView.onPause();
         locationManager.removeUpdates(locationListener);
     }
+
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         mMap.setPadding(10, 180, 10, 10);
         mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
         mMap.setMyLocationEnabled(true);
         mMap.getUiSettings().setCompassEnabled(true);
         mMap.getUiSettings().setZoomGesturesEnabled(true);

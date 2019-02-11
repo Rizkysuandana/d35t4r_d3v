@@ -39,6 +39,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kursi Roda"
+                        android:id="@+id/namamedis1"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:fontFamily="@font/calibri" />
@@ -46,11 +47,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="AVICO 766"
+                        android:id="@+id/merkmedis1"
                         android:fontFamily="@font/calibri"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/alamatmedis1"
                         android:text="Jl. Rawa, RT.11 RW.04, Cipuyuh, Sukabumi, Jawa Barat"
                         android:textSize="12dp"
                         android:fontFamily="@font/calibri"/>
@@ -98,12 +101,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tabung Oksigen"
+                        android:id="@+id/namamedis2"
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:fontFamily="@font/calibri" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/merkmedis2"
                         android:text="QL-54T"
                         android:fontFamily="@font/calibri"
                         android:textSize="15dp"/>
@@ -111,6 +116,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kantor DESTAR"
+                        android:id="@+id/alamatmedis2"
                         android:textSize="15dp"
                         android:fontFamily="@font/calibri"/>
                     <TextView
@@ -158,18 +164,21 @@
                         android:layout_height="wrap_content"
                         android:text="Ranjang Pasien"
                         android:textStyle="bold"
+                        android:id="@+id/namamedis3"
                         android:textSize="20dp"
                         android:fontFamily="@font/calibri" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="SELLA B-1"
+                        android:id="@+id/merkmedis3"
                         android:fontFamily="@font/calibri"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kantor DESTAR"
+                        android:id="@+id/alamatmedis3"
                         android:textSize="15dp"
                         android:fontFamily="@font/calibri"/>
                     <TextView
@@ -218,18 +227,21 @@
                         android:layout_height="wrap_content"
                         android:text="Alat Cek Gula Darah"
                         android:textStyle="bold"
+                        android:id="@+id/namamedis4"
                         android:textSize="20dp"
                         android:fontFamily="@font/calibri" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="ACCU-CHEK Go"
+                        android:id="@+id/merkmedis4"
                         android:fontFamily="@font/calibri"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kantor DESTAR"
+                        android:id="@+id/alamatmedis4"
                         android:textSize="15dp"
                         android:fontFamily="@font/calibri"/>
                     <TextView

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,163 +9,248 @@
     android:background="#C2C2C2">
     <include layout="@layout/header"
         android:id="@+id/header"/>
-    <RelativeLayout
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_below="@+id/header"
-        android:layout_marginTop="5dp"
-        android:layout_margin="10dp"
-        android:background="@color/cardview_light_background">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar1">
+        <android.support.design.widget.CoordinatorLayout
             android:orientation="vertical"
-            android:id="@+id/line">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_marginLeft="15dp"
-                android:text="RINCIAN"
-                android:textColor="#000000"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#000000"
-                android:visibility="visible" />
-        </LinearLayout>
-
-        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:id="@+id/formWaktu"
-            android:layout_marginHorizontal="10dp"
-            android:layout_below="@+id/line">
-
-            <ImageView
-                android:id="@+id/waktu"
-                android:layout_width="30sp"
-                android:layout_height="30sp"
-                android:layout_centerVertical="true"
-                android:src="@drawable/image_time"
-                android:layout_marginRight="10dp"/>
-            <RelativeLayout
+            android:layout_height="match_parent"
+            android:background="@color/cardview_light_background">
+            <!--<fragment-->
+            <!--android:id="@+id/map"-->
+            <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:apiKey="AIzaSyDer24n5iXYt8iGfCkEXJU8MEvzhHmsBDk"-->
+            <!--tools:context=".DeantarMapsActivity" />-->
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/waktu"
-                android:layout_centerVertical="true">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/waktuAntar"
-                    android:layout_marginTop="5dp"
-                    android:text="Waktu Antar"
-                    android:fontFamily="@font/calibri"
-                    android:textSize="23sp"
-                    android:layout_alignParentRight="true"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:visibility="visible"
-                    android:background="@color/colorblack"
-                    android:layout_below="@+id/waktuAntar"/>
-            </RelativeLayout>
-
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:id="@+id/formlokasijemput"
-            android:layout_below="@+id/formWaktu"
-            android:layout_marginHorizontal="10dp">
-
-            <ImageView
-                android:id="@+id/pickupfrom"
-                android:layout_width="30sp"
-                android:layout_height="30sp"
-                android:layout_centerVertical="true"
-                android:src="@drawable/image_place"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="5dp"/>
-            <RelativeLayout
+                android:layout_height="match_parent"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:apiKey="AIzaSyDer24n5iXYt8iGfCkEXJU8MEvzhHmsBDk"/>
+            <android.support.design.widget.CoordinatorLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/pickupfrom"
-                android:layout_centerVertical="true">
-                <TextView
+                android:layout_height="300dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+                android:background="@drawable/textboxdesainkecil"
+                android:id="@+id/sliding">
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/lokasijemput"
-                    android:layout_marginTop="5dp"
-                    android:text="Lokasi Jemput"
-                    android:fontFamily="@font/calibri"
-                    android:textSize="23sp"
-                    android:layout_alignParentRight="true"/>
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/line">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="RINCIAN"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:visibility="visible"
-                    android:background="@color/colorblack"
-                    android:layout_below="@+id/lokasijemput"/>
-            </RelativeLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000000"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/dots"
-            android:layout_below="@+id/formlokasijemput"
-            android:layout_marginHorizontal="10dp">
-            <ImageView
-                android:layout_width="30sp"
-                android:layout_height="30sp"
-                android:id="@+id/tripledot"
-                android:src="@drawable/triple_dot"
-                android:layout_centerVertical="true"
-                android:layout_marginBottom="5dp"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:id="@+id/formlokasitujuan"
-            android:layout_below="@+id/dots"
-            android:layout_marginHorizontal="10dp">
-            <ImageView
-                android:layout_width="30sp"
-                android:layout_height="30sp"
-                android:id="@+id/destLoc"
-                android:src="@drawable/image_place_tujuan"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="10dp"/>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/destLoc"
-                android:layout_centerVertical="true">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/lokasitujuan"
-                    android:layout_marginTop="5dp"
-                    android:text="Lokasi Tujuan"
-                    android:fontFamily="@font/calibri"
-                    android:textSize="23sp"
-                    android:layout_alignParentRight="true"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/formWaktu"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_below="@+id/line">
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:visibility="visible"
-                    android:background="@color/colorblack"
-                    android:layout_below="@+id/lokasitujuan"/>
-            </RelativeLayout>
-        </RelativeLayout>
+                        <ImageView
+                            android:id="@+id/waktu"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/image_time"
+                            android:layout_marginRight="10dp"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/waktu"
+                            android:layout_centerVertical="true">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/waktuAntar"
+                                android:layout_marginTop="5dp"
+                                android:text="Waktu Antar"
+                                android:fontFamily="@font/calibri"
+                                android:textSize="23sp"
+                                android:layout_alignParentRight="true"/>
 
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:visibility="visible"
+                                android:background="@color/colorblack"
+                                android:layout_below="@+id/waktuAntar"/>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/formlokasijemput"
+                        android:layout_below="@+id/formWaktu"
+                        android:layout_marginHorizontal="10dp">
+
+                        <ImageView
+                            android:id="@+id/pickupfrom"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/image_place"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="5dp"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/pickupfrom"
+                            android:layout_centerVertical="true">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/lokasijemput"
+                                android:layout_marginTop="5dp"
+                                android:text="Lokasi Jemput"
+                                android:fontFamily="@font/calibri"
+                                android:textSize="23sp"
+                                android:layout_alignParentRight="true"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:visibility="visible"
+                                android:background="@color/colorblack"
+                                android:layout_below="@+id/lokasijemput"/>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dots"
+                        android:layout_below="@+id/formlokasijemput"
+                        android:layout_marginHorizontal="10dp">
+                        <ImageView
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:id="@+id/tripledot"
+                            android:src="@drawable/triple_dot"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5dp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/formlokasitujuan"
+                        android:layout_below="@+id/dots"
+                        android:layout_marginHorizontal="10dp">
+                        <ImageView
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"
+                            android:id="@+id/destLoc"
+                            android:src="@drawable/image_place_tujuan"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/destLoc"
+                            android:layout_centerVertical="true">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/lokasitujuan"
+                                android:layout_marginTop="5dp"
+                                android:text="Lokasi Tujuan"
+                                android:fontFamily="@font/calibri"
+                                android:textSize="23sp"
+                                android:layout_alignParentRight="true"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:visibility="visible"
+                                android:background="@color/colorblack"
+                                android:layout_below="@+id/lokasitujuan"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginBottom="-8dp"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:paddingVertical="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tvPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rp13.000" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:background="@android:color/darker_gray"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Distance"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tvDistance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.6 Km" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.design.widget.CoordinatorLayout>
+        </android.support.design.widget.CoordinatorLayout>
     </RelativeLayout>
 
 
@@ -173,4 +258,4 @@
         android:id="@+id/bar"
         layout="@layout/layout_toolbar"
         tools:context="com.destar.platform.destar.Toolbar" />
-</RelativeLayout>
+</LinearLayout>

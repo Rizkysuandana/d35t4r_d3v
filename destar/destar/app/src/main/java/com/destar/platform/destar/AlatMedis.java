@@ -5,9 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class AlatMedis extends AppCompatActivity {
     private LinearLayout kursiroda, tabungoksigen, ranjangpasien, alatcekguladarah;
+    private TextView alatmedis, merkalat, alamatalat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

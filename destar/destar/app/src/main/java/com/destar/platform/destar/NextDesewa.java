@@ -34,6 +34,8 @@ public class NextDesewa extends AppCompatActivity {
     private Context context;
     private RelativeLayout relativeLayout;
     private PopupWindow popupWindow;
+    private String nama;
+    private String namapesanan, merkpesanan, kapasitaspesanan = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +61,16 @@ public class NextDesewa extends AppCompatActivity {
             }
         });
         final RadioGroup tipepesan = (RadioGroup)findViewById(R.id.tipepengambilan);
+        namabarang = (TextView)findViewById(R.id.namapesanan);
+        namaMerk = (TextView)findViewById(R.id.merk);
+        kapasitas = (TextView)findViewById(R.id.kapasitas);
+        Bundle extras = getIntent().getExtras();
+        namapesanan = extras.getString("parse_namakendaraan");
+        merkpesanan = extras.getString("parse_merkKendaraan");
+        kapasitaspesanan = extras.getString("parse_kapasitasKendaraan");
+        namabarang.setText(namapesanan);
+        namaMerk.setText(merkpesanan);
+        kapasitas.setText(kapasitaspesanan);
         btn_pesan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -5,6 +5,7 @@
     <supports-screens
         android:largeScreens="true"
         android:normalScreens="true"
+        android:anyDensity="true"
         android:resizeable="true"
         android:smallScreens="true"
         android:xlargeScreens="true" />

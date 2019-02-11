@@ -71,11 +71,10 @@
                                     android:id="@+id/btnkolat">
 
                                     <ImageView
-                                        android:layout_width="60dp"
-                                        android:layout_height="60dp"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
                                         android:layout_marginTop="5dp"
                                         android:background="@drawable/transportasi1"
-                                        android:padding="10dp"
                                         android:scaleType="fitXY" />
 
                                     <View
@@ -113,11 +112,10 @@
 
                                     <ImageView
                                         android:id="@+id/btnkolat2"
-                                        android:layout_width="60dp"
-                                        android:layout_height="60dp"
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
                                         android:layout_marginTop="5dp"
-                                        android:background="@drawable/image_perdagangan"
-                                        android:padding="10dp"
+                                        android:background="@drawable/perdagangan1"
                                         android:scaleType="fitXY" />
 
                                     <View
@@ -129,7 +127,6 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="0dp"
                                         android:text="DE PASAR"
                                         android:fontFamily="@font/font1"
                                         android:textSize="19sp" />
@@ -163,8 +160,8 @@
 
                                     <ImageView
                                         android:id="@+id/ssss"
-                                        android:layout_width="65dp"
-                                        android:layout_height="65dp"
+                                        android:layout_width="75dp"
+                                        android:layout_height="75dp"
                                         android:src="@drawable/desewa"
                                         android:scaleType="fitXY" />
 
@@ -177,7 +174,6 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="0dp"
                                         android:fontFamily="@font/font1"
                                         android:text="DE SEWA"
                                         android:textSize="19sp" />
@@ -203,9 +199,8 @@
 
                                     <ImageView
                                         android:id="@+id/sssssaaaa"
-                                        android:layout_width="60dp"
-                                        android:layout_height="60dp"
-                                        android:layout_marginTop="5dp"
+                                        android:layout_width="75dp"
+                                        android:layout_height="75dp"
                                         android:background="@drawable/kesepakatan1"
                                         android:padding="10dp"
                                         android:scaleType="fitXY" />
@@ -701,7 +696,7 @@
 
             <include
                 layout="@layout/layout_toolbar"
-                class="com.destar.platform.destar.Toolbar" />
+                tools:context="com.destar.platform.destar.Toolbar" />
         </LinearLayout>
     </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>

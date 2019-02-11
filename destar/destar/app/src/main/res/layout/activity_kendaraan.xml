@@ -8,253 +8,267 @@
     android:orientation="vertical">
     <include layout="@layout/header"
         android:id="@+id/header"/>
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_below="@+id/header"
         android:layout_above="@+id/toolbar">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/Germor"
-            android:background="@drawable/textboxdesainkecil"
-            android:orientation="horizontal"
-            android:layout_margin="2.5dp">
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/motor_roda_tiga"
-                android:layout_gravity="center"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:id="@+id/Germor"
                 android:background="@drawable/textboxdesainkecil"
-                android:layout_marginLeft="10dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Motor Roda Tiga (Mini Dump Truck)"
-                    android:id="@+id/namakendaraan"
-                    android:textStyle="bold"
-                    android:textSize="20dp"
-                    android:fontFamily="@font/calibri" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="VIAR karya 300"
-                    android:id="@+id/merkKendaraan"
-                    android:fontFamily="@font/calibri"
-                    android:textSize="15dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Kapasitas : 1.000 - 1.200 Kg"
-                    android:textSize="15dp"
-                    android:id="@+id/kapasitasKendaraan"
-                    android:fontFamily="@font/calibri"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lihat Lokasi"
-                    android:fontFamily="@font/calibri"
-                    android:textSize="10dp"
-                    android:textColor="@color/colorBlue"
-                    android:layout_gravity="right"/>
-                <View
+                android:orientation="horizontal"
+                android:layout_margin="2.5dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/motor_roda_tiga"
+                    android:layout_gravity="center"/>
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorblack"/>
-                <TextView
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:text="Rp.250.000/Hari"
-                    android:textColor="@color/colorGreen"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/calibri"/>
+                    android:orientation="vertical"
+                    android:background="@drawable/textboxdesainkecil"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Motor Roda Tiga (Mini Dump Truck)"
+                        android:id="@+id/namakendaraan"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/font1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VIAR karya 300"
+                        android:id="@+id/merkKendaraan"
+                        android:fontFamily="@font/font1"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kapasitas : 1.000 - 1.200 Kg"
+                        android:textSize="15dp"
+                        android:id="@+id/kapasitasKendaraan"
+                        android:fontFamily="@font/font1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Lokasi"
+                        android:fontFamily="@font/font1"
+                        android:textSize="10dp"
+                        android:textColor="@color/colorBlue"
+                        android:layout_gravity="right"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorblack"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="Rp.250.000/Hari"
+                        android:textColor="@color/colorGreen"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/font1"/>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@drawable/textboxdesainkecil"
-            android:layout_margin="2.5dp"
-            android:id="@+id/pickupStandar">
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/pickupstandar"
-                android:layout_gravity="center"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:background="@drawable/textboxdesainkecil"
-                android:orientation="vertical"
-                android:layout_marginLeft="10dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pick Up Standar"
-                    android:textStyle="bold"
-                    android:textSize="20dp"
-                    android:fontFamily="@font/calibri" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="MITSUBISHI Colt L300"
-                    android:fontFamily="@font/calibri"
-                    android:textSize="15dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Kapasitas : 1.500 - 2.500 Kg"
-                    android:textSize="15dp"
-                    android:fontFamily="@font/calibri"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lihat Lokasi"
-                    android:fontFamily="@font/calibri"
-                    android:textSize="10dp"
-                    android:textColor="@color/colorBlue"
-                    android:layout_gravity="right"/>
-                <View
+                android:layout_margin="2.5dp"
+                android:id="@+id/pickupStandar">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pickupstandar"
+                    android:layout_gravity="center"/>
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorblack"/>
-                <TextView
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:text="Rp.400.000/Hari"
-                    android:textColor="@color/colorGreen"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/calibri"/>
+                    android:background="@drawable/textboxdesainkecil"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pick Up Standar"
+                        android:textStyle="bold"
+                        android:id="@+id/namakendaraan2"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/font1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MITSUBISHI Colt L300"
+                        android:fontFamily="@font/font1"
+                        android:id="@+id/merkKendaraan2"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kapasitas : 1.500 - 2.500 Kg"
+                        android:id="@+id/kapasitasKendaraan2"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/font1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Lokasi"
+                        android:fontFamily="@font/font1"
+                        android:textSize="10dp"
+                        android:textColor="@color/colorBlue"
+                        android:layout_gravity="right"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorblack"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="Rp.400.000/Hari"
+                        android:textColor="@color/colorGreen"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/font1"/>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@drawable/textboxdesainkecil"
-            android:layout_margin="2.5dp"
-            android:id="@+id/DumpTruck">
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/pickupdumptruckk"
-                android:layout_gravity="center"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:background="@drawable/textboxdesainkecil"
-                android:orientation="vertical"
-                android:layout_marginLeft="10dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pick Up Dump Truck"
-                    android:textStyle="bold"
-                    android:textSize="20dp"
-                    android:fontFamily="@font/calibri" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="MITSUBISHI Colt Diesel FE 74 L"
-                    android:fontFamily="@font/calibri"
-                    android:textSize="15dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Kapasitas : 3.000 - 6.000 Kg"
-                    android:textSize="15dp"
-                    android:fontFamily="@font/calibri"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lihat Lokasi"
-                    android:fontFamily="@font/calibri"
-                    android:textSize="10dp"
-                    android:textColor="@color/colorBlue"
-                    android:layout_gravity="right"/>
-                <View
+                android:layout_margin="2.5dp"
+                android:id="@+id/DumpTruck">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pickupdumptruckk"
+                    android:layout_gravity="center"/>
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorblack"/>
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textboxdesainkecil"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pick Up Dump Truck"
+                        android:id="@+id/namakendaraan3"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/font1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/merkKendaraan3"
+                        android:text="MITSUBISHI Colt Diesel FE 74 L"
+                        android:fontFamily="@font/calibri"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/kapasitasKendaraan3"
+                        android:text="Kapasitas : 3.000 - 6.000 Kg"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/font1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Lokasi"
+                        android:fontFamily="@font/font1"
+                        android:textSize="10dp"
+                        android:textColor="@color/colorBlue"
+                        android:layout_gravity="right"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorblack"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="13dp"
-                    android:layout_gravity="right"
-                    android:fontFamily="@font/calibri"
-                    android:text="Rp.800.000/Hari"
-                    android:textColor="@color/colorGreen"
-                    android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="13dp"
+                        android:layout_gravity="right"
+                        android:fontFamily="@font/font1"
+                        android:text="Rp.800.000/Hari"
+                        android:textColor="@color/colorGreen"
+                        android:textStyle="bold" />
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="2.5dp"
-            android:background="@drawable/textboxdesainkecil"
-            android:id="@+id/pickupbox">
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/box_pickup"
-                android:layout_gravity="center"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:orientation="horizontal"
+                android:layout_margin="2.5dp"
                 android:background="@drawable/textboxdesainkecil"
-                android:layout_marginLeft="10dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pick Up Box"
-                    android:textStyle="bold"
-                    android:textSize="20dp"
-                    android:fontFamily="@font/calibri" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="SUZUKI Mega Carry Box"
-                    android:fontFamily="@font/calibri"
-                    android:textSize="15dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Kapasitas : 2.000 - 3.000 Kg"
-                    android:textSize="15dp"
-                    android:fontFamily="@font/calibri"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lihat Lokasi"
-                    android:fontFamily="@font/calibri"
-                    android:textSize="10dp"
-                    android:textColor="@color/colorBlue"
-                    android:layout_gravity="right"/>
-                <View
+                android:id="@+id/pickupbox">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/box_pickup"
+                    android:layout_gravity="center"/>
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorblack"/>
-                <TextView
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:text="Rp.450.000/Hari"
-                    android:textColor="@color/colorGreen"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/calibri"/>
+                    android:orientation="vertical"
+                    android:background="@drawable/textboxdesainkecil"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pick Up Box"
+                        android:id="@+id/namakendaraan4"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/font1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/merkKendaraan4"
+                        android:text="SUZUKI Mega Carry Box"
+                        android:fontFamily="@font/font1"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kapasitas : 2.000 - 3.000 Kg"
+                        android:id="@+id/kapasitasKendaraan4"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/calibri"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Lokasi"
+                        android:fontFamily="@font/font1"
+                        android:textSize="10dp"
+                        android:textColor="@color/colorBlue"
+                        android:layout_gravity="right"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorblack"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="Rp.450.000/Hari"
+                        android:textColor="@color/colorGreen"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/font1"/>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
+
     <include layout="@layout/layout_toolbar"
         android:id="@+id/toolbar"/>
 </RelativeLayout>

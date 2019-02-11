@@ -213,7 +213,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
         REQUEST_CODE = typeLocation;
 
         // Filter hanya tmpat yg ada di Indonesia
-        AutocompleteFilter typeFilter = new AutocompleteFilter.Builder().setCountry("Indonesia").build();
+        AutocompleteFilter typeFilter = new AutocompleteFilter.Builder().setCountry("ID").build();
         try {
             // Intent untuk mengirim Implisit Intent
             Intent mIntent = new PlaceAutocomplete.IntentBuilder(PlaceAutocomplete.MODE_OVERLAY)

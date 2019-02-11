@@ -13,9 +13,10 @@ import android.widget.TextView;
 
 public class Kendaraan extends AppCompatActivity {
     private LinearLayout germor, pickupbox, dumptruck, pickupstandar;
-    private TextView kapasitasKendaraan, merkKendaraan,namabarang;
+    private TextView kapasitasKendaraan, merkKendaraan,namakendaraan;
     private Context context;
     private ImageView gambarKendaraan;
+    private String namakend, merkKend, kapasitasKend;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,28 +28,72 @@ public class Kendaraan extends AppCompatActivity {
         germor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                namakendaraan = (TextView)findViewById(R.id.namakendaraan);
+                merkKendaraan = (TextView)findViewById(R.id.merkKendaraan);
+                kapasitasKendaraan = (TextView)findViewById(R.id.kapasitasKendaraan);
+                namakend = namakendaraan.getText().toString();
+                merkKend = merkKendaraan.getText().toString();
+                kapasitasKend = kapasitasKendaraan.getText().toString();
                 Intent intent = new Intent(Kendaraan.this, NextDesewa.class);
+                Bundle a = new Bundle();
+                a.putString("parse_namakendaraan",namakend);
+                a.putString("parse_merkKendaraan", merkKend);
+                a.putString("parse_kapasitasKendaraan", kapasitasKend);
+                intent.putExtras(a);
                 startActivity(intent);
             }
         });
         pickupstandar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                namakendaraan = (TextView)findViewById(R.id.namakendaraan2);
+                merkKendaraan = (TextView)findViewById(R.id.merkKendaraan2);
+                kapasitasKendaraan = (TextView)findViewById(R.id.kapasitasKendaraan2);
+                namakend = namakendaraan.getText().toString();
+                merkKend = merkKendaraan.getText().toString();
+                kapasitasKend = kapasitasKendaraan.getText().toString();
                 Intent intent = new Intent(Kendaraan.this, NextDesewa.class);
+                Bundle a = new Bundle();
+                a.putString("parse_namakendaraan",namakend);
+                a.putString("parse_merkKendaraan", merkKend);
+                a.putString("parse_kapasitasKendaraan", kapasitasKend);
+                intent.putExtras(a);
                 startActivity(intent);
             }
         });
         pickupbox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                namakendaraan = (TextView)findViewById(R.id.namakendaraan4);
+                merkKendaraan = (TextView)findViewById(R.id.merkKendaraan4);
+                kapasitasKendaraan = (TextView)findViewById(R.id.kapasitasKendaraan4);
+                namakend = namakendaraan.getText().toString();
+                merkKend = merkKendaraan.getText().toString();
+                kapasitasKend = kapasitasKendaraan.getText().toString();
                 Intent intent = new Intent(Kendaraan.this, NextDesewa.class);
+                Bundle a = new Bundle();
+                a.putString("parse_namakendaraan",namakend);
+                a.putString("parse_merkKendaraan", merkKend);
+                a.putString("parse_kapasitasKendaraan", kapasitasKend);
+                intent.putExtras(a);
                 startActivity(intent);
             }
         });
         dumptruck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                namakendaraan = (TextView)findViewById(R.id.namakendaraan3);
+                merkKendaraan = (TextView)findViewById(R.id.merkKendaraan3);
+                kapasitasKendaraan = (TextView)findViewById(R.id.kapasitasKendaraan3);
+                namakend = namakendaraan.getText().toString();
+                merkKend = merkKendaraan.getText().toString();
+                kapasitasKend = kapasitasKendaraan.getText().toString();
                 Intent intent = new Intent(Kendaraan.this, NextDesewa.class);
+                Bundle a = new Bundle();
+                a.putString("parse_namakendaraan",namakend);
+                a.putString("parse_merkKendaraan", merkKend);
+                a.putString("parse_kapasitasKendaraan", kapasitasKend);
+                intent.putExtras(a);
                 startActivity(intent);
             }
         });

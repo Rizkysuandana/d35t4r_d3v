@@ -48,11 +48,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/font1"
                         android:text="Beranda"
                         android:textAlignment="center"
-                        android:textColor="@color/common_google_signin_btn_text_light_focused"
-                        android:textSize="20dp" />
+                        android:textColor="@color/common_google_signin_btn_text_light_focused" />
 
                 </LinearLayout>
 
@@ -74,11 +72,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/font1"
                         android:text="Pesanan"
                         android:textAlignment="center"
-                        android:textColor="@color/common_google_signin_btn_text_light_focused"
-                        android:textSize="20dp" />
+                        android:textColor="@color/common_google_signin_btn_text_light_focused" />
 
                 </LinearLayout>
 
@@ -100,11 +96,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/font1"
                         android:text="Pemantauan"
                         android:textAlignment="center"
-                        android:textColor="@color/common_google_signin_btn_text_light_focused"
-                        android:textSize="19dp" />
+                        android:textColor="@color/common_google_signin_btn_text_light_focused"/>
 
                 </LinearLayout>
 
@@ -126,11 +120,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/font1"
                         android:text="Riwayat"
                         android:textAlignment="center"
-                        android:textColor="@color/common_google_signin_btn_text_light_focused"
-                        android:textSize="20dp" />
+                        android:textColor="@color/common_google_signin_btn_text_light_focused" />
 
                 </LinearLayout>
 
@@ -152,11 +144,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/font1"
                         android:text="Akun"
                         android:textAlignment="center"
-                        android:textColor="@color/common_google_signin_btn_text_light_focused"
-                        android:textSize="20dp" />
+                        android:textColor="@color/common_google_signin_btn_text_light_focused" />
                 </LinearLayout>
 
             </LinearLayout>

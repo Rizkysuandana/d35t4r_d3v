@@ -65,9 +65,9 @@ public class NextDesewa extends AppCompatActivity {
         namaMerk = (TextView)findViewById(R.id.merk);
         kapasitas = (TextView)findViewById(R.id.kapasitas);
         Bundle extras = getIntent().getExtras();
-        namapesanan = extras.getString("parse_namakendaraan");
-        merkpesanan = extras.getString("parse_merkKendaraan");
-        kapasitaspesanan = extras.getString("parse_kapasitasKendaraan");
+        namapesanan = extras.getString("parse_pesanan");
+        merkpesanan = extras.getString("parse_merkpesanan");
+        kapasitaspesanan = extras.getString("parse_kapasitaspesanan");
         namabarang.setText(namapesanan);
         namaMerk.setText(merkpesanan);
         kapasitas.setText(kapasitaspesanan);

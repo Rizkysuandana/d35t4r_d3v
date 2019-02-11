@@ -172,7 +172,7 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/merkKendaraan3"
                         android:text="MITSUBISHI Colt Diesel FE 74 L"
-                        android:fontFamily="@font/calibri"
+                        android:fontFamily="@font/font1"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -243,7 +243,7 @@
                         android:text="Kapasitas : 2.000 - 3.000 Kg"
                         android:id="@+id/kapasitasKendaraan4"
                         android:textSize="15dp"
-                        android:fontFamily="@font/calibri"/>
+                        android:fontFamily="@font/font1"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

@@ -36,9 +36,9 @@ public class Kendaraan extends AppCompatActivity {
                 kapasitasKend = kapasitasKendaraan.getText().toString();
                 Intent intent = new Intent(Kendaraan.this, NextDesewa.class);
                 Bundle a = new Bundle();
-                a.putString("parse_namakendaraan",namakend);
-                a.putString("parse_merkKendaraan", merkKend);
-                a.putString("parse_kapasitasKendaraan", kapasitasKend);
+                a.putString("parse_pesanan",namakend);
+                a.putString("parse_merkpesanan", merkKend);
+                a.putString("parse_kapasitaspesanan", kapasitasKend);
                 intent.putExtras(a);
                 startActivity(intent);
             }
@@ -54,9 +54,9 @@ public class Kendaraan extends AppCompatActivity {
                 kapasitasKend = kapasitasKendaraan.getText().toString();
                 Intent intent = new Intent(Kendaraan.this, NextDesewa.class);
                 Bundle a = new Bundle();
-                a.putString("parse_namakendaraan",namakend);
-                a.putString("parse_merkKendaraan", merkKend);
-                a.putString("parse_kapasitasKendaraan", kapasitasKend);
+                a.putString("parse_pesanan",namakend);
+                a.putString("parse_merkpesanan", merkKend);
+                a.putString("parse_kapasitaspesanan", kapasitasKend);
                 intent.putExtras(a);
                 startActivity(intent);
             }
@@ -72,9 +72,9 @@ public class Kendaraan extends AppCompatActivity {
                 kapasitasKend = kapasitasKendaraan.getText().toString();
                 Intent intent = new Intent(Kendaraan.this, NextDesewa.class);
                 Bundle a = new Bundle();
-                a.putString("parse_namakendaraan",namakend);
-                a.putString("parse_merkKendaraan", merkKend);
-                a.putString("parse_kapasitasKendaraan", kapasitasKend);
+                a.putString("parse_pesanan",namakend);
+                a.putString("parse_merkpesanan", merkKend);
+                a.putString("parse_kapasitaspesanan", kapasitasKend);
                 intent.putExtras(a);
                 startActivity(intent);
             }
@@ -90,9 +90,9 @@ public class Kendaraan extends AppCompatActivity {
                 kapasitasKend = kapasitasKendaraan.getText().toString();
                 Intent intent = new Intent(Kendaraan.this, NextDesewa.class);
                 Bundle a = new Bundle();
-                a.putString("parse_namakendaraan",namakend);
-                a.putString("parse_merkKendaraan", merkKend);
-                a.putString("parse_kapasitasKendaraan", kapasitasKend);
+                a.putString("parse_pesanan",namakend);
+                a.putString("parse_merkpesanan", merkKend);
+                a.putString("parse_kapasitaspesanan", kapasitasKend);
                 intent.putExtras(a);
                 startActivity(intent);
             }

@@ -177,7 +177,7 @@
                     android:layout_height="match_parent"
                     app:layout_behavior="@string/bottom_sheet_behavior"
                     app:behavior_hideable="false"
-                    app:behavior_peekHeight="100dp"
+                    app:behavior_peekHeight="200dp"
                     android:background="@drawable/textboxdesainkecil"
                     android:id="@+id/sliding">
                     <LinearLayout
@@ -274,8 +274,9 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:id="@+id/berbar"
+                                        android:inputType="numberDecimal"
                                         android:fontFamily="@font/font1"
-                                        android:hint="Perkiraan Berat Barang"
+                                        android:hint="Perkiraan Berat Barang(Kg)"
                                         android:textSize="20dp"/>
                                 </LinearLayout>
                             </LinearLayout>

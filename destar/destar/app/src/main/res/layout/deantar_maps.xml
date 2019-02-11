@@ -160,7 +160,6 @@
                 <!--<TextView-->
                     <!--android:layout_width="match_parent"-->
                     <!--android:layout_height="wrap_content"-->
-                    <!--android:fontFamily="@font/calibri"-->
                     <!--android:text="Sepeda Motor"-->
                     <!--android:textAlignment="center"-->
                     <!--android:textColor="@color/cardview_dark_background"-->
@@ -184,7 +183,6 @@
                 <!--<TextView-->
                     <!--android:layout_width="match_parent"-->
                     <!--android:layout_height="wrap_content"-->
-                    <!--android:fontFamily="@font/calibri"-->
                     <!--android:text="Gerobak Motor"-->
                     <!--android:textAlignment="center"-->
                     <!--android:textColor="@color/cardview_dark_background"-->
@@ -208,7 +206,6 @@
                 <!--<TextView-->
                     <!--android:layout_width="match_parent"-->
                     <!--android:layout_height="wrap_content"-->
-                    <!--android:fontFamily="@font/calibri"-->
                     <!--android:text="Pickup"-->
                     <!--android:textAlignment="center"-->
                     <!--android:textColor="@color/cardview_dark_background"-->
@@ -232,7 +229,6 @@
                 <!--<TextView-->
                     <!--android:layout_width="match_parent"-->
                     <!--android:layout_height="wrap_content"-->
-                    <!--android:fontFamily="@font/calibri"-->
                     <!--android:text="Pickup Box"-->
                     <!--android:textAlignment="center"-->
                     <!--android:textColor="@color/cardview_dark_background"-->
@@ -255,7 +251,6 @@
                 <!--<TextView-->
                     <!--android:layout_width="match_parent"-->
                     <!--android:layout_height="wrap_content"-->
-                    <!--android:fontFamily="@font/calibri"-->
                     <!--android:text="Engkel Bak"-->
                     <!--android:textAlignment="center"-->
                     <!--android:textColor="@color/cardview_dark_background"-->

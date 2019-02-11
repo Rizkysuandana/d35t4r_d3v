@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.location.Address;
 import android.location.LocationManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -24,6 +25,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,6 +34,7 @@ import com.destar.platform.destar.response.LegsItem;
 import com.destar.platform.destar.response.ResponseRoute;
 import com.destar.platform.destar.service.ApiServices;
 import com.destar.platform.destar.service.InitLibrary;
+import com.destar.platform.destar.service.MyLocationService;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
@@ -64,12 +67,14 @@ import retrofit2.Response;
 
 public class DeantarMapsActivity extends AppCompatActivity implements OnMapReadyCallback {
 
-    private String API_KEY = "AIzaSyDAYclEPUZVFukgkAnxIBavesMbOoabDa0";
+    private String API_KEY = "AIzaSyDer24n5iXYt8iGfCkEXJU8MEvzhHmsBDk";
 
     public LatLng pickUpLatLng = null;
     public LatLng locationLatLng = null;
     private TextView tvStartAddress, tvEndAddress;
     private TextView tvPrice, tvDistance;
+    private EditText namabarang, beratbarang;
+    private String nama, berat;
     private Button btnNext;
     private LinearLayout infoPanel;
     private LinearLayout motor;
@@ -125,10 +130,18 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         getCurrentLocation();
         btnNext = (Button)findViewById(R.id.btnNext);
+        namabarang = (EditText)findViewById(R.id.nambar);
+        beratbarang = (EditText)findViewById(R.id.berbar);
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                nama = namabarang.getText().toString();
+                berat = beratbarang.getText().toString();
                 Intent intent = new Intent(DeantarMapsActivity.this, NextPengantarBarang.class);
+                Bundle a = new Bundle();
+                a.putString("parse_namabarang", nama);
+                a.putString("parse_beratbarang", berat+" Kg");
+                intent.putExtras(a);
                 startActivity(intent);
             }
         });
@@ -155,10 +168,12 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
         // getSupportActionBar().setTitle("Ojek Hampir Online");
 
 //        // Inisialisasi Widget
-        wigetInit();
+        initMap();
         infoPanel.setVisibility(View.VISIBLE);
         // Event OnClick
+
         tvPickUpFrom = (AutoCompleteTextView) findViewById(R.id.tvPickUpFrom);
+
         tvPickUpFrom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -259,7 +274,6 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
                 String placeAddress = placeData.getAddress().toString();
                 LatLng placeLatLng = placeData.getLatLng();
                 String placeName = placeData.getName().toString();
-
                 // Cek user milih titik jemput atau titik tujuan
                 switch (REQUEST_CODE) {
                     case PICK_UP:
@@ -406,7 +420,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
             mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,20));
         }
     }
-    private void actionRoute(LatLng placeLatlng, int requestCode) {
+    private void actionRoute(LatLng placeLatlng, final int requestCode) {
         String lokasiAwal = pickUpLatLng.latitude + "," + pickUpLatLng.longitude;
         String lokasiAkhir = locationLatLng.latitude + "," + locationLatLng.longitude;
 

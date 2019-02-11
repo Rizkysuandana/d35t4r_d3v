@@ -40,25 +40,28 @@
                         android:layout_height="wrap_content"
                         android:text="Bor Listrik"
                         android:textStyle="bold"
+                        android:id="@+id/alat1"
                         android:textSize="20dp"
-                        android:fontFamily="@font/calibri" />
+                        android:fontFamily="@font/font1" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="BOSCH GSB 16 Re"
-                        android:fontFamily="@font/calibri"
+                        android:id="@+id/merk1"
+                        android:fontFamily="@font/font1"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/alamat1"
                         android:text="Jl. Rawa, RT.11 RW.04, Cipuyuh, Sukabumi, Jawa Barat"
                         android:textSize="12dp"
-                        android:fontFamily="@font/calibri"/>
+                        android:fontFamily="@font/font1"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lihat Lokasi"
-                        android:fontFamily="@font/calibri"
+                        android:fontFamily="@font/font1"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlue"
                         android:layout_gravity="right"/>
@@ -73,7 +76,7 @@
                         android:text="Rp.70.000/Hari"
                         android:textColor="@color/colorGreen"
                         android:textStyle="bold"
-                        android:fontFamily="@font/calibri"/>
+                        android:fontFamily="@font/font1"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -98,26 +101,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Buku"
+                        android:id="@+id/alat2"
                         android:textStyle="bold"
                         android:textSize="20dp"
-                        android:fontFamily="@font/calibri" />
+                        android:fontFamily="@font/font1" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="BERTANAM MANGGA"
-                        android:fontFamily="@font/calibri"
+                        android:id="@+id/merk2"
+                        android:fontFamily="@font/font1"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kantor DESTAR"
+                        android:id="@+id/alamat2"
                         android:textSize="15dp"
-                        android:fontFamily="@font/calibri"/>
+                        android:fontFamily="@font/font1"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lihat Lokasi"
-                        android:fontFamily="@font/calibri"
+                        android:fontFamily="@font/font1"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlue"
                         android:layout_gravity="right"/>
@@ -132,7 +138,7 @@
                         android:text="Rp.8.000/Hari"
                         android:textColor="@color/colorGreen"
                         android:textStyle="bold"
-                        android:fontFamily="@font/calibri"/>
+                        android:fontFamily="@font/font1"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -158,25 +164,28 @@
                         android:layout_height="wrap_content"
                         android:text="Tas Carrier"
                         android:textStyle="bold"
+                        android:id="@+id/alat3"
                         android:textSize="20dp"
-                        android:fontFamily="@font/calibri" />
+                        android:fontFamily="@font/font1" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="CONSINA Alamo 75"
-                        android:fontFamily="@font/calibri"
+                        android:id="@+id/merk3"
+                        android:fontFamily="@font/font1"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kantor DESTAR"
+                        android:id="@+id/alamat3"
                         android:textSize="15dp"
-                        android:fontFamily="@font/calibri"/>
+                        android:fontFamily="@font/font1"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lihat Lokasi"
-                        android:fontFamily="@font/calibri"
+                        android:fontFamily="@font/font1"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlue"
                         android:layout_gravity="right"/>
@@ -189,7 +198,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="13dp"
                         android:layout_gravity="right"
-                        android:fontFamily="@font/calibri"
+                        android:fontFamily="@font/font1"
                         android:text="Rp.80.000/Hari"
                         android:textColor="@color/colorGreen"
                         android:textStyle="bold" />
@@ -217,26 +226,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kamera"
+                        android:id="@+id/alat4"
                         android:textStyle="bold"
                         android:textSize="20dp"
-                        android:fontFamily="@font/calibri" />
+                        android:fontFamily="@font/font1" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="CANON Eos 550D"
-                        android:fontFamily="@font/calibri"
+                        android:id="@+id/merk4"
+                        android:fontFamily="@font/font1"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kantor DESTAR"
+                        android:id="@+id/alamat4"
                         android:textSize="15dp"
-                        android:fontFamily="@font/calibri"/>
+                        android:fontFamily="@font/font1"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lihat Lokasi"
-                        android:fontFamily="@font/calibri"
+                        android:fontFamily="@font/font1"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlue"
                         android:layout_gravity="right"/>
@@ -251,7 +263,7 @@
                         android:text="Rp.20.000/Hari"
                         android:textColor="@color/colorGreen"
                         android:textStyle="bold"
-                        android:fontFamily="@font/calibri"/>
+                        android:fontFamily="@font/font1"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

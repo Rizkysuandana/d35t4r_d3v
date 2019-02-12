@@ -454,6 +454,7 @@
                                 android:layout_marginHorizontal="4dp"
                                 android:layout_weight="25"
                                 android:gravity="center"
+                                android:background="@drawable/background_menu"
                                 android:orientation="vertical">
 
                                 <ImageView
@@ -485,6 +486,7 @@
                                 android:layout_marginHorizontal="4dp"
                                 android:layout_weight="25"
                                 android:gravity="center"
+                                android:background="@drawable/background_menu"
                                 android:orientation="vertical">
 
                                 <ImageView
@@ -516,6 +518,7 @@
                                 android:layout_marginHorizontal="4dp"
                                 android:layout_weight="25"
                                 android:gravity="center"
+                                android:background="@drawable/background_menu"
                                 android:orientation="vertical">
 
                                 <ImageView
@@ -547,6 +550,7 @@
                                 android:layout_marginHorizontal="4dp"
                                 android:layout_weight="25"
                                 android:gravity="center"
+                                android:background="@drawable/background_menu"
                                 android:orientation="vertical">
 
                                 <ImageView
@@ -588,6 +592,7 @@
                                 android:layout_marginHorizontal="4dp"
                                 android:layout_weight="25"
                                 android:gravity="center"
+                                android:background="@drawable/background_menu"
                                 android:orientation="vertical">
 
                                 <ImageView
@@ -620,6 +625,7 @@
                                 android:layout_weight="25"
                                 android:layout_marginHorizontal="4dp"
                                 android:gravity="center"
+                                android:background="@drawable/background_menu"
                                 android:orientation="vertical">
 
                                 <ImageView
@@ -651,6 +657,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_weight="25"
                                 android:layout_marginHorizontal="4dp"
+                                android:background="@drawable/background_menu"
                                 android:gravity="center"
                                 android:orientation="vertical">
 

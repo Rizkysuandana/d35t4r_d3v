@@ -1,6 +1,7 @@
 package com.destar.platform.destar;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
@@ -16,6 +17,7 @@ public class Dashboard extends AppCompatActivity {
     private LinearLayout deSewa;
     CarouselView carouselView;
     int[] sampleImages = {R.drawable.image_promo1, R.drawable.image_promo2, R.drawable.image_promo3, R.drawable.image_promo4};
+    private ImageView icon_beranda;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +43,8 @@ public class Dashboard extends AppCompatActivity {
         carouselView.setPageCount(sampleImages.length);
 
         carouselView.setImageListener(imageListener);
+        icon_beranda = (ImageView)findViewById(R.id.image_home);
+        icon_beranda.setImageDrawable(getDrawable(R.drawable.home_orange));
         ToolBarEvent();
     }
     ImageListener imageListener = new ImageListener() {

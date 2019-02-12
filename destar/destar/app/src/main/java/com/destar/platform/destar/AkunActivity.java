@@ -3,10 +3,13 @@ package com.destar.platform.destar;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.Image;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -16,6 +19,7 @@ public class AkunActivity extends AppCompatActivity {
     LinearLayout blogout;
     String appNamaUSer,appTypeUSer;
     TextView tUser,tType;
+    private ImageView icon_akun;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +31,8 @@ public class AkunActivity extends AppCompatActivity {
         appTypeUSer = ((AppClass) AkunActivity.this.getApplication()).getCUSTOMERTYPENAME();
         tUser.setText( appNamaUSer );
         tType.setText( appTypeUSer );
+        icon_akun = (ImageView)findViewById(R.id.image_akun);
+        icon_akun.setImageDrawable(getDrawable(R.drawable.akun_orange));
         KlikEvent();
         ToolBarEvent();
     }

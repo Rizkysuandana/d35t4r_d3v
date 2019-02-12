@@ -5,17 +5,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.destar.platform.destar.R;
 
 public class RiwayatActivity extends AppCompatActivity {
-
+    private ImageView icon_riwayat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.riwayat);
         ToolBarEvent();
+        icon_riwayat = (ImageView)findViewById(R.id.image_riwayat);
+        icon_riwayat.setImageDrawable(getDrawable(R.drawable.riwayat_orange));
     }
     private void ToolBarEvent(){
         LinearLayout beranda1 = (LinearLayout) findViewById(R.id.beranda);

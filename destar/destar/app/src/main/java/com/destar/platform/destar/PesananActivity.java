@@ -5,17 +5,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.destar.platform.destar.R;
 
 public class PesananActivity extends AppCompatActivity {
-
+    private ImageView icon_pesanan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pesanan);
         ToolBarEvent();
+        icon_pesanan = (ImageView)findViewById(R.id.image_pesanan);
+        icon_pesanan.setImageDrawable(getDrawable(R.drawable.pemesanan_orange));
     }
     private void ToolBarEvent(){
         LinearLayout beranda1 = (LinearLayout) findViewById(R.id.beranda);

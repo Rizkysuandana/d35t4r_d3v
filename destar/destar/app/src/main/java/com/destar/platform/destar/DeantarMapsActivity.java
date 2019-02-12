@@ -30,6 +30,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.destar.platform.destar.response.Distance;
+import com.destar.platform.destar.response.Duration;
 import com.destar.platform.destar.response.LegsItem;
 import com.destar.platform.destar.response.ResponseRoute;
 import com.destar.platform.destar.service.ApiServices;
@@ -67,7 +69,7 @@ import retrofit2.Response;
 
 public class DeantarMapsActivity extends AppCompatActivity implements OnMapReadyCallback {
 
-    private String API_KEY = "AIzaSyDer24n5iXYt8iGfCkEXJU8MEvzhHmsBDk";
+    private String API_KEY = "AIzaSyCYNh9kZmt8z0E-GSU2f2vHfBWGy0hs9Ps";
 
     public LatLng pickUpLatLng = null;
     public LatLng locationLatLng = null;
@@ -121,7 +123,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
         setContentView(R.layout.activity_pengantar_barang);
         mapView = findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
-        wigetInit();
+
         mapView.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap googleMap) {
@@ -129,7 +131,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
             }
         });
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        getCurrentLocation();
+      //  getCurrentLocation();
         btnNext = (Button)findViewById(R.id.btnNext);
         namabarang = (EditText)findViewById(R.id.nambar);
         beratbarang = (EditText)findViewById(R.id.berbar);
@@ -174,7 +176,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
         // Event OnClick
 
         tvPickUpFrom = (AutoCompleteTextView) findViewById(R.id.tvPickUpFrom);
-
+        wigetInit();
         tvPickUpFrom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -455,15 +457,15 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
                     mMap.addMarker(new MarkerOptions().position(pickUpLatLng).title("Lokasi Awal"));
                     mMap.addMarker(new MarkerOptions().position(locationLatLng).title("Lokasi Akhir"));
                     // Dapatkan jarak dan waktu
-//                    Distance dataDistance = dataLegs.getDistance();
-//                    Duration dataDuration = dataLegs.getDuration();
-//
-//                    // Set Nilai Ke Widget
-//                    double price_per_meter = 250;
-//                    double priceTotal = dataDistance.getValue() * price_per_meter; // Jarak * harga permeter
-//
-//                    tvDistance.setText(dataDistance.getText());
-//                    tvPrice.setText(String.valueOf(priceTotal));
+                    Distance dataDistance = dataLegs.getDistance();
+                    Duration dataDuration = dataLegs.getDuration();
+
+                    // Set Nilai Ke Widget
+                   double price_per_meter = 250;
+                    double priceTotal = dataDistance.getValue() * price_per_meter; // Jarak * harga permeter
+
+                    tvPrice.setText(dataDistance.getText());
+                    tvDistance.setText(String.valueOf(priceTotal));
                     /** START
                      * Logic untuk membuat layar berada ditengah2 dua koordinat
                      */
@@ -493,8 +495,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
             }
 
             @Override
-            public void onFailure(Call<ResponseRoute> call, Throwable t)
-            {
+            public void onFailure(Call<ResponseRoute> call, Throwable t) {
                 t.printStackTrace();
             }
         });

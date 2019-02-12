@@ -12,6 +12,6 @@ public interface ApiServices {
     Call<ResponseRoute> request_route(
             @Query("origin") String origin,
             @Query("destination") String destination,
-            @Query("api_key") String api_key
+            @Query("key") String api_key
     );
 }

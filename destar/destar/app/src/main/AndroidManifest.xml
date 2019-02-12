@@ -42,7 +42,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDer24n5iXYt8iGfCkEXJU8MEvzhHmsBDk" />
+            android:value="@string/google_maps_api_key" />
 
         <service android:name=".service.MyFirebaseMessagingService">
             <intent-filter>
@@ -75,7 +75,7 @@
         <activity
             android:name=".DeantarMapsActivity"
             android:parentActivityName=".TransportasiActivity"
-            android:value="AIzaSyDer24n5iXYt8iGfCkEXJU8MEvzhHmsBDk">
+            android:value="AIzaSyCYNh9kZmt8z0E-GSU2f2vHfBWGy0hs9Ps">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TransportasiActivity" />

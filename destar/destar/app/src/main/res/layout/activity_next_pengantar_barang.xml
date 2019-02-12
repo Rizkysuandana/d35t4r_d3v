@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:name="com.google.android.gms.maps.SupportMapFragment"
-                android:apiKey="AIzaSyDer24n5iXYt8iGfCkEXJU8MEvzhHmsBDk"/>
+                android:apiKey="AIzaSyCYNh9kZmt8z0E-GSU2f2vHfBWGy0hs9Ps"/>
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="300dp"

@@ -11,9 +11,13 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            resValue "string", "google_maps_api_key", "AIzaSyDMp8PeE7K8IqnMQzSsH-HjL2Z9C0y6u4Q"
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue "string", "google_maps_api_key", "AIzaSyDMp8PeE7K8IqnMQzSsH-HjL2Z9C0y6u4Q"
         }
     }
     productFlavors {
@@ -48,9 +52,10 @@ dependencies {
     implementation 'com.github.smart-fun:XmlToJson:1.4.4'
     implementation 'com.synnapps:carouselview:0.1.5'
     // Auto Complete Place & location
-    implementation 'com.google.android.gms:play-services-places:9.8.0'
+    //implementation 'com.google.android.gms:play-services-places:9.8.0'
     implementation 'com.google.android.gms:play-services-places:11.8.0'
     implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
 
     // Maps Utils
     implementation 'com.google.maps.android:android-maps-utils:0.4+'
@@ -58,5 +63,6 @@ dependencies {
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.akexorcist:googledirectionlibrary:1.0.4'
 }
 apply plugin: 'com.google.gms.google-services'

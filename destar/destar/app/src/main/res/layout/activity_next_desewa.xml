@@ -30,7 +30,7 @@
                     android:text="RINCIAN"
                     android:textSize="25sp"
                     android:textColor="@color/colorblack"
-                    android:fontFamily="@font/pala"
+                    android:fontFamily="@font/caviardreams"
                     android:layout_marginLeft="10dp"/>
                 <View
                     android:layout_width="match_parent"
@@ -59,7 +59,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/pala"
+                            android:fontFamily="@font/caviardreams"
                             android:id="@+id/namapesanan"
                             android:layout_gravity="center"
                             android:text="Nama Barang"
@@ -68,7 +68,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/pala"
+                            android:fontFamily="@font/caviardreams"
                             android:id="@+id/merk"
                             android:textSize="15dp"
                             android:text="Merk Barang"
@@ -76,7 +76,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/pala"
+                            android:fontFamily="@font/caviardreams"
                             android:textSize="15dp"
                             android:text="Kapasitas"
                             android:id="@+id/kapasitas"/>
@@ -99,7 +99,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="0"
                                 android:layout_marginHorizontal="2dp"
-                                android:fontFamily="@font/pala"
+                                android:fontFamily="@font/caviardreams"
                                 android:id="@+id/quantity_textview"
                                 android:textSize="20sp"/>
                             <Button
@@ -133,7 +133,7 @@
                         android:id="@+id/tglpesan"
                         android:textSize="20dp"
                         android:layout_toRightOf="@+id/gbr1"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                     <ImageButton
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
@@ -176,7 +176,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="5dp"
                         android:layout_toRightOf="@+id/gbr2"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:text="Tanggal Kembali"
                         android:textSize="20dp" />
                     <ImageButton
@@ -202,14 +202,14 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/pala"
+                            android:fontFamily="@font/caviardreams"
                             android:textSize="20dp"
                             android:id="@+id/diambil"
                             android:text="Diambil" />
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/pala"
+                            android:fontFamily="@font/caviardreams"
                             android:textSize="20dp"
                             android:id="@+id/diantar"
                             android:text="Diantar"/>
@@ -224,7 +224,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Unggah Foto KTP/Kartu Keluarga/SIM"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="18sp"
                         android:layout_marginBottom="4dp"
                         android:id="@+id/unggahtext"/>
@@ -252,7 +252,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:id="@+id/beratKendaraan"
                         android:textSize="20dp"
                         android:hint="Alamat Anda"/>
@@ -270,7 +270,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:fontFamily="@font/pala"
+                    android:fontFamily="@font/caviardreams"
                     android:text="PEMBAYARAN"
                     android:textColor="@color/colorblack"
                     android:textSize="25sp" />
@@ -306,7 +306,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:fontFamily="@font/pala"
+                                android:fontFamily="@font/caviardreams"
                                 android:text="Harga"
                                 android:textColor="@color/colorblack"
                                 android:textSize="15dp" />
@@ -323,7 +323,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Harga"
                                 android:inputType="number"
-                                android:fontFamily="@font/pala"
+                                android:fontFamily="@font/caviardreams"
                                 android:textSize="15sp"
                                 android:textStyle="bold"
                                 android:layout_gravity="right"
@@ -362,7 +362,7 @@
                                 android:text="Jenis Pembayaran"
                                 android:textAlignment="center"
                                 android:textColor="@color/colorblack"
-                                android:fontFamily="@font/pala"
+                                android:fontFamily="@font/caviardreams"
                                 android:textSize="12sp"/>
                         </LinearLayout>
 
@@ -397,7 +397,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="20dp"
-                    android:fontFamily="@font/pala"
+                    android:fontFamily="@font/caviardreams"
                     android:text="TOTAL : "
                     android:textColor="@color/cardview_light_background"
                     android:textSize="15sp"
@@ -407,7 +407,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/totalHarga"
                     android:text="Harga"
-                    android:fontFamily="@font/pala"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="15sp"
                     android:layout_marginRight="20dp"
                     android:layout_alignParentRight="true"
@@ -427,7 +427,7 @@
                     android:id="@+id/pesan"
                     android:textStyle="bold"
                     android:textColor="@color/putih"
-                    android:fontFamily="@font/pala"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="20sp"
                     android:background="@drawable/shape_green"/>
             </RelativeLayout>

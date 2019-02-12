@@ -5,7 +5,10 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.location.Address;
 import android.location.LocationManager;
 import android.location.Location;
@@ -52,6 +55,8 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
@@ -69,7 +74,7 @@ import retrofit2.Response;
 
 public class DeantarMapsActivity extends AppCompatActivity implements OnMapReadyCallback {
 
-    private String API_KEY = "AIzaSyCYNh9kZmt8z0E-GSU2f2vHfBWGy0hs9Ps";
+    private String API_KEY = "AIzaSyBd0ivEYNo5TNR5R18gxte8YmbnU8mIRYE";
 
     public LatLng pickUpLatLng = null;
     public LatLng locationLatLng = null;
@@ -79,7 +84,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
     private String nama, berat;
     private Button btnNext;
     private LinearLayout infoPanel;
-    private LinearLayout motor;
+    private LinearLayout motor,germor;
     private Boolean mLocationPermissionsGranted = false;
     private FusedLocationProviderClient mFusedLocationProviderClient;
     private GoogleApiClient mGoogleApiClient;
@@ -209,6 +214,24 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
 
             }
         });
+        motor = (LinearLayout) findViewById(R.id.sepeda_motor);
+        motor.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Sepeda Motor dipilih", Toast.LENGTH_SHORT).show();
+                motor.setBackgroundColor(R.color.colorOrange);
+            }
+        });
+        germor = (LinearLayout) findViewById(R.id.gerobak_motor);
+        germor.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Germor Motor dipilih", Toast.LENGTH_SHORT).show();
+                germor.setBackgroundColor(R.color.colorOrange);
+            }
+        });
     }
 
     private void mapView_onMapReady(GoogleMap googleMap) {
@@ -300,15 +323,6 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
                 Toast.makeText(this, "Invalid Place !", Toast.LENGTH_SHORT).show();
             }
         }
-        motor = (LinearLayout) findViewById(R.id.sepeda_motor);
-        motor.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("ResourceAsColor")
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Sepeda Motor dipilih", Toast.LENGTH_SHORT).show();
-                motor.setBackgroundColor(R.color.colorOrange);
-            }
-        });
 
     }
 
@@ -419,9 +433,18 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
         if (mMap!=null){
             mMap.clear();
             LatLng latLng = new LatLng(location.getLatitude(),location.getLongitude());
-            mMap.addMarker(new MarkerOptions().position(latLng).title(getText(R.string.i_here).toString()));
+            mMap.addMarker(new MarkerOptions().position(latLng).title(getText(R.string.i_here).toString()).icon(bitmapDescriptorFromVector(getApplicationContext(),R.drawable.pgmnt)));
+
             mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,20));
         }
+    }
+    private BitmapDescriptor bitmapDescriptorFromVector(Context context, int vectorResId) {
+        Drawable vectorDrawable = ContextCompat.getDrawable(context, vectorResId);
+        vectorDrawable.setBounds(0, 0, vectorDrawable.getIntrinsicWidth(), vectorDrawable.getIntrinsicHeight());
+        Bitmap bitmap = Bitmap.createBitmap(vectorDrawable.getIntrinsicWidth(), vectorDrawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        vectorDrawable.draw(canvas);
+        return BitmapDescriptorFactory.fromBitmap(bitmap);
     }
     private void actionRoute(LatLng placeLatlng, final int requestCode) {
         String lokasiAwal = pickUpLatLng.latitude + "," + pickUpLatLng.longitude;

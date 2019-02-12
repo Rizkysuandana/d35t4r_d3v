@@ -56,7 +56,7 @@
                                 android:text="RINCIAN"
                                 android:textColor="#000000"
                                 android:textSize="25sp"
-                                android:fontFamily="@font/pala"
+                                android:fontFamily="@font/caviardreams"
                                 android:textStyle="bold" />
 
                             <View
@@ -92,7 +92,7 @@
                                     android:id="@+id/waktuAntar"
                                     android:layout_marginTop="5dp"
                                     android:text="Waktu Antar"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:textSize="20sp"
                                     android:layout_alignParentRight="true"/>
 
@@ -131,7 +131,7 @@
                                     android:id="@+id/lokasijemput"
                                     android:layout_marginTop="5dp"
                                     android:text="Lokasi Jemput"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:textSize="20sp"
                                     android:layout_alignParentRight="true"/>
 
@@ -182,7 +182,7 @@
                                     android:id="@+id/lokasitujuan"
                                     android:layout_marginTop="5dp"
                                     android:text="Lokasi Tujuan"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:textSize="20sp"
                                     android:layout_alignParentRight="true"/>
 
@@ -212,7 +212,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:id="@+id/nambar"
                                     android:layout_marginLeft="5dp"
                                     android:text="Nama Barang"
@@ -233,7 +233,7 @@
                                     android:layout_height="wrap_content"
                                     android:id="@+id/berbar"
                                     android:layout_marginLeft="5dp"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:text="Perkiraan Berat Barang"
                                     android:textSize="20sp"/>
                             </LinearLayout>
@@ -261,14 +261,14 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Price"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:textSize="20sp" />
 
                                 <TextView
                                     android:id="@+id/tvPrice"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:textSize="15sp"
                                     android:text="Rp13.000" />
 
@@ -286,7 +286,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Distance"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:textSize="20sp" />
 
                                 <TextView
@@ -294,7 +294,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="0.6 Km"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:textSize="15sp" />
 
                             </LinearLayout>

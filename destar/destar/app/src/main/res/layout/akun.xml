@@ -159,7 +159,7 @@
                                     android:layout_marginLeft="10dp"
                                     android:layout_marginEnd="5dp"
                                     android:layout_marginRight="10dp"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:text="Logout"
                                     android:textSize="18sp" />
 
@@ -205,7 +205,7 @@
                                     android:layout_marginRight="10dp"
                                     android:text="Bantuan"
                                     android:textSize="18sp"
-                                    android:fontFamily="@font/pala" />
+                                    android:fontFamily="@font/caviardreams" />
 
                                 <View
                                     android:layout_width="match_parent"
@@ -249,7 +249,7 @@
                                     android:layout_marginRight="10dp"
                                     android:text="Ketentuan Layanan"
                                     android:textSize="18sp"
-                                    android:fontFamily="@font/pala" />
+                                    android:fontFamily="@font/caviardreams" />
 
                                 <View
                                     android:layout_width="match_parent"
@@ -293,7 +293,7 @@
                                     android:layout_marginRight="10dp"
                                     android:text="Kebijakan Privasi"
                                     android:textSize="18sp"
-                                    android:fontFamily="@font/pala" />
+                                    android:fontFamily="@font/caviardreams" />
 
                                 <View
                                     android:layout_width="match_parent"
@@ -337,7 +337,7 @@
                                     android:layout_marginRight="10dp"
                                     android:text="Hubungi Kami"
                                     android:textSize="18sp"
-                                    android:fontFamily="@font/pala" />
+                                    android:fontFamily="@font/caviardreams" />
 
                                 <View
                                     android:layout_width="match_parent"
@@ -381,7 +381,7 @@
                                     android:layout_marginRight="10dp"
                                     android:text="Tentang Kami"
                                     android:textSize="18sp"
-                                    android:fontFamily="@font/pala" />
+                                    android:fontFamily="@font/caviardreams" />
 
                                 <View
                                     android:layout_width="match_parent"

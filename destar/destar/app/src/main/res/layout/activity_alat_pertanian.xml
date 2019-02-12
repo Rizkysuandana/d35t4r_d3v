@@ -42,13 +42,13 @@
                         android:id="@+id/alat1"
                         android:textStyle="bold"
                         android:textSize="20dp"
-                        android:fontFamily="@font/pala" />
+                        android:fontFamily="@font/caviardreams" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Quick Boxer G 1000"
                         android:id="@+id/merk1"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -56,12 +56,12 @@
                         android:id="@+id/alamat1"
                         android:text="Jl. Rawa, RT.11 RW.04, Cipuyuh, Sukabumi, Jawa Barat"
                         android:textSize="15sp"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lihat Lokasi"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlue"
                         android:layout_gravity="right"/>
@@ -76,7 +76,7 @@
                         android:text="Rp.250.000/Hari"
                         android:textColor="@color/colorGreen"
                         android:textStyle="bold"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -104,12 +104,12 @@
                         android:textStyle="bold"
                         android:id="@+id/alat2"
                         android:textSize="20dp"
-                        android:fontFamily="@font/pala" />
+                        android:fontFamily="@font/caviardreams" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="KUBOTA Traktor LG 400"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:id="@+id/merk2"
                         android:textSize="15dp"/>
                     <TextView
@@ -118,12 +118,12 @@
                         android:text="Kantor DESTAR"
                         android:id="@+id/alamat2"
                         android:textSize="15dp"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lihat Lokasi"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlue"
                         android:layout_gravity="right"/>
@@ -138,7 +138,7 @@
                         android:text="Rp.500.000/Hari"
                         android:textColor="@color/colorGreen"
                         android:textStyle="bold"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -166,13 +166,13 @@
                         android:textStyle="bold"
                         android:textSize="20dp"
                         android:id="@+id/alat3"
-                        android:fontFamily="@font/pala" />
+                        android:fontFamily="@font/caviardreams" />
 
                     <TextView
                         android:id="@+id/merk3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:text="ADR MPS 750"
                         android:textSize="15dp" />
                     <TextView
@@ -181,12 +181,12 @@
                         android:text="Kantor DESTAR"
                         android:id="@+id/alamat3"
                         android:textSize="15dp"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lihat Lokasi"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlue"
                         android:layout_gravity="right"/>
@@ -199,7 +199,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="13dp"
                         android:layout_gravity="right"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:text="Rp.300.000/Hari"
                         android:textColor="@color/colorGreen"
                         android:textStyle="bold" />
@@ -230,13 +230,13 @@
                         android:textStyle="bold"
                         android:id="@+id/alat4"
                         android:textSize="20dp"
-                        android:fontFamily="@font/pala" />
+                        android:fontFamily="@font/caviardreams" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="MAGUMI 1060"
                         android:id="@+id/merk4"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -244,12 +244,12 @@
                         android:text="Kantor DESTAR"
                         android:id="@+id/alamat4"
                         android:textSize="15dp"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lihat Lokasi"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlue"
                         android:layout_gravity="right"/>
@@ -264,7 +264,7 @@
                         android:text="Rp.20.000/Hari"
                         android:textColor="@color/colorGreen"
                         android:textStyle="bold"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

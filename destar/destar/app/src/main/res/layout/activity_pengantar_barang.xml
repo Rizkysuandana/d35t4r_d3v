@@ -46,7 +46,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:text="Sepeda Motor"
                         android:textAlignment="center"
                         android:textColor="@color/cardview_dark_background"
@@ -70,7 +70,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:text="Gerobak Motor"
                         android:textAlignment="center"
                         android:textColor="@color/cardview_dark_background"
@@ -94,7 +94,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:text="Pickup"
                         android:textAlignment="center"
                         android:textColor="@color/cardview_dark_background"
@@ -118,7 +118,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:text="Pickup Box"
                         android:textAlignment="center"
                         android:textColor="@color/cardview_dark_background"
@@ -141,7 +141,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:text="Engkel Bak"
                         android:textAlignment="center"
                         android:textColor="@color/cardview_dark_background"
@@ -171,7 +171,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:name="com.google.android.gms.maps.SupportMapFragment"
-                    android:apiKey="AIzaSyCYNh9kZmt8z0E-GSU2f2vHfBWGy0hs9Ps"/>
+                    android:apiKey="AIzaSyBd0ivEYNo5TNR5R18gxte8YmbnU8mIRYE"/>
                 <android.support.design.widget.CoordinatorLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -206,7 +206,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:id="@+id/tvPickUpFrom"
-                                        android:fontFamily="@font/pala"
+                                        android:fontFamily="@font/caviardreams"
                                         android:text="Pick Up From"
                                         android:textSize="19sp"/>
                                 </LinearLayout>
@@ -219,7 +219,7 @@
                                         android:id="@+id/tvDestLocation"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:fontFamily="@font/pala"
+                                        android:fontFamily="@font/caviardreams"
                                         android:textSize="19sp"
                                         android:text="Destination Location" />
                                 </LinearLayout>
@@ -243,7 +243,7 @@
                                     <EditText
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:fontFamily="@font/pala"
+                                        android:fontFamily="@font/caviardreams"
                                         android:id="@+id/nambar"
                                         android:hint="Nama Barang"
                                         android:textSize="19sp"/>
@@ -256,8 +256,8 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:textSize="18dp"
-                                        android:fontFamily="@font/pala"
+                                        android:textSize="13dp"
+                                        android:fontFamily="@font/caviardreamsitalic"
                                         android:text="Jelaskan Barang yang akan dikirim. Sopir akan menghubungi Anda untuk memastikan rincian"/>
                                 </LinearLayout>
                                 <LinearLayout
@@ -275,7 +275,7 @@
                                         android:layout_height="wrap_content"
                                         android:id="@+id/berbar"
                                         android:inputType="numberDecimal"
-                                        android:fontFamily="@font/pala"
+                                        android:fontFamily="@font/caviardreams"
                                         android:hint="Perkiraan Berat Barang(Kg)"
                                         android:textSize="19sp"/>
                                 </LinearLayout>
@@ -291,7 +291,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
                                     android:elevation="1dp"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:paddingVertical="20dp"
                                     android:text="Next"
                                     android:textSize="20sp"/>

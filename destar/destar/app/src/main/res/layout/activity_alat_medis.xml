@@ -42,13 +42,13 @@
                         android:id="@+id/namamedis1"
                         android:textStyle="bold"
                         android:textSize="20dp"
-                        android:fontFamily="@font/pala" />
+                        android:fontFamily="@font/caviardreams" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="AVICO 766"
                         android:id="@+id/merkmedis1"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -56,12 +56,12 @@
                         android:id="@+id/alamatmedis1"
                         android:text="Jl. Rawa, RT.11 RW.04, Cipuyuh, Sukabumi, Jawa Barat"
                         android:textSize="15sp"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lihat Lokasi"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlue"
                         android:layout_gravity="right"/>
@@ -76,7 +76,7 @@
                         android:text="Rp.70.000/Hari"
                         android:textColor="@color/colorGreen"
                         android:textStyle="bold"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -104,13 +104,13 @@
                         android:id="@+id/namamedis2"
                         android:textStyle="bold"
                         android:textSize="20dp"
-                        android:fontFamily="@font/pala" />
+                        android:fontFamily="@font/caviardreams" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/merkmedis2"
                         android:text="QL-54T"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -118,12 +118,12 @@
                         android:text="Kantor DESTAR"
                         android:id="@+id/alamatmedis2"
                         android:textSize="15dp"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lihat Lokasi"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlue"
                         android:layout_gravity="right"/>
@@ -138,7 +138,7 @@
                         android:text="Rp.55.000/Hari"
                         android:textColor="@color/colorGreen"
                         android:textStyle="bold"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -166,13 +166,13 @@
                         android:textStyle="bold"
                         android:id="@+id/namamedis3"
                         android:textSize="20dp"
-                        android:fontFamily="@font/pala" />
+                        android:fontFamily="@font/caviardreams" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="SELLA B-1"
                         android:id="@+id/merkmedis3"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -180,12 +180,12 @@
                         android:text="Kantor DESTAR"
                         android:id="@+id/alamatmedis3"
                         android:textSize="15dp"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lihat Lokasi"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlue"
                         android:layout_gravity="right"/>
@@ -198,7 +198,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="13dp"
                         android:layout_gravity="right"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:text="Rp.300.000/Hari"
                         android:textColor="@color/colorGreen"
                         android:textStyle="bold" />
@@ -229,13 +229,13 @@
                         android:textStyle="bold"
                         android:id="@+id/namamedis4"
                         android:textSize="20dp"
-                        android:fontFamily="@font/pala" />
+                        android:fontFamily="@font/caviardreams" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="ACCU-CHEK Go"
                         android:id="@+id/merkmedis4"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -243,12 +243,12 @@
                         android:text="Kantor DESTAR"
                         android:id="@+id/alamatmedis4"
                         android:textSize="15dp"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lihat Lokasi"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlue"
                         android:layout_gravity="right"/>
@@ -263,7 +263,7 @@
                         android:text="Rp.20.000/Hari"
                         android:textColor="@color/colorGreen"
                         android:textStyle="bold"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

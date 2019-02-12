@@ -42,13 +42,13 @@
                         android:id="@+id/namakendaraan"
                         android:textStyle="bold"
                         android:textSize="20dp"
-                        android:fontFamily="@font/pala" />
+                        android:fontFamily="@font/caviardreams" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="VIAR karya 300"
                         android:id="@+id/merkKendaraan"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -56,12 +56,12 @@
                         android:text="Kapasitas : 1.000 - 1.200 Kg"
                         android:textSize="15dp"
                         android:id="@+id/kapasitasKendaraan"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lihat Lokasi"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlue"
                         android:layout_gravity="right"/>
@@ -81,7 +81,7 @@
                             android:text="Rp. "
                             android:textColor="@color/colorGreen"
                             android:textStyle="bold"
-                            android:fontFamily="@font/pala"/>
+                            android:fontFamily="@font/caviardreams"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
                             android:text="250000"
                             android:textColor="@color/colorGreen"
                             android:textStyle="bold"
-                            android:fontFamily="@font/pala"/>
+                            android:fontFamily="@font/caviardreams"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                             android:text="/Hari"
                             android:textColor="@color/colorGreen"
                             android:textStyle="bold"
-                            android:fontFamily="@font/pala"/>
+                            android:fontFamily="@font/caviardreams"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -126,12 +126,12 @@
                         android:textStyle="bold"
                         android:id="@+id/namakendaraan2"
                         android:textSize="20dp"
-                        android:fontFamily="@font/pala" />
+                        android:fontFamily="@font/caviardreams" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="MITSUBISHI Colt L300"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:id="@+id/merkKendaraan2"
                         android:textSize="15dp" />
                     <TextView
@@ -140,12 +140,12 @@
                         android:text="Kapasitas : 1.500 - 2.500 Kg"
                         android:id="@+id/kapasitasKendaraan2"
                         android:textSize="15dp"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lihat Lokasi"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlue"
                         android:layout_gravity="right"/>
@@ -160,7 +160,7 @@
                         android:text="Rp.400.000/Hari"
                         android:textColor="@color/colorGreen"
                         android:textStyle="bold"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -188,13 +188,13 @@
                         android:id="@+id/namakendaraan3"
                         android:textStyle="bold"
                         android:textSize="20dp"
-                        android:fontFamily="@font/pala" />
+                        android:fontFamily="@font/caviardreams" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/merkKendaraan3"
                         android:text="MITSUBISHI Colt Diesel FE 74 L"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -202,12 +202,12 @@
                         android:id="@+id/kapasitasKendaraan3"
                         android:text="Kapasitas : 3.000 - 6.000 Kg"
                         android:textSize="15dp"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lihat Lokasi"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlue"
                         android:layout_gravity="right"/>
@@ -220,7 +220,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="13dp"
                         android:layout_gravity="right"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:text="Rp.800.000/Hari"
                         android:textColor="@color/colorGreen"
                         android:textStyle="bold" />
@@ -251,13 +251,13 @@
                         android:id="@+id/namakendaraan4"
                         android:textStyle="bold"
                         android:textSize="20dp"
-                        android:fontFamily="@font/pala" />
+                        android:fontFamily="@font/caviardreams" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/merkKendaraan4"
                         android:text="SUZUKI Mega Carry Box"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -265,12 +265,12 @@
                         android:text="Kapasitas : 2.000 - 3.000 Kg"
                         android:id="@+id/kapasitasKendaraan4"
                         android:textSize="15dp"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lihat Lokasi"
-                        android:fontFamily="@font/pala"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="10dp"
                         android:textColor="@color/colorBlue"
                         android:layout_gravity="right"/>
@@ -285,7 +285,7 @@
                         android:text="Rp.450.000/Hari"
                         android:textColor="@color/colorGreen"
                         android:textStyle="bold"
-                        android:fontFamily="@font/pala"/>
+                        android:fontFamily="@font/caviardreams"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

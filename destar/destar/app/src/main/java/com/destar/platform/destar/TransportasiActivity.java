@@ -5,17 +5,26 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.destar.platform.destar.R;
+import com.synnapps.carouselview.CarouselView;
+import com.synnapps.carouselview.ImageListener;
 
 public class TransportasiActivity extends AppCompatActivity {
     private LinearLayout pengantarBarang;
     private LinearLayout jasaAngkut;
+    int[] sampleImages = {R.drawable.image_promo1, R.drawable.image_promo2, R.drawable.image_promo3, R.drawable.image_promo4};
+    CarouselView carouselView1;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transportasi);
+        carouselView1 = (CarouselView) findViewById(R.id.carouselView1);
+        carouselView1.setPageCount(sampleImages.length);
+
+        carouselView1.setImageListener(imageListener);
         pengantarBarang = (LinearLayout) findViewById(R.id.btnpengantaran);
         pengantarBarang.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,5 +75,12 @@ public class TransportasiActivity extends AppCompatActivity {
                 startActivity(i);TransportasiActivity.this.finish();
             }
         });
+
     }
+    ImageListener imageListener = new ImageListener() {
+        @Override
+        public void setImageForPosition(int position, ImageView imageView) {
+            imageView.setImageResource(sampleImages[position]);
+        }
+    };
 }

@@ -12,7 +12,7 @@ android {
     }
     buildTypes {
         debug {
-            resValue "string", "google_maps_api_key", "AIzaSyDMp8PeE7K8IqnMQzSsH-HjL2Z9C0y6u4Q"
+            resValue "string", "google_maps_api_key", "AIzaSyBd0ivEYNo5TNR5R18gxte8YmbnU8mIRYE"
         }
         release {
             minifyEnabled false

@@ -54,7 +54,7 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginBottom="5dp"
                             android:layout_marginTop="5dp"
-                            android:fontFamily="sans-serif-smallcaps"
+                            android:fontFamily="@font/caviardreams"
                             android:text="DAFTAR"
                             android:textColor="@color/colorblack"
                             android:textSize="18dip" />

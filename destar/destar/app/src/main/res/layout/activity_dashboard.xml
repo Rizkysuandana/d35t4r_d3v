@@ -88,7 +88,7 @@
                                         android:layout_height="wrap_content"
                                         android:layout_marginTop="0dp"
                                         android:text="DE ANTAR"
-                                        android:fontFamily="@font/pala"
+                                        android:fontFamily="@font/caviardreams"
                                         android:textSize="15sp" />
 
                                 </LinearLayout>
@@ -128,7 +128,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="DE PASAR"
-                                        android:fontFamily="@font/pala"
+                                        android:fontFamily="@font/caviardreams"
                                         android:textSize="15sp" />
 
                                 </LinearLayout>
@@ -174,7 +174,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:fontFamily="@font/pala"
+                                        android:fontFamily="@font/caviardreams"
                                         android:text="DE SEWA"
                                         android:textSize="15sp" />
 
@@ -215,7 +215,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="DE BAYAR"
-                                        android:fontFamily="@font/pala"
+                                        android:fontFamily="@font/caviardreams"
                                         android:textSize="15sp" />
 
                                 </LinearLayout>
@@ -255,9 +255,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_weight="70"
-                                android:fontFamily="@font/pala"
+                                android:fontFamily="@font/caviardreams"
                                 android:gravity="left"
-                                android:text="RECENTLY BOUGHT PHONES"
+                                android:text="PROMO"
                                 android:textColor="#322e47"
                                 android:textSize="15sp" />
 
@@ -266,7 +266,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_weight="30"
-                                android:fontFamily="@font/pala"
+                                android:fontFamily="@font/caviardreams"
                                 android:gravity="right"
                                 android:text="See All"
                                 android:textColor="#308fe9"
@@ -310,10 +310,10 @@
                                                 android:gravity="center">
 
                                                 <ImageView
-                                                    android:layout_width="50dp"
+                                                    android:layout_width="67dp"
                                                     android:layout_height="80dp"
                                                     android:scaleType="fitXY"
-                                                    android:src="@drawable/image22" />
+                                                    android:src="@drawable/promo" />
 
                                             </LinearLayout>
 
@@ -329,8 +329,8 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginBottom="6dp"
-                                                    android:fontFamily="@font/pala"
-                                                    android:text="Huawei Nexus 6p"
+                                                    android:fontFamily="@font/caviardreams"
+                                                    android:text="Promo DE-OJEK"
                                                     android:textColor="#000000"
                                                     android:textSize="16dp"
                                                     android:textStyle="bold" />
@@ -339,8 +339,8 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginBottom="4dp"
-                                                    android:fontFamily="@font/pala"
-                                                    android:text="3 GB RAM | 5.7 inch Quad HD Display | 12.3 MP Camera | 3450 mAH Battery"
+                                                    android:fontFamily="@font/caviardreams"
+                                                    android:text="Nikmati potongan harga di setiap perjalanan anda"
                                                     android:textColor="#757575"
                                                     android:textSize="14dp" />
 
@@ -378,10 +378,10 @@
                                                 android:gravity="center">
 
                                                 <ImageView
-                                                    android:layout_width="50dp"
+                                                    android:layout_width="67dp"
                                                     android:layout_height="80dp"
-                                                    android:src="@drawable/image23"
-                                                    android:scaleType="fitXY"/>
+                                                    android:scaleType="fitXY"
+                                                    android:src="@drawable/rwd" />
 
                                             </LinearLayout>
 
@@ -397,8 +397,8 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginBottom="6dp"
-                                                    android:fontFamily="@font/pala"
-                                                    android:text="Redmi Note 4"
+                                                    android:fontFamily="@font/caviardreams"
+                                                    android:text="DE-BARANG Rewards"
                                                     android:textColor="#000000"
                                                     android:textSize="16sp"
                                                     android:textStyle="bold" />
@@ -407,8 +407,8 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginBottom="4dp"
-                                                    android:fontFamily="@font/pala"
-                                                    android:text="4 GB RAM | 5.5 inch Full HD Display | 13 MP Camera | 4100 mAH Battery"
+                                                    android:fontFamily="@font/caviardreams"
+                                                    android:text="Dapatkan 50 poin untuk setiap pengantaran barang menggunakan DE-GERMOR"
                                                     android:textColor="#757575"
                                                     android:textSize="14dp" />
 
@@ -471,7 +471,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:text="PUPUK &amp; PESTISIDA"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
@@ -502,7 +502,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:text="FARMASI &amp; ALAT KESEHATAN"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
@@ -533,7 +533,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:text="KONSUMSI &amp; BAHAN POKOK"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
@@ -564,7 +564,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:text="PRODUK GUHRING"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
@@ -606,7 +606,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="12dp"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:text="BAHAN KIMIA"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
@@ -638,7 +638,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:text="PRODUK EKSPOR"
                                     android:textAlignment="center"
                                     android:textColor="#000000"
@@ -670,7 +670,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:fontFamily="@font/pala"
+                                    android:fontFamily="@font/caviardreams"
                                     android:text="PRODUK LAINNYA"
                                     android:textAlignment="center"
                                     android:textColor="#000000"

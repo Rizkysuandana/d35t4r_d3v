@@ -23,6 +23,17 @@
             android:orientation="vertical"
             android:background="@drawable/textboxdesainkecil">
 
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView1"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:fillColor="#FFFFFFFF"
+                app:pageColor="#00000000"
+                app:radius="6dp"
+                app:slideInterval="3000"
+                app:strokeColor="#FF777777"
+                app:strokeWidth="1dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -49,10 +60,10 @@
 
                         <ImageView
                             android:id="@+id/btnkolat"
-                            android:layout_width="100dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="100dp"
                             android:layout_marginTop="5dp"
-                            android:background="@drawable/image_pengantarbarang"
+                            android:background="@drawable/image_jasaangkut"
                             android:padding="10dp"
                             android:scaleType="centerInside" />
 
@@ -65,9 +76,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="DE ANTAR BARANG"
+                            android:text="DE-BARANG"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/pala"
+                            android:fontFamily="@font/caviardreams"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -95,7 +106,7 @@
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:layout_marginTop="5dp"
-                            android:background="@drawable/image_jasaangkut"
+                            android:background="@drawable/image_pengantarbarang"
                             android:scaleType="fitXY" />
 
                         <View
@@ -107,9 +118,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/pala"
+                            android:fontFamily="@font/caviardreams"
                             android:layout_gravity="center"
-                            android:text="DE ANTAR OJEK"
+                            android:text="DE-OJEK"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -117,6 +128,303 @@
                 </LinearLayout>
 
             </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:id="@+id/btndemobil"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="50"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@drawable/shape"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/btndemobil1"
+                            android:layout_width="117dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/car"
+                            android:padding="10dp"
+                            android:scaleType="centerInside" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="1dp"
+                            android:background="@color/dark_blue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DE-CAR"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/caviardreams"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_lainnya"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="50"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@drawable/shape"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/btnlainya1"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/image_lainnya"
+                            android:scaleType="fitXY" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginVertical="1dp"
+                            android:background="@color/dark_blue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/caviardreams"
+                            android:layout_gravity="center"
+                            android:text="LAINNYA"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/textboxdesainkecil"
+                android:layout_marginTop="3dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/recenliatas"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="70"
+                            android:fontFamily="@font/caviardreams"
+                            android:gravity="left"
+                            android:text="PROMO"
+                            android:textColor="#322e47"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="30"
+                            android:fontFamily="@font/caviardreams"
+                            android:gravity="right"
+                            android:text="See All"
+                            android:textColor="#308fe9"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:id="@+id/recentbawah"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="3dp">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                app:cardCornerRadius="4dp"
+                                app:cardElevation="8dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="100">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="28"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:layout_width="67dp"
+                                                android:layout_height="80dp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/promo" />
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="72"
+                                            android:orientation="vertical">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="6dp"
+                                                android:fontFamily="@font/caviardreams"
+                                                android:text="Promo DE-OJEK"
+                                                android:textColor="#000000"
+                                                android:textSize="16dp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:fontFamily="@font/caviardreams"
+                                                android:text="Nikmati potongan harga di setiap perjalanan anda"
+                                                android:textColor="#757575"
+                                                android:textSize="14dp" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                app:cardCornerRadius="4dp"
+                                app:cardElevation="8dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="100">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="28"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:layout_width="67dp"
+                                                android:layout_height="80dp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/rwd" />
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="72"
+                                            android:orientation="vertical">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="6dp"
+                                                android:fontFamily="@font/caviardreams"
+                                                android:text="DE-BARANG Rewards"
+                                                android:textColor="#000000"
+                                                android:textSize="16sp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:fontFamily="@font/caviardreams"
+                                                android:text="Dapatkan 50 poin untuk setiap pengantaran barang menggunakan DE-GERMOR"
+                                                android:textColor="#757575"
+                                                android:textSize="14dp" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -128,5 +436,6 @@
                 layout="@layout/layout_toolbar"
                 tools:context="com.destar.platform.destar.Toolbar" />
         </LinearLayout>
+
     </RelativeLayout>
 </LinearLayout>

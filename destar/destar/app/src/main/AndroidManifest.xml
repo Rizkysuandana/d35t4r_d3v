@@ -64,7 +64,7 @@
 
         <activity
             android:name=".SplashActivity"
-            android:label="deStar"
+            android:label="DESTAR"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -75,7 +75,7 @@
         <activity
             android:name=".DeantarMapsActivity"
             android:parentActivityName=".TransportasiActivity"
-            android:value="AIzaSyCYNh9kZmt8z0E-GSU2f2vHfBWGy0hs9Ps">
+            android:value="AIzaSyBd0ivEYNo5TNR5R18gxte8YmbnU8mIRYE">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".TransportasiActivity" />

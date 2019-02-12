@@ -76,16 +76,32 @@ public class RegisterActivity extends AppCompatActivity {
                 pImage="-";
                 pCustomerType="1";
                 pMobileNumber = xMobileNumber.getText().toString();
-                if(pPwd.equals( pPwd2 )) {
 
+                if (pUsername.equals("")){
+                    xUsername.setError("Username Harus di Isi");
+                    xUsername.requestFocus();
+                } else if (pFullName.equals("")){
+                    xFullName.setError("Full Name Harus di Isi");
+                    xFullName.requestFocus();
+                } else if (pEmail.equals("")){
+                    xEmail.setError("Email Harus di Isi");
+                    xEmail.requestFocus();
+                } else if (pPwd2.equals("")){
+                    xPwd2.setError("Ulangi Kata Sandi Harus di Isi");
+                    xPwd2.requestFocus();
+                }else if (pMobileNumber.equals("")){
+                    xMobileNumber.setError("Nomor Handphone Harus di Isi");
+                    xMobileNumber.requestFocus();
+ //               }
+// else if (pPwd != pPwd2){
+//                    Toast.makeText(RegisterActivity.this,"Password Tidak Sama",Toast.LENGTH_LONG).show();
+//                    xPwd.setText( "" );
+//                    xPwd2.setText( "" );
+//                    xPwd.requestFocus();
+                }else{
                     Simpan();
                 }
-                else{
-                    Toast.makeText(RegisterActivity.this,"Password Tidak Sama",Toast.LENGTH_LONG).show();
-                    xPwd.setText( "" );
-                    xPwd2.setText( "" );
-                    xPwd.requestFocus();
-                }
+
             }
         });
     }

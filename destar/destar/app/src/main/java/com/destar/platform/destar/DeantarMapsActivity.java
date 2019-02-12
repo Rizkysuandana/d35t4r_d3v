@@ -121,6 +121,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
         setContentView(R.layout.activity_pengantar_barang);
         mapView = findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
+        wigetInit();
         mapView.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap googleMap) {

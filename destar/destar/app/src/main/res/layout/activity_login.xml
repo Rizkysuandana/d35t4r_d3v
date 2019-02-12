@@ -32,7 +32,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
-                android:fontFamily="sans-serif-smallcaps"
+                android:fontFamily="@font/pala"
                 android:text="Masuk"
                 android:textColor="@color/colorblack"
                 android:textSize="18dip"
@@ -59,6 +59,7 @@
                     android:layout_margin="10dp"
                     android:layout_toRightOf="@+id/image_email"
                     android:hint="Email"
+                    android:fontFamily="@font/pala"
                     android:inputType="textEmailAddress"
                     android:singleLine="true"
                     android:text="Ali" />
@@ -109,6 +110,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:text="Masuk"
+                    android:fontFamily="@font/pala"
                     android:background="@drawable/buttonshapelogin"
                     android:textColor="#fff"
                     android:textStyle="bold" />
@@ -119,12 +121,14 @@
                     android:layout_centerHorizontal="true"
                     android:text="Lupa Kata Sandi?"
                     android:textSize="11dp"
+                    android:fontFamily="@font/pala"
                     android:id="@+id/lupasandi"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/lupasandi"
                     android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/pala"
                     android:text="Belum Punya Akun?"
                     android:textSize="11dp"
                     android:id="@+id/daftar"/>

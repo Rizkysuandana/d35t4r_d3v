@@ -26,7 +26,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/font1"
+                android:fontFamily="@font/pala"
                 android:text="Sepeda Motor"
                 android:textAlignment="center"
                 android:textColor="@color/cardview_dark_background"
@@ -50,7 +50,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/font1"
+                android:fontFamily="@font/pala"
                 android:text="Gerobak Motor"
                 android:textAlignment="center"
                 android:textColor="@color/cardview_dark_background"
@@ -74,7 +74,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/font1"
+                android:fontFamily="@font/pala"
                 android:text="Pickup"
                 android:textAlignment="center"
                 android:textColor="@color/cardview_dark_background"
@@ -98,7 +98,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/font1"
+                android:fontFamily="@font/pala"
                 android:text="Pickup Box"
                 android:textAlignment="center"
                 android:textColor="@color/cardview_dark_background"
@@ -121,7 +121,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/font1"
+                android:fontFamily="@font/pala"
                 android:text="Engkel Bak"
                 android:textAlignment="center"
                 android:textColor="@color/cardview_dark_background"

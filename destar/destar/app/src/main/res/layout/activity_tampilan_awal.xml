@@ -53,9 +53,9 @@
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
                         android:layout_centerInParent="true"
-                        android:fontFamily="@font/font1"
+                        android:fontFamily="@font/pala"
                         android:text="LOGIN"
-                        android:textSize="17dp"
+                        android:textSize="15sp"
                         android:background="@drawable/buttonshape"
                         android:textColor="@color/cardview_light_background"/>
                     <Button
@@ -63,8 +63,8 @@
                         android:layout_height="wrap_content"
                         android:text="REGISTER"
                         android:id="@+id/register"
-                        android:fontFamily="@font/font1"
-                        android:textSize="17dp"
+                        android:fontFamily="@font/pala"
+                        android:textSize="15sp"
                         android:layout_alignParentRight="true"
                         android:layout_centerInParent="true"
                         android:background="@drawable/buttonshapehijau"
@@ -99,7 +99,7 @@
                         android:text="OR"
                         android:textSize="15dp"
                         android:textStyle="bold"
-                        android:fontFamily="@font/font1"
+                        android:fontFamily="@font/pala"
                         android:layout_centerInParent="true"
                         android:layout_centerHorizontal="true"
                         android:textColor="@color/cardview_dark_background"/>
@@ -118,10 +118,10 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/buttonshapemerah"
-                    android:fontFamily="@font/font1"
+                    android:fontFamily="@font/pala"
                     android:text="GOOGLE +"
                     android:textColor="@color/cardview_light_background"
-                    android:textSize="20dp" />
+                    android:textSize="17sp" />
 
             </RelativeLayout>
         </RelativeLayout>

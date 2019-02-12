@@ -7,11 +7,14 @@ import android.os.Build;
 import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.PopupWindow;
 import android.widget.RadioButton;
@@ -20,6 +23,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
@@ -35,6 +39,7 @@ public class NextDesewa extends AppCompatActivity {
     private RelativeLayout relativeLayout;
     private PopupWindow popupWindow;
     private String nama;
+    int quantity=0;
     private String namapesanan, merkpesanan, kapasitaspesanan = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -135,5 +140,41 @@ public class NextDesewa extends AppCompatActivity {
 
         }, newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH), newCalendar.get(Calendar.DAY_OF_MONTH));
         datePickerDialogKembali.show();
+    }
+
+    public void increment(View view) {
+        if(quantity==10){
+            Toast.makeText(this,"10",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        quantity = quantity+1 ;
+        display(quantity);
+    }
+
+    public void decrement(View view) {
+        if (quantity==1){
+            Toast.makeText(this,"pesanan minimal 1",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        quantity = quantity -1;
+        display(quantity);
+    }
+    private void displayMessage(String message) {
+        TextView priceTextView = (TextView) findViewById(R.id.totalHarga);
+        priceTextView.setText(message);
+    }
+    private void display(int number) {
+        TextView quantityTextView = (TextView) findViewById(R.id.quantity_textview);
+        quantityTextView.setText("" + number);
+    }
+    private void displayPrice(int number) {
+        TextView priceTextView = (TextView) findViewById(R.id.totalHarga);
+        priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
+    }
+    private int calculateprice(){//jumlah pesanan * harga
+        int harga=5000;
+
+
+        return quantity * harga;
     }
 }

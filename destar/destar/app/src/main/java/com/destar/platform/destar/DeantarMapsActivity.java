@@ -13,6 +13,7 @@ import android.location.Address;
 import android.location.LocationManager;
 import android.location.Location;
 import android.location.LocationListener;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
@@ -29,6 +30,7 @@ import android.view.WindowManager;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -81,8 +83,8 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
     private TextView tvStartAddress, tvEndAddress;
     private TextView tvPrice, tvDistance;
     private EditText namabarang, beratbarang;
-    private String nama, berat;
-        private Button btnNext;
+    private String nama, berat, pickup, dest;
+    private Button btnNext;
     private LinearLayout infoPanel;
     private LinearLayout motor,germor;
     private Boolean mLocationPermissionsGranted = false;
@@ -140,15 +142,21 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
         btnNext = (Button)findViewById(R.id.btnNext);
         namabarang = (EditText)findViewById(R.id.nambar);
         beratbarang = (EditText)findViewById(R.id.berbar);
+        tvPickUpFrom = (AutoCompleteTextView)findViewById(R.id.tvPickUpFrom);
+        tvDestLocation = (AutoCompleteTextView)findViewById(R.id.tvDestLocation);
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 nama = namabarang.getText().toString();
                 berat = beratbarang.getText().toString();
+                pickup = tvPickUpFrom.getText().toString();
+                dest = tvDestLocation.getText().toString();
                 Intent intent = new Intent(DeantarMapsActivity.this, NextPengantarBarang.class);
                 Bundle a = new Bundle();
                 a.putString("parse_namabarang", nama);
                 a.putString("parse_beratbarang", berat+" Kg");
+                a.putString("parse_pickupfrom", pickup);
+                a.putString("parse_destlok", dest);
                 intent.putExtras(a);
                 startActivity(intent);
             }
@@ -220,7 +228,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Sepeda Motor dipilih", Toast.LENGTH_SHORT).show();
-                motor.setBackgroundColor(R.color.colorOrange);
+                motor.setBackgroundColor(R.drawable.background_menu);
             }
         });
         germor = (LinearLayout) findViewById(R.id.gerobak_motor);
@@ -229,7 +237,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Germor Motor dipilih", Toast.LENGTH_SHORT).show();
-                germor.setBackgroundColor(R.color.colorOrange);
+                germor.setBackgroundColor(R.drawable.background_menu);
             }
         });
     }

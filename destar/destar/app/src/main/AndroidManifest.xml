@@ -109,6 +109,7 @@
         <activity android:name=".AlatPertanian" />
         <activity android:name=".Kendaraan" />
         <activity android:name=".NextDesewa"></activity>
+        <activity android:name=".pop_up"/>
     </application>
 
 </manifest>

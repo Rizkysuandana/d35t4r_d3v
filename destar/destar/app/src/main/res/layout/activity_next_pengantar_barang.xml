@@ -6,7 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.destar.platform.destar.NextPengantarBarang"
     android:orientation="vertical"
-    android:background="#C2C2C2">
+    android:background="#C2C2C2"
+    android:id="@+id/next_pengantarbarang">
     <include layout="@layout/header"
         android:id="@+id/header"/>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -18,23 +19,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/cardview_light_background">
-            <!--<fragment-->
-            <!--android:id="@+id/map"-->
-            <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:apiKey="AIzaSyDer24n5iXYt8iGfCkEXJU8MEvzhHmsBDk"-->
-            <!--tools:context=".DeantarMapsActivity" />-->
-            <com.google.android.gms.maps.MapView
-                android:id="@+id/mapView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:name="com.google.android.gms.maps.SupportMapFragment"
-                android:apiKey="AIzaSyCYNh9kZmt8z0E-GSU2f2vHfBWGy0hs9Ps"/>
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_alignParentBottom="true"
+                android:layout_height="match_parent"
                 android:background="@drawable/textboxdesainkecil">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -91,7 +78,7 @@
                                     android:layout_height="wrap_content"
                                     android:id="@+id/waktuAntar"
                                     android:layout_marginTop="5dp"
-                                    android:text="Waktu Antar"
+                                    android:text="Waktu Tempuh"
                                     android:fontFamily="@font/caviardreams"
                                     android:textSize="20sp"
                                     android:layout_alignParentRight="true"/>
@@ -107,7 +94,7 @@
                         </RelativeLayout>
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="wrap_content"
                             android:id="@+id/formlokasijemput"
                             android:layout_below="@+id/formWaktu"
                             android:layout_marginHorizontal="10dp">
@@ -132,8 +119,7 @@
                                     android:layout_marginTop="5dp"
                                     android:text="Lokasi Jemput"
                                     android:fontFamily="@font/caviardreams"
-                                    android:textSize="20sp"
-                                    android:layout_alignParentRight="true"/>
+                                    android:textSize="20sp"/>
 
                                 <View
                                     android:layout_width="match_parent"
@@ -160,7 +146,7 @@
                         </RelativeLayout>
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="wrap_content"
                             android:id="@+id/formlokasitujuan"
                             android:layout_below="@+id/dots"
                             android:layout_marginHorizontal="10dp">
@@ -183,8 +169,7 @@
                                     android:layout_marginTop="5dp"
                                     android:text="Lokasi Tujuan"
                                     android:fontFamily="@font/caviardreams"
-                                    android:textSize="20sp"
-                                    android:layout_alignParentRight="true"/>
+                                    android:textSize="20sp"/>
 
                                 <View
                                     android:layout_width="match_parent"
@@ -241,68 +226,133 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_marginBottom="-8dp"
-                            android:background="@android:color/white"
-                            android:gravity="center"
                             android:orientation="horizontal"
-                            android:layout_marginVertical="20dp"
-                            android:paddingVertical="10dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
+                            android:layout_margin="10dp">
+                            <RadioGroup
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:layout_marginRight="2dp"
-                                android:orientation="vertical">
-
-                                <TextView
+                                android:orientation="horizontal"
+                                android:id="@+id/pesankapan">
+                                <RadioButton
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Price"
-                                    android:fontFamily="@font/caviardreams"
-                                    android:textSize="20sp" />
-
-                                <TextView
-                                    android:id="@+id/tvPrice"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:text="Pesan Sekarang"
                                     android:fontFamily="@font/caviardreams"
                                     android:textSize="15sp"
-                                    android:text="Rp13.000" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
+                                    android:id="@+id/sekarang"/>
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:text="Pesan Nanti"
+                                    android:id="@+id/nanti"
+                                    android:fontFamily="@font/caviardreams"/>
+                            </RadioGroup>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginHorizontal="10dp"
+                            android:gravity="center"
+                            android:layout_gravity="right"
+                            android:id="@+id/inputtanggal">
+                            <TextView
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:layout_marginLeft="2dp"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Distance"
-                                    android:fontFamily="@font/caviardreams"
-                                    android:textSize="20sp" />
-
-                                <TextView
-                                    android:id="@+id/tvDistance"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="0.6 Km"
-                                    android:fontFamily="@font/caviardreams"
-                                    android:textSize="15sp" />
-
-                            </LinearLayout>
+                                android:text="Masukkan Tanggal Pesanan"
+                                android:textSize="15sp"
+                                android:id="@+id/tanggalinput"
+                                android:fontFamily="@font/caviardreams"/>
+                            <Button
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:id="@+id/btntanggal"
+                                android:drawableTop="@drawable/arrow_down" />
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
             </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="-8dp"
+                android:background="@drawable/background_menu2"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginVertical="20dp"
+                android:paddingVertical="10dp"
+                android:layout_above="@+id/formpesan">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/background_menu2"
+                    android:layout_marginRight="2dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price"
+                        android:fontFamily="@font/caviardreams"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/caviardreams"
+                        android:textSize="15sp"
+                        android:text="Rp13.000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/background_menu2"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Distance"
+                        android:fontFamily="@font/caviardreams"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.6 Km"
+                        android:fontFamily="@font/caviardreams"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/formpesan">
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonshapelogin"
+                    android:text="Pesan"
+                    android:id="@+id/pesannext"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/caviardreams"
+                    android:textColor="@color/cardview_light_background"/>
+            </RelativeLayout>
         </RelativeLayout>
     </RelativeLayout>
 

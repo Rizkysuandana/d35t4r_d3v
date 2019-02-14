@@ -36,18 +36,20 @@
                     app:strokeColor="#FF777777"
                     app:strokeWidth="1dp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_marginTop="30dp">
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+
                 <LinearLayout
                     android:id="@+id/btn_kendaraan"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_margin="10dp"
-                    android:orientation="horizontal"
-                    android:clickable="true">
+                    android:clickable="true"
+                    android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -57,9 +59,9 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="89dp"
-                            android:layout_height="89dp"
-                            android:src="@drawable/car" />
+                            android:layout_width="113dp"
+                            android:layout_height="98dp"
+                            android:src="@drawable/kendaraan1" />
 
                         <View
                             android:layout_width="match_parent"
@@ -71,8 +73,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="KENDARAAN"
                             android:fontFamily="@font/caviardreams"
+                            android:text="KENDARAAN"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -89,14 +91,14 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@drawable/background_menu"
                         android:gravity="center"
-                        android:orientation="vertical"
-                        android:background="@drawable/background_menu">
+                        android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="89dp"
-                            android:layout_height="89dp"
-                            android:src="@drawable/traktor2" />
+                            android:layout_width="113dp"
+                            android:layout_height="98dp"
+                            android:src="@drawable/pertanian1" />
 
                         <View
                             android:layout_width="match_parent"
@@ -108,10 +110,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="0dp"
-                            android:text="ALAT PERTANIAN"
                             android:fontFamily="@font/caviardreams"
+                            android:text="ALAT PERTANIAN"
                             android:textSize="12sp"
-                            android:textStyle="bold"  />
+                            android:textStyle="bold" />
 
                     </LinearLayout>
                 </LinearLayout>
@@ -119,7 +121,8 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
                 android:gravity="center">
 
                 <LinearLayout
@@ -137,9 +140,9 @@
                         android:background="@drawable/background_menu">
 
                         <ImageView
-                            android:layout_width="89dp"
-                            android:layout_height="89dp"
-                            android:src="@drawable/stcp" />
+                            android:layout_width="113dp"
+                            android:layout_height="98dp"
+                            android:src="@drawable/healt1" />
 
                         <View
                             android:layout_width="match_parent"
@@ -174,9 +177,9 @@
                         android:background="@drawable/background_menu">
 
                         <ImageView
-                            android:layout_width="89dp"
-                            android:layout_height="89dp"
-                            android:src="@drawable/image_lainnya"/>
+                            android:layout_width="113dp"
+                            android:layout_height="98dp"
+                            android:src="@drawable/others1" />
 
                         <View
                             android:layout_width="match_parent"

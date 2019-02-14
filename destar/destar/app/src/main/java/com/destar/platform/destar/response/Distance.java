@@ -10,6 +10,9 @@ public class Distance{
 	@SerializedName("value")
 	private int value;
 
+	public Distance(String text, int value) {
+	}
+
 	public void setText(String text){
 		this.text = text;
 	}

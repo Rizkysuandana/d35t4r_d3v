@@ -82,7 +82,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
     private TextView tvPrice, tvDistance;
     private EditText namabarang, beratbarang;
     private String nama, berat;
-    private Button btnNext;
+        private Button btnNext;
     private LinearLayout infoPanel;
     private LinearLayout motor,germor;
     private Boolean mLocationPermissionsGranted = false;
@@ -98,7 +98,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
 
     private GoogleMap mMap;
     private MapView mapView;
-    private int LOCATION_MIN_DISTANCE = 20;
+    private int LOCATION_MIN_DISTANCE = 2000;
     private int LOCATION_MIN_TIME = 4000;
     private LocationManager locationManager;
     private LocationListener locationListener = new LocationListener() {
@@ -136,7 +136,7 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
             }
         });
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-      //  getCurrentLocation();
+        getCurrentLocation();
         btnNext = (Button)findViewById(R.id.btnNext);
         namabarang = (EditText)findViewById(R.id.nambar);
         beratbarang = (EditText)findViewById(R.id.berbar);
@@ -434,7 +434,6 @@ public class DeantarMapsActivity extends AppCompatActivity implements OnMapReady
             mMap.clear();
             LatLng latLng = new LatLng(location.getLatitude(),location.getLongitude());
             mMap.addMarker(new MarkerOptions().position(latLng).title(getText(R.string.i_here).toString()).icon(bitmapDescriptorFromVector(getApplicationContext(),R.drawable.pgmnt)));
-
             mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,20));
         }
     }

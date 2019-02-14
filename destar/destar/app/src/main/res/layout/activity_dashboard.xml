@@ -74,7 +74,7 @@
                                         android:layout_width="80dp"
                                         android:layout_height="80dp"
                                         android:layout_marginTop="5dp"
-                                        android:background="@drawable/transportasi1"
+                                        android:background="@drawable/deantar123"
                                         android:scaleType="fitXY" />
 
                                     <View
@@ -115,7 +115,7 @@
                                         android:layout_width="80dp"
                                         android:layout_height="80dp"
                                         android:layout_marginTop="5dp"
-                                        android:background="@drawable/perdagangan1"
+                                        android:background="@drawable/depasar123"
                                         android:scaleType="fitXY" />
 
                                     <View
@@ -162,7 +162,7 @@
                                         android:id="@+id/ssss"
                                         android:layout_width="75dp"
                                         android:layout_height="75dp"
-                                        android:src="@drawable/desewa"
+                                        android:src="@drawable/desewa123"
                                         android:scaleType="fitXY" />
 
                                     <View
@@ -201,7 +201,7 @@
                                         android:id="@+id/sssssaaaa"
                                         android:layout_width="75dp"
                                         android:layout_height="75dp"
-                                        android:background="@drawable/kesepakatan1"
+                                        android:background="@drawable/debayar123"
                                         android:padding="10dp"
                                         android:scaleType="fitXY" />
 
@@ -378,7 +378,7 @@
                                                 android:gravity="center">
 
                                                 <ImageView
-                                                    android:layout_width="67dp"
+                                                    android:layout_width="match_parent"
                                                     android:layout_height="80dp"
                                                     android:scaleType="fitXY"
                                                     android:src="@drawable/rwd" />

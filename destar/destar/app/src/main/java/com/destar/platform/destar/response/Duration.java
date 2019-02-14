@@ -10,6 +10,9 @@ public class Duration{
 	@SerializedName("value")
 	private int value;
 
+	public Duration(String text, int value) {
+	}
+
 	public void setText(String text){
 		this.text = text;
 	}

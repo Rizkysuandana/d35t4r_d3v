@@ -13,13 +13,13 @@
         android:layout_marginVertical="5dp">
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:scaleType="fitXY"
+            android:layout_width="89dp"
+            android:layout_height="30dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:layout_marginLeft="5dp"
-            android:src="@drawable/logo_destar" />
+            android:scaleType="fitXY"
+            android:src="@drawable/destarfont" />
 
         <ImageView
             android:layout_width="60dp"

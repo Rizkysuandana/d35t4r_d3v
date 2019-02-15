@@ -3,10 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/putih">
+    android:background="@color/putih"
+    android:orientation="vertical">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_above="@+id/logo_pemerintah">
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
@@ -160,28 +162,30 @@
                         android:id="@+id/lupasandi"/>
                 </LinearLayout>
             </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/formlogin"
-                android:gravity="bottom"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/bumn_logo"
-                    android:scaleType="centerCrop"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_alignParentLeft="true"/>
-                <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/logo_ppi"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_alignParentRight="true"/>
-            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo_pemerintah"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bumn_logo" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/logo_ppi" />
+    </RelativeLayout>
 
 </RelativeLayout>

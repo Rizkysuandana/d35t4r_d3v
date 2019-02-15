@@ -144,7 +144,7 @@ public class NextDesewa extends AppCompatActivity {
 
     public void increment(View view) {
         if(quantity==10){
-            Toast.makeText(this,"10",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"pesan maksimal 10",Toast.LENGTH_SHORT).show();
             return;
         }
         quantity = quantity+1 ;
@@ -152,7 +152,7 @@ public class NextDesewa extends AppCompatActivity {
     }
 
     public void decrement(View view) {
-        if (quantity==1){
+        if (quantity==1 && quantity==0){
             Toast.makeText(this,"pesanan minimal 1",Toast.LENGTH_SHORT).show();
             return;
         }

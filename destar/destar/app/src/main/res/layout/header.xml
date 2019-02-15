@@ -22,13 +22,13 @@
             android:src="@drawable/destarfont" />
 
         <ImageView
-            android:layout_width="60dp"
+            android:layout_width="50dp"
             android:layout_height="50dp"
             android:scaleType="fitXY"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="5dp"
-            android:src="@drawable/logo_ppi" />
+            android:src="@drawable/logo_destar" />
     </RelativeLayout>
 </android.support.design.widget.AppBarLayout>

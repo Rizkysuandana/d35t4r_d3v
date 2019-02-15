@@ -23,6 +23,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.akexorcist.googledirection.model.Line;
 import com.destar.platform.destar.R;
@@ -56,6 +57,7 @@ public class NextPengantarBarang extends AppCompatActivity {
         nambar = (TextView)findViewById(R.id.nambar);
         berbar = (TextView)findViewById(R.id.berbar);
         Bundle a = getIntent().getExtras();
+        dateFormat = new SimpleDateFormat("dd-MM-yyy", Locale.US);
         linearLayout = (LinearLayout)findViewById(R.id.next_pengantarbarang);
         namabarang = a.getString("parse_namabarang");
         beratbarang = a.getString("parse_beratbarang");
@@ -114,7 +116,8 @@ public class NextPengantarBarang extends AppCompatActivity {
                         popupWindow.showAtLocation(linearLayout, Gravity.CENTER,0,0);
                         break;
                     case R.id.nanti :
-                                Intent intent = new Intent(NextPengantarBarang.this, Dashboard.class);
+                        Intent intent = new Intent(NextPengantarBarang.this, Dashboard.class);
+                        startActivity(intent);
                         break;
                 }
             }

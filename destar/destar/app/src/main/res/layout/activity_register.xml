@@ -17,8 +17,7 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/putih"
-            android:layout_marginTop="10dp">
+            android:background="@color/putih">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -31,10 +30,10 @@
                     android:layout_gravity="center">
                     <ImageView
                         android:id="@+id/imgfoto"
-                        android:layout_width="150dp"
-                        android:layout_height="155dp"
-                        android:layout_margin="20dp"
-                        app:srcCompat="@drawable/logo_destar"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/gambarlogin"
                         android:layout_gravity="center_horizontal" />
                 </LinearLayout>
 
@@ -53,11 +52,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
-                            android:layout_margin="5dp"
                             android:fontFamily="@font/caviardreams"
                             android:text="DAFTAR"
+                            android:layout_marginVertical="20dp"
                             android:textStyle="bold"
-                            android:textColor="@color/colorOrange"
+                            android:textColor="@color/colorblack"
                             android:textSize="18dip" />
 
 
@@ -85,9 +84,10 @@
                                         android:hint="Nama Pengguna"
                                         android:layout_marginHorizontal="10dp"
                                         android:singleLine="true"
-                                        android:textSize="14sp"
+                                        android:textSize="15sp"
+                                        android:textColor="@color/colorblack"
                                         android:fontFamily="@font/caviardreams"
-                                        android:textColorLink="@color/colorPrimary"/>
+                                        android:textColorLink="@color/colorblack"/>
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -101,9 +101,11 @@
                                         android:layout_below="@+id/nama_pengguna"
                                         android:layout_marginHorizontal="10dp"
                                         android:hint="Nama Lengkap"
+                                        android:textColor="@color/colorblack"
                                         android:fontFamily="@font/caviardreams"
+                                        android:textColorLink="@color/colorblack"
                                         android:singleLine="true"
-                                        android:textSize="14sp"
+                                        android:textSize="15sp"
                                         android:textAlignment="textStart" />
                                 </LinearLayout>
 
@@ -121,7 +123,9 @@
                                         android:hint="Email"
                                         android:inputType="textEmailAddress"
                                         android:singleLine="true"
-                                        android:textSize="14sp"
+                                        android:textColor="@color/colorblack"
+                                        android:textColorLink="@color/colorblack"
+                                        android:textSize="15sp"
                                         android:fontFamily="@font/caviardreams"/>
                                 </LinearLayout>
 
@@ -137,11 +141,13 @@
                                         android:layout_below="@+id/daftar_email"
                                         android:layout_marginHorizontal="10dp"
                                         android:hint="Kata Sandi"
+                                        android:textColor="@color/colorblack"
+                                        android:textColorLink="@color/colorblack"
+                                        android:textSize="15sp"
                                         android:fontFamily="@font/caviardreams"
                                         android:inputType="textPassword"
                                         android:password="true"
-                                        android:singleLine="true"
-                                        android:textSize="14sp" />
+                                        android:singleLine="true" />
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -158,8 +164,10 @@
                                         android:inputType="textPassword"
                                         android:password="true"
                                         android:singleLine="true"
-                                        android:fontFamily="@font/caviardreams"
-                                        android:textSize="14sp" />
+                                        android:textColor="@color/colorblack"
+                                        android:textColorLink="@color/colorblack"
+                                        android:textSize="15sp"
+                                        android:fontFamily="@font/caviardreams"/>
                                 </LinearLayout>
 
                                 <LinearLayout
@@ -176,9 +184,11 @@
                                         android:hint="Nomor HP"
                                         android:inputType="number"
                                         android:singleLine="true"
-                                        android:fontFamily="@font/caviardreams"
                                         android:textAlignment="textStart"
-                                        android:textSize="14sp" />
+                                        android:textColor="@color/colorblack"
+                                        android:textColorLink="@color/colorblack"
+                                        android:textSize="15sp"
+                                        android:fontFamily="@font/caviardreams"/>
                                 </LinearLayout>
 
                             </LinearLayout>
@@ -198,7 +208,7 @@
                                 <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
-                                    android:gravity="start"
+                                    android:gravity="center"
                                     android:orientation="horizontal"
                                     android:layout_marginHorizontal="10dp"
                                     android:layout_gravity="right">
@@ -207,14 +217,14 @@
                                         android:id="@+id/unggah"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
+                                        android:scaleType="fitXY"
                                         android:src="@drawable/unggah_foto" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:layout_margin="3dp"
-                                        android:layout_toRightOf="@+id/unggah"
                                         android:layout_weight="1"
+                                        android:fontFamily="@font/caviardreams"
                                         android:text="Unggah Foto" />
 
                                 </LinearLayout>
@@ -243,27 +253,28 @@
 
 
                     </RelativeLayout>
-                </LinearLayout>
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp">
-                    <ImageView
-                        android:layout_width="120dp"
-                        android:layout_height="100dp"
-                        android:layout_marginHorizontal="10dp"
-                        android:src="@drawable/bumn_logo"
-                        android:scaleType="centerCrop"
-                        android:layout_alignParentLeft="true"/>
-                    <ImageView
-                        android:layout_width="120dp"
-                        android:layout_height="100dp"
-                        android:layout_marginHorizontal="10dp"
-                        android:src="@drawable/logo_ppi"
-                        android:layout_alignParentRight="true"/>
-                </RelativeLayout>
+                </LinearLayout><RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/logo_pemerintah"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginHorizontal="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bumn_logo" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/logo_ppi" />
+            </RelativeLayout>
             </LinearLayout>
 
         </ScrollView>

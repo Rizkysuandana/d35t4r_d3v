@@ -51,6 +51,7 @@
                     android:text="Selamat Datang di DESTAR!"
                     android:textSize="23dp"
                     android:textColor="@color/colorblack"
+                    android:fontFamily="@font/caviardreams"
                     android:layout_marginVertical="25sp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -112,6 +113,7 @@
                     android:layout_height="wrap_content"
                     android:text="Dengan masuk atau mendaftar, kamu menyetujui"
                     android:textColor="@color/colorblack"
+                    android:fontFamily="@font/caviardreams"
                     android:textSize="15dp"/>
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -123,18 +125,21 @@
                         android:layout_height="wrap_content"
                         android:text="Ketentuan Layanan "
                         android:textColor="@color/colorBlue"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="dan "
                         android:textColor="@color/colorblack"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="15dp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Kebijakan Privasi"
                         android:textColor="@color/colorBlue"
+                        android:fontFamily="@font/caviardreams"
                         android:textSize="15dp"/>
                 </LinearLayout>
             </LinearLayout>

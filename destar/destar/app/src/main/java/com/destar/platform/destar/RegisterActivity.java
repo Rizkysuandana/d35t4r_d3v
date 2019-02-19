@@ -20,6 +20,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.destar.platform.destar.utils.MasifaController;
@@ -47,7 +48,6 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
         msfC = new MasifaController();
         bSimpan = (Button) findViewById(R.id.btn_daftar);
         xUsername =  (EditText) findViewById(R.id.nama_pengguna);

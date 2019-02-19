@@ -163,7 +163,8 @@
                         android:textStyle="bold"
                         android:textColor="@color/colorblack"
                         android:fontFamily="@font/caviardreams"
-                        android:id="@+id/lupasandi"/>
+                        android:id="@+id/lupasandi"
+                        android:layout_marginTop="45dp"/>
                 </LinearLayout>
             </RelativeLayout>
         </LinearLayout>

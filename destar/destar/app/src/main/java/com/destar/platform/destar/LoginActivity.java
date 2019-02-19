@@ -63,7 +63,6 @@ public class LoginActivity extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
            public void onClick(View v) {
-
                 xLogin();
            }
         });
@@ -90,29 +89,23 @@ public class LoginActivity extends AppCompatActivity {
                     // Check for error node in json
                     if (success == 1) {
                         String username = jObj.getString(TAG_USERNAME);
-
-
                         Log.e("Successfully Login!", jObj.toString());
-
                         Toast.makeText(getApplicationContext(), jObj.getString(TAG_MESSAGE), Toast.LENGTH_LONG).show();
 
                         // menyimpan login ke session
                         SharedPreferences.Editor editor = sharedpreferences.edit();
                         editor.putBoolean(session_status, true);
-
                         editor.putString(TAG_USERNAME, username);
                         editor.commit();
 
                         // Memanggil main activity
                         Intent intent = new Intent(LoginActivity.this, Dashboard.class);
-
                         intent.putExtra(TAG_USERNAME, username);
                         finish();
                         startActivity(intent);
                     } else {
                         Toast.makeText(getApplicationContext(),
                                 jObj.getString(TAG_MESSAGE), Toast.LENGTH_LONG).show();
-
                     }
                 } catch (JSONException e) {
                     // JSON error
@@ -164,10 +157,8 @@ public class LoginActivity extends AppCompatActivity {
                 HashMapParams.put("strUserName",username);
                 HashMapParams.put("strPwd", password);
                 HashMapParams.put("strHardwareID",pIdHardware);
-
                 String FinalData = msfC.HttpPost(url, HashMapParams);
                 return FinalData;
-
             }
             @Override
             protected void onPostExecute(String string1) {

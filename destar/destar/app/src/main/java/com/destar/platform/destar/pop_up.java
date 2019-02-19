@@ -15,6 +15,7 @@ import android.widget.TextView;
 import java.util.Locale;
 
 
+
 public class pop_up extends AppCompatActivity {
     private static final long COUNTDOWN_IN_MILLIES = 40000;
     private ColorStateList textColorDefaultCd;

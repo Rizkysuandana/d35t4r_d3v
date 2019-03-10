@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/pergudangan"
+        android:drawable="@drawable/promo2"
+        android:width="650px"
+        android:height="321px" />
+</layer-list>

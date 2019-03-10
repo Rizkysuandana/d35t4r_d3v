@@ -14,7 +14,7 @@ public class AppClass extends Application {
     private String pLong,pLat,pNamaUser;
     private String android_id ;String pActif;
     String pServer = "http://server.masifa.xyz/vcb/app/android/InputLokasi";
-    String pServerLogout ="http://server.masifa.xyz/vcb/app/android/Logout" ;
+    String pServerLogout =ServerActivity.URL + "CustomersLogOut" ;
     boolean check = true;
     public String getFBase() { return pFBase; }
     MasifaController msfC ;
@@ -69,7 +69,7 @@ public class AppClass extends Application {
                 HashMapParams.put("pLong", pLong);
                 HashMapParams.put("pLat", pLat);
                 HashMapParams.put("pNamaUser", pNamaUser);
-                String FinalData = msfC.HttpRequest(pServer, HashMapParams);
+                String FinalData = msfC.HttpPost(pServer, HashMapParams);
                 return FinalData;
 
             }
@@ -94,8 +94,8 @@ public class AppClass extends Application {
             @Override
             protected String doInBackground(Void... params) {
                 HashMap<String,String> HashMapParams = new HashMap<String,String>();
-                HashMapParams.put("hardwareid", android_id);
-                String FinalData = msfC.HttpRequest(pServerLogout, HashMapParams);
+                HashMapParams.put("strHardwareID", android_id);
+                String FinalData = msfC.HttpPost(pServerLogout, HashMapParams);
                 return FinalData;
 
             }

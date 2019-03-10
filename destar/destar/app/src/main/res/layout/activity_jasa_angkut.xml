@@ -44,11 +44,12 @@
 
     <android.support.v7.widget.CardView
         android:id="@+id/toolbar1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"
         android:layout_alignParentStart="true"
         android:background="@color/colorgrey"
+        android:layout_centerHorizontal="true"
         app:popupTheme="@style/AppTheme.PopupOverlay"
         app:theme="@style/AppTheme.Toolbar">
 
@@ -57,7 +58,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="100"
-            android:background="@color/colorgrey">
+            android:background="@color/colorgrey"
+            android:layout_gravity="center">
 
             <LinearLayout
                 android:id="@+id/pesanan"
@@ -66,7 +68,8 @@
                 android:layout_weight="25"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:visibility="visible">
+                android:visibility="visible"
+                android:layout_marginHorizontal="2dp">
 
                 <ImageView
                     android:layout_width="90dp"
@@ -76,7 +79,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/calibri"
+                    android:fontFamily="@font/caviardreams"
                     android:text="Gerobak Motor"
                     android:textAlignment="center"
                     android:textColor="@color/cardview_dark_background"
@@ -90,7 +93,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginHorizontal="2dp">
 
                 <ImageView
                     android:layout_width="90dp"
@@ -100,7 +104,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/calibri"
+                    android:fontFamily="@font/caviardreams"
                     android:text="Pickup"
                     android:textAlignment="center"
                     android:textColor="@color/cardview_dark_background"
@@ -114,7 +118,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginHorizontal="2dp">
 
                 <ImageView
                     android:layout_width="90dp"
@@ -124,7 +129,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/calibri"
+                    android:fontFamily="@font/caviardreams"
                     android:text="Pickup Box"
                     android:textAlignment="center"
                     android:textColor="@color/cardview_dark_background"
@@ -137,7 +142,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="25"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginHorizontal="2dp">
 
                 <ImageView
                     android:layout_width="70dp"
@@ -147,7 +153,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/calibri"
+                    android:fontFamily="@font/caviardreams"
                     android:text="Engkel Bak"
                     android:textAlignment="center"
                     android:textColor="@color/cardview_dark_background"
@@ -497,7 +503,7 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/next_jasaAngkut"
                         android:text="lanjutkan"
-                        android:background="@drawable/buttonshapelogin"/>
+                        android:background="@color/colorOrange"/>
                 </RelativeLayout>
             </LinearLayout>
         </ScrollView>

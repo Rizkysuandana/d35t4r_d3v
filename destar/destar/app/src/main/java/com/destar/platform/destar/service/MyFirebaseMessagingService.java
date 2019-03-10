@@ -10,15 +10,15 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.destar.platform.destar.Dashboard;
 import com.destar.platform.destar.app.Config;
-import com.destar.platform.destar.utils.NotificationUtils;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.destar.platform.destar.Dashboard;
+import com.destar.platform.destar.utils.NotificationUtils;
 
 /**
  * Created by Ravi Tamada on 08/08/16.

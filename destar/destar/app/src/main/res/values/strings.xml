@@ -18,5 +18,8 @@
     <string name="id_pesanan">pesanan</string>
     <string name="id_riwayat">riwayat</string>
     <string name="id_akun">akun</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="i_here">Saya Disini</string>
+    <string name="network_failed">Network or GPS Failed</string>
 
 </resources>

@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.destar.platform.destar.R;
+
 public class Toolbar extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -13,7 +15,6 @@ public class Toolbar extends AppCompatActivity {
         setContentView(R.layout.layout_toolbar);
        LinearLayout beranda1 = (LinearLayout) findViewById(R.id.beranda);
        LinearLayout pesanan1 = (LinearLayout)findViewById(R.id.pesanan);
-       LinearLayout pemantauan1 = (LinearLayout)findViewById(R.id.pemantauan);
        LinearLayout riwayat1 = (LinearLayout)findViewById(R.id.riwayat);
       LinearLayout akun1 = (LinearLayout)findViewById(R.id.akun);
 
@@ -31,13 +32,6 @@ public class Toolbar extends AppCompatActivity {
                startActivity(i);
            }
        });
-        pemantauan1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Toolbar.this, PemantauanActivity.class);
-               startActivity(i);
-            }
-        });
         riwayat1.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {

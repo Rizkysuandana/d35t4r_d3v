@@ -18,6 +18,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.destar.platform.destar.R;
 import com.destar.platform.destar.app.AppController;
 import com.destar.platform.destar.utils.MasifaController;
 
@@ -33,7 +34,6 @@ public class LoginActivity extends AppCompatActivity {
     Button btn_login;
     EditText txt_username, txt_password;
     Intent intent;
-
     int success;
     ConnectivityManager conMgr;
     private String url = ServerActivity.URL + "CustomersLogin";
@@ -63,9 +63,6 @@ public class LoginActivity extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
            public void onClick(View v) {
-                String username = txt_username.getText().toString();
-                String password = txt_password.getText().toString();
-                url = url +"?strUserName="+username+"&strPwd="+password;
                 xLogin();
            }
         });
@@ -92,29 +89,23 @@ public class LoginActivity extends AppCompatActivity {
                     // Check for error node in json
                     if (success == 1) {
                         String username = jObj.getString(TAG_USERNAME);
-
-
                         Log.e("Successfully Login!", jObj.toString());
-
                         Toast.makeText(getApplicationContext(), jObj.getString(TAG_MESSAGE), Toast.LENGTH_LONG).show();
 
                         // menyimpan login ke session
                         SharedPreferences.Editor editor = sharedpreferences.edit();
                         editor.putBoolean(session_status, true);
-
                         editor.putString(TAG_USERNAME, username);
                         editor.commit();
 
                         // Memanggil main activity
                         Intent intent = new Intent(LoginActivity.this, Dashboard.class);
-
                         intent.putExtra(TAG_USERNAME, username);
                         finish();
                         startActivity(intent);
                     } else {
                         Toast.makeText(getApplicationContext(),
                                 jObj.getString(TAG_MESSAGE), Toast.LENGTH_LONG).show();
-
                     }
                 } catch (JSONException e) {
                     // JSON error
@@ -159,9 +150,15 @@ public class LoginActivity extends AppCompatActivity {
             }
             @Override
             protected String doInBackground(Void... params) {
-                String FinalData = msfC.HttpGET(url);
+                String username = txt_username.getText().toString();
+                String password = txt_password.getText().toString();
+                String pIdHardware = ((AppClass) LoginActivity.this.getApplication()).Getandroidid();
+                HashMap<String,String> HashMapParams = new HashMap<String,String>();
+                HashMapParams.put("strUserName",username);
+                HashMapParams.put("strPwd", password);
+                HashMapParams.put("strHardwareID",pIdHardware);
+                String FinalData = msfC.HttpPost(url, HashMapParams);
                 return FinalData;
-
             }
             @Override
             protected void onPostExecute(String string1) {
@@ -191,6 +188,7 @@ public class LoginActivity extends AppCompatActivity {
         Boolean xACTIVE= null;
         Integer xCUSTOMERTYPEID= null;
         String xCUSTOMERTYPENAME= null;
+        Log.e("Hasil",pParam);
         String pxJson = pParam.replace( "<?xml version=\"1.0\" encoding=\"utf-8\"?>","" );
         pxJson = pxJson.replace( "<string xmlns=\"http://tempuri.org/\">[","" );
         pxJson = pxJson.replace( "]</string>","" );

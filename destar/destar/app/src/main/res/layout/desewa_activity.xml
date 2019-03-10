@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deSewaActivity">
+
+    <include layout="@layout/header"
+        android:id="@+id/header"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="10dp"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/toolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/textboxdesainkecil">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <com.synnapps.carouselview.CarouselView
+                    android:id="@+id/carouselView"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginVertical="30dp"
+                    app:fillColor="#FFFFFFFF"
+                    app:pageColor="#00000000"
+                    app:radius="6dp"
+                    app:slideInterval="3000"
+                    app:strokeColor="#FF777777"
+                    app:strokeWidth="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/btn_kendaraan"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_menu"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="113dp"
+                            android:layout_height="98dp"
+                            android:src="@drawable/kendaraan1" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/dark_blue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:fontFamily="@font/caviardreams"
+                            android:text="KENDARAAN"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_alatPertanian"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_menu"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="113dp"
+                            android:layout_height="98dp"
+                            android:src="@drawable/pertanian1" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/dark_blue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:fontFamily="@font/caviardreams"
+                            android:text="ALAT PERTANIAN"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/btn_alatMedis"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:background="@drawable/background_menu">
+
+                        <ImageView
+                            android:layout_width="113dp"
+                            android:layout_height="98dp"
+                            android:src="@drawable/healt1" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/dark_blue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="ALAT MEDIS"
+                            android:fontFamily="@font/caviardreams"
+                            android:textSize="12sp"
+                            android:textStyle="bold"  />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_lainnya"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:background="@drawable/background_menu">
+
+                        <ImageView
+                            android:layout_width="113dp"
+                            android:layout_height="98dp"
+                            android:src="@drawable/others1" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/dark_blue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="LAINNYA"
+                            android:fontFamily="@font/caviardreams"
+                            android:textSize="12sp"
+                            android:textStyle="bold"  />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/textboxdesainkecil"
+                android:layout_marginTop="3dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/recenliatas"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="70"
+                            android:fontFamily="@font/caviardreams"
+                            android:gravity="left"
+                            android:text="PROMO"
+                            android:textColor="#322e47"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="30"
+                            android:fontFamily="@font/caviardreams"
+                            android:gravity="right"
+                            android:text="See All"
+                            android:textColor="#308fe9"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:id="@+id/recentbawah"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="3dp">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                app:cardCornerRadius="4dp"
+                                app:cardElevation="8dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="100">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="28"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:layout_width="67dp"
+                                                android:layout_height="80dp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/promo" />
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="72"
+                                            android:orientation="vertical">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="6dp"
+                                                android:fontFamily="@font/caviardreams"
+                                                android:text="Promo DE-OJEK"
+                                                android:textColor="#000000"
+                                                android:textSize="16dp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:fontFamily="@font/caviardreams"
+                                                android:text="Nikmati potongan harga di setiap perjalanan anda"
+                                                android:textColor="#757575"
+                                                android:textSize="14dp" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                app:cardCornerRadius="4dp"
+                                app:cardElevation="8dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:weightSum="100">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="28"
+                                            android:gravity="center">
+
+                                            <ImageView
+                                                android:layout_width="67dp"
+                                                android:layout_height="80dp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/rwd" />
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="72"
+                                            android:orientation="vertical">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="6dp"
+                                                android:fontFamily="@font/caviardreams"
+                                                android:text="DE-BARANG Rewards"
+                                                android:textColor="#000000"
+                                                android:textSize="16sp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4dp"
+                                                android:fontFamily="@font/caviardreams"
+                                                android:text="Dapatkan 50 poin untuk setiap pengantaran barang menggunakan DE-GERMOR"
+                                                android:textColor="#757575"
+                                                android:textSize="14dp" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <include layout="@layout/layout_toolbar"
+        class="com.destar.platform.destar.Toolbar"
+        android:id="@+id/toolbar"/>
+
+</RelativeLayout>

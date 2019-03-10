@@ -3,6 +3,6 @@
     <item
         android:drawable="@drawable/logo_ppi"
         android:id="@+id/ppilogo"
-        android:width="500dp"
-        android:height="200dp"/>
+        android:width="700dp"
+        android:height="400dp"/>
 </selector>

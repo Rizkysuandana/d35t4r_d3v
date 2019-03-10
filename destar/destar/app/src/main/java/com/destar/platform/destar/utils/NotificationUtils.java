@@ -28,8 +28,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import com.destar.platform.destar.R;
 import com.destar.platform.destar.app.Config;
+import com.destar.platform.destar.R;
 
 public class NotificationUtils {
 
